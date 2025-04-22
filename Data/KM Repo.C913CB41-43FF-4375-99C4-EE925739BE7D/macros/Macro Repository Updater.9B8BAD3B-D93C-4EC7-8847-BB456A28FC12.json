@@ -1,7 +1,7 @@
 {
 	"UID": "9B8BAD3B-D93C-4EC7-8847-BB456A28FC12",
 	"CreationDate": 505944330.85614,
-	"ModificationDate": 766802060.733302,
+	"ModificationDate": 766978897.276092,
 	"Triggers": [],
 	"Actions": [
 		{
@@ -380,6 +380,24 @@
 					"ActionUID": 15614511
 				}
 			]
+		},
+		{
+			"MacroActionType": "ExecuteShellScript",
+			"ActionName": "Push to Github",
+			"IncludedVariables": [
+				"9999"
+			],
+			"TrimResults": true,
+			"Source": "Nothing",
+			"IncludeStdErr": false,
+			"ActionUID": 15614942,
+			"UseText": true,
+			"TrimResultsNew": true,
+			"TimeOutAbortsMacro": true,
+			"Path": "",
+			"DisplayKind": "Window",
+			"HonourFailureSettings": true,
+			"Text": "#!/bin/bash\ncd \"/Users/ognistik/Documents/GitHubRepos/km\"\ngit add .\ngit commit -m \"Automated commit from Keyboard Maestro\"\ngit push origin main"
 		}
 	],
 	"Name": "Macro Repository Updater",
