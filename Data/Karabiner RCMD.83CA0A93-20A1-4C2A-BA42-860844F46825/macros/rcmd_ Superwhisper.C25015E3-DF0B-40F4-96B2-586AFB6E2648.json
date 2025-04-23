@@ -3,7 +3,7 @@
 	"UID": "C25015E3-DF0B-40F4-96B2-586AFB6E2648",
 	"Name": "rcmd: Superwhisper",
 	"Triggers": [],
-	"ModificationDate": 762064167.652288,
+	"ModificationDate": 767049229.700942,
 	"Actions": [
 		{
 			"MacroActionType": "SetVariableToText",
@@ -658,22 +658,78 @@
 					"ThenActions": [
 						{
 							"MacroActionType": "IfThenElse",
+							"ActionUID": 15533687,
+							"ThenActionListDisclosed": false,
+							"TimeOutAbortsMacro": true,
 							"ElseActions": [
 								{
-									"MacroActionType": "ExecuteAppleScript",
+									"MacroActionType": "ExecuteShellScript",
+									"ActionName": "Get SW window with Yabai",
 									"IncludedVariables": [
 										"9999"
 									],
 									"TrimResults": true,
+									"Source": "Nothing",
+									"Variable": "localSwWin",
 									"IncludeStdErr": false,
-									"ActionUID": 15533688,
+									"ActionUID": 15616114,
 									"UseText": true,
 									"TrimResultsNew": true,
 									"TimeOutAbortsMacro": true,
 									"Path": "",
-									"DisplayKind": "None",
+									"DisplayKind": "Variable",
 									"HonourFailureSettings": true,
-									"Text": "tell application id \"com.runningwithcrayons.Alfred\" to run trigger \"sw\" in workflow \"com.superwhisper.aft\" with argument \"settings\""
+									"Text": "#!/bin/bash\n\n# Get all windows in all spaces\nwindow_list=$(/opt/homebrew/bin/yabai -m query --windows)\n\n# Find superwhisper window with AXDialog subrole\nwindow_id=$(echo \"$window_list\" | jq -r '.[] | select(.app==\"superwhisper\" and .subrole==\"AXStandardWindow\") | .id')\n\nif [ -n \"$window_id\" ]; then\n    echo \"$window_id\"\nelse\n    echo \"no\"\nfi",
+									"NotifyOnFailure": false
+								},
+								{
+									"MacroActionType": "IfThenElse",
+									"ElseActions": [
+										{
+											"MacroActionType": "ExecuteAppleScript",
+											"IncludedVariables": [
+												"9999"
+											],
+											"TrimResults": true,
+											"IncludeStdErr": false,
+											"ActionUID": 15533688,
+											"UseText": true,
+											"TrimResultsNew": true,
+											"TimeOutAbortsMacro": true,
+											"Path": "",
+											"DisplayKind": "None",
+											"HonourFailureSettings": true,
+											"Text": "tell application id \"com.runningwithcrayons.Alfred\" to run trigger \"sw\" in workflow \"com.superwhisper.aft\" with argument \"settings\""
+										}
+									],
+									"Conditions": {
+										"ConditionListMatch": "All",
+										"ConditionList": [
+											{
+												"ConditionType": "Variable",
+												"VariableValue": "no",
+												"Variable": "localSwWin",
+												"VariableConditionType": "IsNot"
+											}
+										]
+									},
+									"ThenActions": [
+										{
+											"MacroActionType": "ActivateApplication",
+											"ActionUID": 15616116,
+											"ReopenWindows": false,
+											"AllWindows": false,
+											"TimeOutAbortsMacro": true,
+											"AlreadyActivatedActionType": "Normal",
+											"Application": {
+												"BundleIdentifier": "com.superduper.superwhisper",
+												"Name": "superwhisper",
+												"NewFile": "/Applications/superwhisper.app"
+											}
+										}
+									],
+									"TimeOutAbortsMacro": true,
+									"ActionUID": 15616115
 								}
 							],
 							"Conditions": {
@@ -704,9 +760,7 @@
 										"NewFile": "/Applications/superwhisper.app"
 									}
 								}
-							],
-							"TimeOutAbortsMacro": true,
-							"ActionUID": 15533687
+							]
 						}
 					],
 					"TimeOutAbortsMacro": true,

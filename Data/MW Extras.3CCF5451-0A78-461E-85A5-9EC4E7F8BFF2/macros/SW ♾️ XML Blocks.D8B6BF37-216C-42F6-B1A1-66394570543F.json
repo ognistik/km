@@ -1,7 +1,7 @@
 {
 	"UID": "D8B6BF37-216C-42F6-B1A1-66394570543F",
 	"CreationDate": 764533103.134389,
-	"ModificationDate": 764650268.795892,
+	"ModificationDate": 767117962.641287,
 	"Triggers": [
 		{
 			"AutoRun": false,
@@ -29,6 +29,7 @@
 			"ActionUID": 15599646,
 			"PromptUID": "8BB078DE-FD7D-4B46-A7AA-A82FE75A509F",
 			"TimeOutAbortsMacro": false,
+			"IsDisclosed": false,
 			"Destination": "Variable",
 			"Text": "Style Requirements\nBanned Terms\nBanned Writing Structures",
 			"NotifyOnFailure": false
@@ -46,12 +47,13 @@
 			"ActionUID": 15599647,
 			"UseText": true,
 			"TrimResultsNew": true,
+			"ActionColor": "Orange",
 			"TimeOutAbortsMacro": true,
 			"Path": "",
 			"DisplayKind": "Variable",
 			"IsDisclosed": false,
 			"HonourFailureSettings": true,
-			"Text": "/usr/bin/python3 \"$HOME/Dropbox/2-Areas/SystemAndApps/superwhisper/queryBlock.py\" \"$KMVAR_localTheBlock\""
+			"Text": "/usr/bin/python3 \"$HOME/Documents/superwhisper/scripts/queryBlock.py\" \"$KMVAR_localTheBlock\""
 		},
 		{
 			"MacroActionType": "ExecuteMacro",
@@ -84,12 +86,13 @@
 			"ActionUID": 15599650,
 			"UseText": true,
 			"TrimResultsNew": true,
+			"ActionColor": "Orange",
 			"TimeOutAbortsMacro": true,
 			"Path": "",
 			"DisplayKind": "None",
 			"IsDisclosed": false,
 			"HonourFailureSettings": true,
-			"Text": "/usr/bin/python3 \"$HOME/Dropbox/2-Areas/SystemAndApps/superwhisper/setBlock.py\" \"$KMVAR_localTheBlock\" \"$KMVAR_localNewBlock\""
+			"Text": "/usr/bin/python3 \"$HOME/Documents/superwhisper/scripts/setBlock.py\" \"$KMVAR_localTheBlock\" \"$KMVAR_localNewBlock\""
 		},
 		{
 			"MacroActionType": "QuitSpecificApp",
@@ -137,6 +140,43 @@
 				"Name": "superwhisper",
 				"NewFile": "/Applications/superwhisper.app"
 			}
+		},
+		{
+			"MacroActionType": "PromptForUserInput",
+			"Title": "Github",
+			"Prompt": "Push change to Github?",
+			"ActionUID": 15616507,
+			"IsDisclosed": false,
+			"TimeOutAbortsMacro": true,
+			"Buttons": [
+				{
+					"Button": "OK"
+				},
+				{
+					"Button": "Cancel",
+					"Cancel": true
+				}
+			],
+			"Variables": []
+		},
+		{
+			"MacroActionType": "ExecuteShellScript",
+			"ActionName": "Push to Github",
+			"IncludedVariables": [
+				"9999"
+			],
+			"TrimResults": true,
+			"Source": "Nothing",
+			"IncludeStdErr": false,
+			"ActionUID": 15616506,
+			"UseText": true,
+			"TrimResultsNew": true,
+			"TimeOutAbortsMacro": true,
+			"Path": "",
+			"DisplayKind": "Window",
+			"IsDisclosed": false,
+			"HonourFailureSettings": true,
+			"Text": "#!/bin/bash\ncd \"/Users/ognistik/Documents/superwhisper\"\ngit add .\ngit commit -m \"XML Block Update - Automated commit from KM\"\ngit push origin main"
 		}
 	],
 	"Name": "SW ♾️ XML Blocks",

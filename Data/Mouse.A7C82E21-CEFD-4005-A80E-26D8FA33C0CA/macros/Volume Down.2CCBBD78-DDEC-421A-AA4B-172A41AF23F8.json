@@ -6,11 +6,11 @@
 		{
 			"KeyCode": 2,
 			"MacroTriggerType": "HotKey",
-			"Modifiers": 6656,
+			"Modifiers": 4352,
 			"FireType": "Pressed"
 		}
 	],
-	"ModificationDate": 737749416.319501,
+	"ModificationDate": 767114253.77878,
 	"Actions": [
 		{
 			"MacroActionType": "SystemAction",

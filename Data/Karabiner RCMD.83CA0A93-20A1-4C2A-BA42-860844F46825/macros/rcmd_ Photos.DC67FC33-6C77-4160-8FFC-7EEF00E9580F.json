@@ -3,7 +3,7 @@
 	"UID": "DC67FC33-6C77-4160-8FFC-7EEF00E9580F",
 	"Name": "rcmd: Photos",
 	"Triggers": [],
-	"ModificationDate": 751236027.652863,
+	"ModificationDate": 767048587.59675,
 	"Actions": [
 		{
 			"MacroActionType": "SetVariableToText",
@@ -626,6 +626,9 @@
 			"ThenActions": [
 				{
 					"MacroActionType": "IfThenElse",
+					"ActionUID": 15549991,
+					"ThenActionListDisclosed": false,
+					"TimeOutAbortsMacro": true,
 					"ElseActions": [
 						{
 							"MacroActionType": "ActivateApplication",
@@ -669,9 +672,7 @@
 								"NewFile": "/System/Applications/Photos.app"
 							}
 						}
-					],
-					"TimeOutAbortsMacro": true,
-					"ActionUID": 15549991
+					]
 				}
 			],
 			"TimeOutAbortsMacro": true,

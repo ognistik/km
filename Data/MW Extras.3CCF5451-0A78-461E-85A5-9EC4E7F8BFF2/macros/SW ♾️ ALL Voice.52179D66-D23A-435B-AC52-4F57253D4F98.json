@@ -1,7 +1,7 @@
 {
 	"UID": "52179D66-D23A-435B-AC52-4F57253D4F98",
 	"CreationDate": 760877919.838434,
-	"ModificationDate": 764558379.054655,
+	"ModificationDate": 767117891.095394,
 	"Triggers": [
 		{
 			"AutoRun": false,
@@ -112,12 +112,13 @@
 			"ActionUID": 15577766,
 			"UseText": true,
 			"TrimResultsNew": true,
+			"ActionColor": "Orange",
 			"TimeOutAbortsMacro": true,
 			"Path": "",
 			"DisplayKind": "None",
 			"IsDisclosed": false,
 			"HonourFailureSettings": true,
-			"Text": "/usr/bin/python3 \"$HOME/Dropbox/2-Areas/SystemAndApps/superwhisper/setVoiceAll.py\" $KMVAR_localTheModel"
+			"Text": "/usr/bin/python3 \"$HOME/Documents/superwhisper/scripts/setVoiceAll.py\" $KMVAR_localTheModel"
 		},
 		{
 			"MacroActionType": "QuitSpecificApp",

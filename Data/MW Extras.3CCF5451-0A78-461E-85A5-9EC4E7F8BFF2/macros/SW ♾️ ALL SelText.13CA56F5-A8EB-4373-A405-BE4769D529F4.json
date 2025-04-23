@@ -1,14 +1,8 @@
 {
 	"UID": "13CA56F5-A8EB-4373-A405-BE4769D529F4",
 	"CreationDate": 764559336.362805,
-	"ModificationDate": 764559465.833938,
-	"Triggers": [
-		{
-			"AutoRun": false,
-			"Display": "All SelText",
-			"MacroTriggerType": "GroupStatusMenu"
-		}
-	],
+	"ModificationDate": 767117859.143267,
+	"Triggers": [],
 	"Actions": [
 		{
 			"MacroActionType": "ExecuteShellScript",
@@ -22,12 +16,13 @@
 			"ActionUID": 15600043,
 			"UseText": true,
 			"TrimResultsNew": true,
+			"ActionColor": "Orange",
 			"TimeOutAbortsMacro": true,
 			"Path": "",
 			"DisplayKind": "None",
 			"IsDisclosed": false,
 			"HonourFailureSettings": true,
-			"Text": "/usr/bin/python3 \"$HOME/Dropbox/2-Areas/SystemAndApps/superwhisper/setSelectedText.py\""
+			"Text": "/usr/bin/python3 \"$HOME/Documents/superwhisper/scripts/setSelectedText.py\""
 		},
 		{
 			"MacroActionType": "QuitSpecificApp",

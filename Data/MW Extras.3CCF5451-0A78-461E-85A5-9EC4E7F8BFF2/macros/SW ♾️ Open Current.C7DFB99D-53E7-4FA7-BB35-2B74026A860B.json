@@ -1,7 +1,7 @@
 {
 	"UID": "C7DFB99D-53E7-4FA7-BB35-2B74026A860B",
 	"CreationDate": 764559975.16846,
-	"ModificationDate": 764560159.093175,
+	"ModificationDate": 767117937.932458,
 	"Triggers": [
 		{
 			"AutoRun": false,
@@ -12,7 +12,7 @@
 	"Actions": [
 		{
 			"MacroActionType": "ExecuteShellScript",
-			"ActionName": "We do all the replacements",
+			"ActionName": "Open Current Mode",
 			"IncludedVariables": [
 				"9999"
 			],
@@ -22,11 +22,13 @@
 			"ActionUID": 15600047,
 			"UseText": true,
 			"TrimResultsNew": true,
+			"ActionColor": "Orange",
 			"TimeOutAbortsMacro": true,
 			"Path": "",
 			"DisplayKind": "None",
+			"IsDisclosed": false,
 			"HonourFailureSettings": true,
-			"Text": "/usr/bin/python3 \"$HOME/Dropbox/2-Areas/SystemAndApps/superwhisper/openActive.py\" \"$KMVAR_sw_currentMode\""
+			"Text": "/usr/bin/python3 \"$HOME/Documents/superwhisper/scripts/openActive.py\" \"$KMVAR_sw_currentMode\""
 		}
 	],
 	"Name": "SW ♾️ Open Current",

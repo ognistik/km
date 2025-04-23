@@ -1,7 +1,7 @@
 {
 	"UID": "5496CF97-8237-44F7-BD54-2E182A26C1BC",
 	"CreationDate": 764526685.164217,
-	"ModificationDate": 765473966.556726,
+	"ModificationDate": 767117776.539303,
 	"Triggers": [
 		{
 			"AutoRun": false,
@@ -30,12 +30,13 @@
 			"ActionUID": 15599625,
 			"UseText": true,
 			"TrimResultsNew": true,
+			"ActionColor": "Orange",
 			"TimeOutAbortsMacro": true,
 			"Path": "",
 			"DisplayKind": "AppendVar",
 			"IsDisclosed": false,
 			"HonourFailureSettings": true,
-			"Text": "/usr/bin/python3 \"$HOME/Dropbox/2-Areas/SystemAndApps/superwhisper/queryPrompt.py\" \"$KMVAR_sw_currentMode\""
+			"Text": "/usr/bin/python3 \"$HOME/Documents/superwhisper/scripts/queryPrompt.py\" \"$KMVAR_sw_currentMode\""
 		},
 		{
 			"MacroActionType": "ExecuteMacro",
@@ -48,6 +49,9 @@
 		},
 		{
 			"MacroActionType": "IfThenElse",
+			"ActionUID": 15599635,
+			"IsDisclosed": false,
+			"TimeOutAbortsMacro": true,
 			"ElseActions": [
 				{
 					"MacroActionType": "ExecuteMacro",
@@ -98,9 +102,7 @@
 					"Text": "%Ask16=%localCurrent%%",
 					"DisplayKind": "Variable"
 				}
-			],
-			"TimeOutAbortsMacro": true,
-			"ActionUID": 15599635
+			]
 		},
 		{
 			"MacroActionType": "ExecuteShellScript",
@@ -114,11 +116,13 @@
 			"ActionUID": 15599631,
 			"UseText": true,
 			"TrimResultsNew": true,
+			"ActionColor": "Orange",
 			"TimeOutAbortsMacro": true,
 			"Path": "",
 			"DisplayKind": "None",
+			"IsDisclosed": false,
 			"HonourFailureSettings": true,
-			"Text": "/usr/bin/python3 \"$HOME/Dropbox/2-Areas/SystemAndApps/superwhisper/setPrompt.py\" \"$KMVAR_localActiveMode\" \"$KMVAR_localNewPrompt\""
+			"Text": "/usr/bin/python3 \"$HOME/Documents/superwhisper/scripts/setPrompt.py\" \"$KMVAR_localActiveMode\" \"$KMVAR_localNewPrompt\""
 		},
 		{
 			"MacroActionType": "QuitSpecificApp",
@@ -166,6 +170,43 @@
 				"Name": "superwhisper",
 				"NewFile": "/Applications/superwhisper.app"
 			}
+		},
+		{
+			"MacroActionType": "PromptForUserInput",
+			"Title": "Github",
+			"Prompt": "Push to Github?",
+			"ActionUID": 15616508,
+			"IsDisclosed": false,
+			"TimeOutAbortsMacro": true,
+			"Buttons": [
+				{
+					"Button": "OK"
+				},
+				{
+					"Button": "Cancel",
+					"Cancel": true
+				}
+			],
+			"Variables": []
+		},
+		{
+			"MacroActionType": "ExecuteShellScript",
+			"ActionName": "Push to Github",
+			"IncludedVariables": [
+				"9999"
+			],
+			"TrimResults": true,
+			"Source": "Nothing",
+			"IncludeStdErr": false,
+			"ActionUID": 15616509,
+			"UseText": true,
+			"TrimResultsNew": true,
+			"TimeOutAbortsMacro": true,
+			"Path": "",
+			"DisplayKind": "Window",
+			"IsDisclosed": false,
+			"HonourFailureSettings": true,
+			"Text": "#!/bin/bash\ncd \"/Users/ognistik/Documents/superwhisper\"\ngit add .\ngit commit -m \"Prompt Update - Automated commit from KM\"\ngit push origin main"
 		}
 	],
 	"Name": "SW ♾️ Active Prompt",

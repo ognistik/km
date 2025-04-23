@@ -1,7 +1,7 @@
 {
 	"UID": "85CE7DA4-AF66-4FC5-BE63-759AF0D9098F",
 	"CreationDate": 760879298.901843,
-	"ModificationDate": 766288233.205078,
+	"ModificationDate": 767117821.89367,
 	"Triggers": [
 		{
 			"AutoRun": false,
@@ -38,12 +38,13 @@
 			"ActionUID": 15599609,
 			"UseText": true,
 			"TrimResultsNew": true,
+			"ActionColor": "Orange",
 			"TimeOutAbortsMacro": true,
 			"Path": "",
 			"DisplayKind": "Variable",
 			"IsDisclosed": false,
 			"HonourFailureSettings": true,
-			"Text": "/usr/bin/python3 \"$HOME/Dropbox/2-Areas/SystemAndApps/superwhisper/queryVoice.py\" \"$KMVAR_localActiveMode\""
+			"Text": "/usr/bin/python3 \"$HOME/Documents/superwhisper/scripts/queryVoice.py\" \"$KMVAR_localActiveMode\""
 		},
 		{
 			"MacroActionType": "ExecuteJavaScriptForAutomation",
@@ -159,11 +160,13 @@
 			"ActionUID": 15577769,
 			"UseText": true,
 			"TrimResultsNew": true,
+			"ActionColor": "Orange",
 			"TimeOutAbortsMacro": true,
 			"Path": "",
 			"DisplayKind": "None",
+			"IsDisclosed": false,
 			"HonourFailureSettings": true,
-			"Text": "/usr/bin/python3 \"$HOME/Dropbox/2-Areas/SystemAndApps/superwhisper/setVoice.py\" \"$KMVAR_localActiveMode\" \"$KMVAR_localTheModel\""
+			"Text": "/usr/bin/python3 \"$HOME/Documents/superwhisper/scripts/setVoice.py\" \"$KMVAR_localActiveMode\" \"$KMVAR_localTheModel\""
 		},
 		{
 			"MacroActionType": "QuitSpecificApp",

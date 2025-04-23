@@ -1,7 +1,7 @@
 {
 	"UID": "B379EF49-9544-4C07-8FE1-2F1F0AC14949",
 	"CreationDate": 761107799.610874,
-	"ModificationDate": 766338233.944966,
+	"ModificationDate": 767117731.632922,
 	"Triggers": [
 		{
 			"AutoRun": false,
@@ -20,8 +20,9 @@
 		{
 			"MacroActionType": "SetVariableToText",
 			"ActionName": "First we set all available models in their respective keys",
+			"IsDisclosed": false,
 			"Variable": "localModels",
-			"Text": "{\n  \"Claude 3.7 Sonnet\": \"sw-claude-3-7-sonnet\",\n  \"GPT-4o Mini\": \"sw-gpt-4o-mini\",\n  \"Claude 3.5 Haiku\": \"sw-claude-instant-1.2\",\n  \"LM Studio\": \"F1D0D9C2-05CB-4F61-A864-DF5BAE67EB1B\"\n}",
+			"Text": "{\n  \"Claude 3.7 Sonnet\": \"sw-claude-3-7-sonnet\",\n  \"GPT-4o Mini\": \"sw-gpt-4o-mini\",\n  \"GPT-4.1\": \"4B0D9A17-1A5E-4B08-AF19-AC43A8B54FC4\",\n  \"GPT-4.1 Mini\": \"4B0D9A17-1A5E-4B08-AF19-AC43A8B54FC3\",\n  \"Claude 3.5 Haiku\": \"sw-claude-instant-1.2\",\n  \"LM Studio\": \"F1D0D9C2-05CB-4F61-A864-DF5BAE67EB1B\"\n}",
 			"ActionUID": 15599597
 		},
 		{
@@ -37,12 +38,13 @@
 			"ActionUID": 15580506,
 			"UseText": true,
 			"TrimResultsNew": true,
+			"ActionColor": "Orange",
 			"TimeOutAbortsMacro": true,
 			"Path": "",
 			"DisplayKind": "Variable",
 			"IsDisclosed": false,
 			"HonourFailureSettings": true,
-			"Text": "/usr/bin/python3 \"$HOME/Dropbox/2-Areas/SystemAndApps/superwhisper/queryLLM.py\" \"$KMVAR_localActiveMode\""
+			"Text": "/usr/bin/python3 \"$HOME/Documents/superwhisper/scripts/queryLLM.py\" \"$KMVAR_localActiveMode\""
 		},
 		{
 			"MacroActionType": "IfThenElse",
@@ -203,12 +205,13 @@
 			"ActionUID": 15580512,
 			"UseText": true,
 			"TrimResultsNew": true,
+			"ActionColor": "Orange",
 			"TimeOutAbortsMacro": true,
 			"Path": "",
 			"DisplayKind": "None",
 			"IsDisclosed": false,
 			"HonourFailureSettings": true,
-			"Text": "/usr/bin/python3 \"$HOME/Dropbox/2-Areas/SystemAndApps/superwhisper/setLLM.py\" \"$KMVAR_localActiveMode\" \"$KMVAR_localTheModel\""
+			"Text": "/usr/bin/python3 \"$HOME/Documents/superwhisper/scripts/setLLM.py\" \"$KMVAR_localActiveMode\" \"$KMVAR_localTheModel\""
 		},
 		{
 			"MacroActionType": "QuitSpecificApp",

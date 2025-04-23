@@ -1,0 +1,55 @@
+{
+	"CreationDate": 766981117.665609,
+	"UID": "61430050-2438-4BB3-A5DB-15855D014263",
+	"Name": "SW Commit",
+	"Triggers": [],
+	"ModificationDate": 767118006.301376,
+	"Actions": [
+		{
+			"MacroActionType": "ExecuteMacro",
+			"MacroUID": "C5C363E6-43A6-400C-A5F7-08C94745B2C9",
+			"ActionUID": 15615333,
+			"IsDisclosed": false,
+			"TimeOutAbortsMacro": true,
+			"UseParameter": false,
+			"Asynchronously": true
+		},
+		{
+			"MacroActionType": "PromptForUserInput",
+			"Title": "Github",
+			"Prompt": "Push to Github?",
+			"ActionUID": 15615332,
+			"IsDisclosed": false,
+			"TimeOutAbortsMacro": true,
+			"Buttons": [
+				{
+					"Button": "OK"
+				},
+				{
+					"Button": "Cancel",
+					"Cancel": true
+				}
+			],
+			"Variables": []
+		},
+		{
+			"MacroActionType": "ExecuteShellScript",
+			"ActionName": "Push to Github",
+			"IncludedVariables": [
+				"9999"
+			],
+			"TrimResults": true,
+			"Source": "Nothing",
+			"IncludeStdErr": false,
+			"ActionUID": 15615334,
+			"UseText": true,
+			"TrimResultsNew": true,
+			"TimeOutAbortsMacro": true,
+			"Path": "",
+			"DisplayKind": "Window",
+			"IsDisclosed": false,
+			"HonourFailureSettings": true,
+			"Text": "#!/bin/bash\ncd \"/Users/ognistik/Documents/superwhisper\"\ngit add .\ngit commit -m \"Automated commit from KM\"\ngit push origin main"
+		}
+	]
+}

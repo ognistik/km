@@ -3,7 +3,7 @@
 	"UID": "EDBA7A69-101B-4A0B-9FCC-4810571CE056",
 	"Name": "SW Clean History",
 	"Triggers": [],
-	"ModificationDate": 766792578.516745,
+	"ModificationDate": 767117978.348396,
 	"Actions": [
 		{
 			"MacroActionType": "ExecuteShellScript",
