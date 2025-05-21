@@ -1,0 +1,48 @@
+{
+	"CreationDate": 739589728.599157,
+	"UID": "5B7C4839-3CA8-4947-AC48-934A4FE1B4CF",
+	"Name": "Maestral",
+	"Triggers": [
+		{
+			"Application": {
+				"BundleIdentifier": "com.samschott.maestral",
+				"Name": "Maestral",
+				"NewFile": "/Applications/Maestral.app"
+			},
+			"FireType2": "Quit",
+			"RepeatTime": 60,
+			"Target": "Specific",
+			"MacroTriggerType": "Application"
+		}
+	],
+	"ModificationDate": 768699505.562709,
+	"Actions": [
+		{
+			"MacroActionType": "Notification",
+			"Title": "Maestral Closed",
+			"SoundName": "",
+			"Subtitle": "",
+			"Text": "Maestral Quit. It will open in 5 seconds unless you cancel all Macros with ALT + ESC",
+			"ActionUID": 15618101
+		},
+		{
+			"MacroActionType": "Pause",
+			"TimeOutAbortsMacro": true,
+			"Time": "5",
+			"ActionUID": 15618102
+		},
+		{
+			"MacroActionType": "ActivateApplication",
+			"ActionUID": 15618103,
+			"ReopenWindows": false,
+			"AllWindows": false,
+			"TimeOutAbortsMacro": true,
+			"AlreadyActivatedActionType": "Normal",
+			"Application": {
+				"BundleIdentifier": "com.samschott.maestral",
+				"Name": "Maestral",
+				"NewFile": "/Applications/Maestral.app"
+			}
+		}
+	]
+}

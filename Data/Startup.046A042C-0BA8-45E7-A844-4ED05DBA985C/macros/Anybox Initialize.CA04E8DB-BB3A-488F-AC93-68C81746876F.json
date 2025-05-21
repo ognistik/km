@@ -1,0 +1,36 @@
+{
+	"CreationDate": 760884158.143173,
+	"UID": "CA04E8DB-BB3A-488F-AC93-68C81746876F",
+	"Name": "Anybox Initialize",
+	"Triggers": [
+		{
+			"Application": {
+				"BundleIdentifier": "cc.anybox.Anybox",
+				"Name": "Anybox",
+				"NewFile": "/Applications/Anybox.app"
+			},
+			"FireType2": "Launch",
+			"RepeatTime": 60,
+			"Target": "Specific",
+			"MacroTriggerType": "Application"
+		}
+	],
+	"ModificationDate": 767937713.799083,
+	"Actions": [
+		{
+			"MacroActionType": "Pause",
+			"TimeOutAbortsMacro": true,
+			"Time": "1.5",
+			"ActionUID": 15617319
+		},
+		{
+			"MacroActionType": "HideSpecificApp",
+			"ActionUID": 15617321,
+			"Application": {
+				"BundleIdentifier": "cc.anybox.Anybox",
+				"Name": "Anybox",
+				"NewFile": "/Applications/Anybox.app"
+			}
+		}
+	]
+}

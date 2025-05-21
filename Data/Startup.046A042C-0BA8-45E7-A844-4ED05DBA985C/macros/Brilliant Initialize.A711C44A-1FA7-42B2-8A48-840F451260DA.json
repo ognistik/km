@@ -1,12 +1,12 @@
 {
-	"CreationDate": 760884158.143173,
 	"UID": "A711C44A-1FA7-42B2-8A48-840F451260DA",
-	"Name": "Brilliant Initialize",
+	"CreationDate": 760884158.143173,
+	"ModificationDate": 768314193.464216,
 	"Triggers": [
 		{
 			"Application": {
 				"BundleIdentifier": "design.brilliant",
-				"Name": "Brilliant.Design",
+				"Name": "Brilliant",
 				"NewFile": "/Applications/Brilliant.Design.app"
 			},
 			"FireType2": "Launch",
@@ -15,7 +15,7 @@
 			"MacroTriggerType": "Application"
 		}
 	],
-	"ModificationDate": 765405337.08245,
+	"IsActive": false,
 	"Actions": [
 		{
 			"MacroActionType": "Pause",
@@ -32,5 +32,6 @@
 			"KeyCode": 3,
 			"Modifiers": 4096
 		}
-	]
+	],
+	"Name": "Brilliant Initialize"
 }

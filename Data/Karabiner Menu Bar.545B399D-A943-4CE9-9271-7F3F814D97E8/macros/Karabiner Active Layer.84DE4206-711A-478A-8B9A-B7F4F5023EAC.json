@@ -3,19 +3,20 @@
 	"UID": "84DE4206-711A-478A-8B9A-B7F4F5023EAC",
 	"Name": "Karabiner Active Layer",
 	"Triggers": [],
-	"ModificationDate": 766157770.214857,
+	"ModificationDate": 767303953.73628,
 	"Actions": [
 		{
 			"MacroActionType": "Semaphore",
-			"SemaphoreAction": "Lock",
-			"SemaphoreName": "Karabiner Active Layer",
+			"ActionUID": 15592415,
+			"IsDisclosed": false,
 			"TimeOutAbortsMacro": true,
 			"TimeOutPeriod": 3600,
-			"ActionUID": 15592415
+			"SemaphoreName": "Karabiner Active Layer",
+			"SemaphoreAction": "Lock"
 		},
 		{
 			"MacroActionType": "IfThenElse",
-			"ActionName": "First - make sure this is not triggered by a \"watched\" change in Karabiner",
+			"ActionName": "First - make sure this is not triggered by FSWatch",
 			"ActionUID": 15590852,
 			"ElseActions": [
 				{
@@ -46,6 +47,7 @@
 							"MacroActionType": "IfThenElse",
 							"ActionName": "First we clear the actual top layer or sublayer if one",
 							"ActionUID": 15598407,
+							"IsDisclosed": false,
 							"ElseActions": [
 								{
 									"MacroActionType": "SetVariableToText",
@@ -107,13 +109,13 @@
 							}
 						]
 					},
-					"ElseActionListDisclosed": false,
 					"ThenActions": [
 						{
 							"MacroActionType": "IfThenElse",
 							"ActionUID": 15599205,
-							"TimeOutAbortsMacro": true,
+							"IsDisclosed": false,
 							"ElseActions": [],
+							"TimeOutAbortsMacro": true,
 							"Conditions": {
 								"ConditionListMatch": "All",
 								"ConditionList": [
@@ -159,7 +161,6 @@
 					}
 				]
 			},
-			"ElseActionListDisclosed": false,
 			"ThenActions": [
 				{
 					"MacroActionType": "IfThenElse",
@@ -268,22 +269,20 @@
 								{
 									"MacroActionType": "SearchRegEx",
 									"Search": "^([^,]*),([^,]*)?",
-									"Action": "IgnoreCaseRegEx",
-									"IsDisclosed": false,
 									"Source": "Text",
+									"Action": "IgnoreCaseRegEx",
 									"Captures": [
 										"",
 										"localTemp",
 										"kara_letter"
 									],
-									"ActionUID": 15598371,
-									"Text": "%TriggerValue%"
+									"Text": "%TriggerValue%",
+									"ActionUID": 15598371
 								},
 								{
 									"MacroActionType": "IfThenElse",
-									"ActionName": "Check if what we're trying to set is layer of sublayer",
+									"ActionName": "Check if what we're trying to set is layer or sublayer",
 									"ActionUID": 15598387,
-									"IsDisclosed": false,
 									"ElseActions": [
 										{
 											"MacroActionType": "SetVariableToText",
@@ -315,14 +314,12 @@
 									"ThenActions": [
 										{
 											"MacroActionType": "SetVariableToText",
-											"IsDisclosed": false,
 											"Variable": "kara_layer_1",
 											"Text": "%localTemp%",
 											"ActionUID": 15598388
 										},
 										{
 											"MacroActionType": "SetVariableToText",
-											"IsDisclosed": false,
 											"Variable": "kara_layer",
 											"Text": "%localTemp%",
 											"ActionUID": 15598390
@@ -406,6 +403,7 @@
 													"ActionUID": 15598394
 												}
 											],
+											"ThenActionListDisclosed": false,
 											"TimeOutAbortsMacro": true,
 											"Conditions": {
 												"ConditionListMatch": "All",
@@ -418,6 +416,7 @@
 													}
 												]
 											},
+											"ElseActionListDisclosed": false,
 											"ThenActions": [
 												{
 													"MacroActionType": "SetVariableToText",
@@ -469,7 +468,7 @@
 										"ConditionList": [
 											{
 												"ConditionType": "Variable",
-												"VariableValue": "value",
+												"VariableValue": "",
 												"Variable": "kara_mods",
 												"VariableConditionType": "IsNot"
 											}
@@ -491,8 +490,9 @@
 											"TimeOutAbortsMacro": true,
 											"Path": "",
 											"DisplayKind": "None",
+											"IsDisclosed": false,
 											"HonourFailureSettings": true,
-											"Text": "set kmInst to system attribute \"KMINSTANCE\"\rtell application \"Keyboard Maestro Engine\"\r\tset karaLetter to getvariable \"kara_letter\" instance kmInst\r\tset karaMods to getvariable \"kara_mods\" instance kmInst\rend tell\r\rtell application \"BetterTouchTool\"\r\tset_string_variable \"kara_letter\" to karaLetter\r\tset_string_variable \"kara_mods\" to karaMods\r\ttrigger_named \"kara_on\"\rend tell"
+											"Text": "set kmInst to system attribute \"KMINSTANCE\"\rtell application \"Keyboard Maestro Engine\"\r\tset karaLetter to getvariable \"kara_letter\" instance kmInst\r\tset karaMods to getvariable \"kara_mods\" instance kmInst\rend tell\r\rtell application \"BetterTouchTool\"\r\tset_string_variable \"kara_letter\" to karaLetter\r\tset_string_variable \"kara_mods\" to karaMods\r\ttrigger_named \"kara_on\"\r\t-- set test to get_string_variable \"kara_letter\"\r\t-- return test\rend tell"
 										}
 									]
 								},
@@ -608,11 +608,12 @@
 										},
 										{
 											"MacroActionType": "ExecuteMacro",
-											"UseParameter": false,
 											"MacroUID": "D61813F2-69FB-4CD0-9100-148B8018DB07",
+											"ActionUID": 15598384,
+											"IsDisclosed": false,
 											"TimeOutAbortsMacro": true,
-											"Asynchronously": false,
-											"ActionUID": 15598384
+											"UseParameter": false,
+											"Asynchronously": false
 										}
 									]
 								},

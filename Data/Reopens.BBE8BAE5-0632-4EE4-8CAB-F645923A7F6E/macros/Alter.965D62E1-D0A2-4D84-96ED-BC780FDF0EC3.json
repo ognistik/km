@@ -1,0 +1,48 @@
+{
+	"CreationDate": 744049617.946075,
+	"UID": "965D62E1-D0A2-4D84-96ED-BC780FDF0EC3",
+	"Name": "Alter",
+	"Triggers": [
+		{
+			"Application": {
+				"BundleIdentifier": "com.wearedevx.alter",
+				"Name": "Alter",
+				"NewFile": "/Applications/Alter.app"
+			},
+			"FireType2": "Quit",
+			"RepeatTime": 60,
+			"Target": "Specific",
+			"MacroTriggerType": "Application"
+		}
+	],
+	"ModificationDate": 768763276.926593,
+	"Actions": [
+		{
+			"MacroActionType": "Notification",
+			"Title": "Alter Closed",
+			"SoundName": "",
+			"Subtitle": "",
+			"Text": "Alter Quit. It will open in 5 seconds unless you cancel all Macros with ALT + ESC",
+			"ActionUID": 15618493
+		},
+		{
+			"MacroActionType": "Pause",
+			"TimeOutAbortsMacro": true,
+			"Time": "5",
+			"ActionUID": 15618494
+		},
+		{
+			"MacroActionType": "ActivateApplication",
+			"ActionUID": 15618495,
+			"ReopenWindows": false,
+			"AllWindows": false,
+			"TimeOutAbortsMacro": true,
+			"AlreadyActivatedActionType": "Normal",
+			"Application": {
+				"BundleIdentifier": "com.wearedevx.alter",
+				"Name": "Alter",
+				"NewFile": "/Applications/Alter.app"
+			}
+		}
+	]
+}

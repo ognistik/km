@@ -10,7 +10,7 @@
 			"FireType": "Pressed"
 		}
 	],
-	"ModificationDate": 766177820.348522,
+	"ModificationDate": 769538541.091677,
 	"Actions": [
 		{
 			"MacroActionType": "ExecuteShellScript",
@@ -36,9 +36,8 @@
 		{
 			"MacroActionType": "IfThenElse",
 			"ActionUID": 15575368,
-			"IsDisclosed": false,
-			"ElseActions": [],
 			"TimeOutAbortsMacro": true,
+			"ElseActions": [],
 			"Conditions": {
 				"ConditionListMatch": "All",
 				"ConditionList": [
@@ -54,7 +53,7 @@
 			"ThenActions": [
 				{
 					"MacroActionType": "ExecuteShellScript",
-					"ActionName": "Get SW window with Yabai",
+					"ActionName": "Get opacity value",
 					"IncludedVariables": [
 						"9999"
 					],
@@ -62,14 +61,14 @@
 					"Source": "Nothing",
 					"Variable": "localOpacity",
 					"IncludeStdErr": false,
-					"ActionUID": 15575366,
+					"ActionUID": 15619279,
 					"UseText": true,
 					"TrimResultsNew": true,
 					"TimeOutAbortsMacro": true,
 					"Path": "",
 					"DisplayKind": "Variable",
 					"HonourFailureSettings": true,
-					"Text": "#!/bin/bash\n\nwindow_id=\"$KMVAR_localSwWin\"\nopacity=$(/opt/homebrew/bin/yabai -m query --windows --window \"$window_id\" | jq '.opacity')\necho \"$opacity\"",
+					"Text": "#!/bin/bash\n\n# Get window IDs from Keyboard Maestro variable\nwindow_ids=($KMVAR_localSwWin)\n\n# Initialize variables\nopacities=()\nnon_full_opacity=\"\"\n\n# Check if we have multiple window IDs\nif [ ${#window_ids[@]} -gt 1 ]; then\n    # Get opacity for each window\n    for id in \"${window_ids[@]}\"; do\n        # Trim any whitespace\n        id=$(echo \"$id\" | xargs)\n        current_opacity=$(/opt/homebrew/bin/yabai -m query --windows --window \"$id\" | jq '.opacity')\n        opacities+=(\"$current_opacity\")\n        \n        # Check if this opacity is not 1 (full)\n        if (( $(echo \"$current_opacity < 1\" | bc -l) )); then\n            non_full_opacity=\"$current_opacity\"\n        fi\n    done\n    \n    # If we found a non-full opacity, echo that\n    if [ -n \"$non_full_opacity\" ]; then\n        echo \"$non_full_opacity\"\n    else\n        # All opacities are the same (full), echo the first one\n        echo \"${opacities[0]}\"\n    fi\nelse\n    # Single window ID\n    window_id=\"${window_ids[0]}\"\n    opacity=$(/opt/homebrew/bin/yabai -m query --windows --window \"$window_id\" | jq '.opacity')\n    echo \"$opacity\"\nfi",
 					"NotifyOnFailure": false
 				},
 				{
@@ -85,14 +84,14 @@
 							"TrimResults": true,
 							"Source": "Nothing",
 							"IncludeStdErr": false,
-							"ActionUID": 15575370,
+							"ActionUID": 15619281,
 							"UseText": true,
 							"TrimResultsNew": true,
 							"TimeOutAbortsMacro": true,
 							"Path": "",
 							"DisplayKind": "Window",
 							"HonourFailureSettings": true,
-							"Text": "/opt/homebrew/bin/yabai -m window $KMVAR_localSwWin --opacity 0.0001"
+							"Text": "for window in $KMVAR_localSwWin; do\n  /opt/homebrew/bin/yabai -m window \"$window\" --opacity 0.0001\ndone"
 						}
 					],
 					"TimeOutAbortsMacro": true,
@@ -116,14 +115,14 @@
 							"TrimResults": true,
 							"Source": "Nothing",
 							"IncludeStdErr": false,
-							"ActionUID": 15575369,
+							"ActionUID": 15619280,
 							"UseText": true,
 							"TrimResultsNew": true,
 							"TimeOutAbortsMacro": true,
 							"Path": "",
 							"DisplayKind": "Window",
 							"HonourFailureSettings": true,
-							"Text": "/opt/homebrew/bin/yabai -m window $KMVAR_localSwWin --opacity 1.0"
+							"Text": "for window in $KMVAR_localSwWin; do\n  /opt/homebrew/bin/yabai -m window \"$window\" --opacity 1.0\ndone"
 						}
 					]
 				}

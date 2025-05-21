@@ -1,7 +1,7 @@
 {
 	"UID": "52179D66-D23A-435B-AC52-4F57253D4F98",
 	"CreationDate": 760877919.838434,
-	"ModificationDate": 767117891.095394,
+	"ModificationDate": 768017030.912551,
 	"Triggers": [
 		{
 			"AutoRun": false,
@@ -13,9 +13,8 @@
 		{
 			"MacroActionType": "SetVariableToText",
 			"ActionName": "First we set all available models in their respective keys",
-			"IsDisclosed": false,
 			"Variable": "localModels",
-			"Text": "{\n  \"Ultra (Cloud)\": \"sw-ultra-cloud-v1-east\",\n  \"Nova (Cloud)\": \"sw-deepgram-nova-2\",\n  \"Ultra V3 Turbo\": \"large-v3-turbo\",\n  \"GPT-4o Mini Transcribe\": \"A2B20D88-A684-43E0-82B6-389731765E97\"\n}",
+			"Text": "{\n  \"Ultra (Cloud)\": \"sw-ultra-cloud-v1-east\",\n  \"Nova (Cloud)\": \"sw-deepgram-nova-2\",\n  \"Ultra V3 Turbo\": \"large-v3-turbo\"\n}",
 			"ActionUID": 15599619
 		},
 		{

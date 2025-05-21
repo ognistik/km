@@ -7,8 +7,14 @@
 	"Name": "Bear",
 	"UID": "0FE06314-14BE-4458-BA12-BC018ABF7812",
 	"Targeting": {
-		"Targeting": "All",
-		"TargetingApps": []
+		"Targeting": "Included",
+		"TargetingApps": [
+			{
+				"BundleIdentifier": "net.shinyfrog.bear",
+				"Name": "Bear",
+				"NewFile": "/Applications/Bear.app"
+			}
+		]
 	},
 	"Macros": [],
 	"ToggleMacroUID": "9389DE5C-4306-4035-A5E2-40E1FDEE606A",

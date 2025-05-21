@@ -1,7 +1,7 @@
 {
 	"UID": "EBECEC76-6E27-4839-B873-3AC55158B3F4",
 	"CreationDate": 766170666.064721,
-	"ModificationDate": 766533564.8557,
+	"ModificationDate": 768333894.553893,
 	"Triggers": [
 		{
 			"AutoRun": false,
@@ -159,7 +159,6 @@
 			"TimeOutAbortsMacro": true,
 			"Path": "",
 			"DisplayKind": "Variable",
-			"IsDisclosed": false,
 			"HonourFailureSettings": true,
 			"Text": "tell application \"System Events\"\r\ttell process \"superwhisper\"\n\t\ttry\r\t\tset menuItemName to name of menu item 7 of menu \"superwhisper\" of menu bar item 1 of menu bar 2\n\t\treturn menuItemName\n\t\tend try\r\tend tell\rend tell",
 			"TimeOutPeriod": 3600

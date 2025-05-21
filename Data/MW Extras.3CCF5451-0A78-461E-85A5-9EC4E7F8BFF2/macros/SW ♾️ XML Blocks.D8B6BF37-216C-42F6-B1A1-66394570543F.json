@@ -1,7 +1,7 @@
 {
 	"UID": "D8B6BF37-216C-42F6-B1A1-66394570543F",
 	"CreationDate": 764533103.134389,
-	"ModificationDate": 767117962.641287,
+	"ModificationDate": 767280803.935618,
 	"Triggers": [
 		{
 			"AutoRun": false,
@@ -150,7 +150,8 @@
 			"TimeOutAbortsMacro": true,
 			"Buttons": [
 				{
-					"Button": "OK"
+					"Button": "OK",
+					"Cancel": false
 				},
 				{
 					"Button": "Cancel",

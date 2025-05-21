@@ -1,0 +1,459 @@
+{
+	"CreationDate": 739990312.282654,
+	"UID": "2CE015C2-78E2-435D-8A11-2305CDF10671",
+	"Name": "rcmd: Alter",
+	"Triggers": [],
+	"ModificationDate": 767554888.319232,
+	"Actions": [
+		{
+			"MacroActionType": "SetVariableToText",
+			"Variable": "localAction",
+			"Text": "%TriggerValue%",
+			"ActionUID": 15616510
+		},
+		{
+			"MacroActionType": "IfThenElse",
+			"ElseActions": [
+				{
+					"MacroActionType": "IfThenElse",
+					"ElseActions": [
+						{
+							"MacroActionType": "IfThenElse",
+							"ElseActions": [
+								{
+									"MacroActionType": "IfThenElse",
+									"ElseActions": [
+										{
+											"MacroActionType": "IfThenElse",
+											"ElseActions": [
+												{
+													"MacroActionType": "IfThenElse",
+													"ElseActions": [],
+													"Conditions": {
+														"ConditionListMatch": "All",
+														"ConditionList": [
+															{
+																"ConditionType": "Variable",
+																"VariableValue": "xx",
+																"Variable": "localAction",
+																"VariableConditionType": "Is"
+															}
+														]
+													},
+													"ThenActions": [
+														{
+															"MacroActionType": "Notification",
+															"Title": "%ExecutingMacro%",
+															"SoundName": "",
+															"Subtitle": "",
+															"Text": "App is not running.",
+															"ActionUID": 15616539
+														}
+													],
+													"TimeOutAbortsMacro": true,
+													"ActionUID": 15616538
+												}
+											],
+											"Conditions": {
+												"ConditionListMatch": "All",
+												"ConditionList": [
+													{
+														"ConditionType": "Variable",
+														"VariableValue": "1",
+														"Variable": "localAction",
+														"VariableConditionType": "Is"
+													}
+												]
+											},
+											"ThenActions": [
+												{
+													"MacroActionType": "HideAll",
+													"ActionUID": 15616535,
+													"HonorExcluded": true
+												},
+												{
+													"MacroActionType": "ActivateApplication",
+													"ActionUID": 15616536,
+													"ReopenWindows": false,
+													"AllWindows": true,
+													"TimeOutAbortsMacro": true,
+													"AlreadyActivatedActionType": "BringAllWindows",
+													"Application": {
+														"BundleIdentifier": "com.wearedevx.alter",
+														"Name": "Alter",
+														"NewFile": "/Applications/Alter.app"
+													}
+												},
+												{
+													"MacroActionType": "ExecuteAppleScript",
+													"IncludedVariables": [
+														"9999"
+													],
+													"TrimResults": true,
+													"IncludeStdErr": false,
+													"ActionUID": 15616537,
+													"UseText": true,
+													"TrimResultsNew": true,
+													"TimeOutAbortsMacro": true,
+													"Path": "",
+													"DisplayKind": "Window",
+													"HonourFailureSettings": true,
+													"Text": "tell application \"Bartender 5\"\n\tactivate \"com.wearedevx.alter-Item-0\"\nend tell"
+												}
+											],
+											"TimeOutAbortsMacro": true,
+											"ActionUID": 15616534
+										}
+									],
+									"Conditions": {
+										"ConditionListMatch": "All",
+										"ConditionList": [
+											{
+												"ConditionType": "Variable",
+												"VariableValue": "2",
+												"Variable": "localAction",
+												"VariableConditionType": "Is"
+											}
+										]
+									},
+									"ThenActions": [
+										{
+											"MacroActionType": "ActivateApplication",
+											"ActionUID": 15616532,
+											"ReopenWindows": false,
+											"AllWindows": true,
+											"TimeOutAbortsMacro": true,
+											"AlreadyActivatedActionType": "BringAllWindows",
+											"Application": {
+												"BundleIdentifier": "com.wearedevx.alter",
+												"Name": "Alter",
+												"NewFile": "/Applications/Alter.app"
+											}
+										},
+										{
+											"MacroActionType": "ExecuteAppleScript",
+											"IncludedVariables": [
+												"9999"
+											],
+											"TrimResults": true,
+											"IncludeStdErr": false,
+											"ActionUID": 15616533,
+											"UseText": true,
+											"TrimResultsNew": true,
+											"TimeOutAbortsMacro": true,
+											"Path": "",
+											"DisplayKind": "Window",
+											"HonourFailureSettings": true,
+											"Text": "tell application \"Bartender 5\"\n\tactivate \"com.wearedevx.alter-Item-0\"\nend tell"
+										}
+									],
+									"TimeOutAbortsMacro": true,
+									"ActionUID": 15616531
+								}
+							],
+							"Conditions": {
+								"ConditionListMatch": "All",
+								"ConditionList": [
+									{
+										"ConditionType": "Variable",
+										"VariableValue": "3",
+										"Variable": "localAction",
+										"VariableConditionType": "Is"
+									}
+								]
+							},
+							"ThenActions": [
+								{
+									"MacroActionType": "HideAll",
+									"ActionUID": 15616528,
+									"HonorExcluded": true
+								},
+								{
+									"MacroActionType": "ActivateApplication",
+									"ActionUID": 15616529,
+									"ReopenWindows": false,
+									"AllWindows": true,
+									"TimeOutAbortsMacro": true,
+									"AlreadyActivatedActionType": "BringAllWindows",
+									"Application": {
+										"BundleIdentifier": "com.wearedevx.alter",
+										"Name": "Alter",
+										"NewFile": "/Applications/Alter.app"
+									}
+								},
+								{
+									"MacroActionType": "ExecuteAppleScript",
+									"IncludedVariables": [
+										"9999"
+									],
+									"TrimResults": true,
+									"IncludeStdErr": false,
+									"ActionUID": 15616530,
+									"UseText": true,
+									"TrimResultsNew": true,
+									"TimeOutAbortsMacro": true,
+									"Path": "",
+									"DisplayKind": "Window",
+									"HonourFailureSettings": true,
+									"Text": "tell application \"Bartender 5\"\n\tactivate \"com.wearedevx.alter-Item-0\"\nend tell"
+								}
+							],
+							"TimeOutAbortsMacro": true,
+							"ActionUID": 15616527
+						}
+					],
+					"Conditions": {
+						"ConditionListMatch": "All",
+						"ConditionList": [
+							{
+								"Application": {
+									"BundleIdentifier": "com.wearedevx.alter",
+									"Name": "Alter",
+									"NewFile": "/Applications/Alter.app"
+								},
+								"ApplicationConditionType": "Running",
+								"ConditionType": "Application"
+							}
+						]
+					},
+					"ThenActions": [
+						{
+							"MacroActionType": "IfThenElse",
+							"ElseActions": [
+								{
+									"MacroActionType": "IfThenElse",
+									"ElseActions": [
+										{
+											"MacroActionType": "IfThenElse",
+											"ElseActions": [
+												{
+													"MacroActionType": "IfThenElse",
+													"ElseActions": [],
+													"Conditions": {
+														"ConditionListMatch": "All",
+														"ConditionList": [
+															{
+																"ConditionType": "Variable",
+																"VariableValue": "xx",
+																"Variable": "localAction",
+																"VariableConditionType": "Is"
+															}
+														]
+													},
+													"ThenActions": [
+														{
+															"MacroActionType": "QuitSpecificApp",
+															"Application": {
+																"BundleIdentifier": "com.wearedevx.alter",
+																"Name": "Alter",
+																"NewFile": "/Applications/Alter.app"
+															},
+															"TimeOutAbortsMacro": true,
+															"Target": "Specific",
+															"Action": "Quit",
+															"ActionUID": 15616526
+														}
+													],
+													"TimeOutAbortsMacro": true,
+													"ActionUID": 15616525
+												}
+											],
+											"Conditions": {
+												"ConditionListMatch": "All",
+												"ConditionList": [
+													{
+														"ConditionType": "Variable",
+														"VariableValue": "1",
+														"Variable": "localAction",
+														"VariableConditionType": "Is"
+													}
+												]
+											},
+											"ThenActions": [
+												{
+													"MacroActionType": "ExecuteAppleScript",
+													"IncludedVariables": [
+														"9999"
+													],
+													"TrimResults": true,
+													"IncludeStdErr": false,
+													"ActionUID": 15616523,
+													"UseText": true,
+													"TrimResultsNew": true,
+													"TimeOutAbortsMacro": true,
+													"Path": "",
+													"DisplayKind": "Window",
+													"HonourFailureSettings": true,
+													"Text": "tell application \"Bartender 5\"\n\tactivate \"com.wearedevx.alter-Item-0\"\nend tell"
+												},
+												{
+													"MacroActionType": "HideAll",
+													"ActionUID": 15616524,
+													"HonorExcluded": true
+												}
+											],
+											"TimeOutAbortsMacro": true,
+											"ActionUID": 15616522
+										}
+									],
+									"Conditions": {
+										"ConditionListMatch": "All",
+										"ConditionList": [
+											{
+												"ConditionType": "Variable",
+												"VariableValue": "2",
+												"Variable": "localAction",
+												"VariableConditionType": "Is"
+											}
+										]
+									},
+									"ThenActions": [
+										{
+											"MacroActionType": "ExecuteAppleScript",
+											"IncludedVariables": [
+												"9999"
+											],
+											"TrimResults": true,
+											"IncludeStdErr": false,
+											"ActionUID": 15616521,
+											"UseText": true,
+											"TrimResultsNew": true,
+											"TimeOutAbortsMacro": true,
+											"Path": "",
+											"DisplayKind": "Window",
+											"HonourFailureSettings": true,
+											"Text": "tell application \"Bartender 5\"\n\tactivate \"com.wearedevx.alter-Item-0\"\nend tell"
+										}
+									],
+									"TimeOutAbortsMacro": true,
+									"ActionUID": 15616520
+								}
+							],
+							"Conditions": {
+								"ConditionListMatch": "All",
+								"ConditionList": [
+									{
+										"ConditionType": "Variable",
+										"VariableValue": "3",
+										"Variable": "localAction",
+										"VariableConditionType": "Is"
+									}
+								]
+							},
+							"ThenActions": [
+								{
+									"MacroActionType": "ExecuteAppleScript",
+									"IncludedVariables": [
+										"9999"
+									],
+									"TrimResults": true,
+									"IncludeStdErr": false,
+									"ActionUID": 15616518,
+									"UseText": true,
+									"TrimResultsNew": true,
+									"TimeOutAbortsMacro": true,
+									"Path": "",
+									"DisplayKind": "Window",
+									"HonourFailureSettings": true,
+									"Text": "tell application \"Bartender 5\"\n\tactivate \"com.wearedevx.alter-Item-0\"\nend tell"
+								},
+								{
+									"MacroActionType": "HideAll",
+									"ActionUID": 15616519,
+									"HonorExcluded": true
+								}
+							],
+							"TimeOutAbortsMacro": true,
+							"ActionUID": 15616517
+						}
+					],
+					"TimeOutAbortsMacro": true,
+					"ActionUID": 15616516
+				}
+			],
+			"Conditions": {
+				"ConditionListMatch": "All",
+				"ConditionList": [
+					{
+						"ConditionType": "Variable",
+						"VariableValue": "",
+						"Variable": "localAction",
+						"VariableConditionType": "Is"
+					}
+				]
+			},
+			"ThenActions": [
+				{
+					"MacroActionType": "IfThenElse",
+					"ElseActions": [
+						{
+							"MacroActionType": "ActivateApplication",
+							"ActionUID": 15616514,
+							"ReopenWindows": false,
+							"AllWindows": false,
+							"TimeOutAbortsMacro": true,
+							"AlreadyActivatedActionType": "Normal",
+							"Application": {
+								"BundleIdentifier": "com.wearedevx.alter",
+								"Name": "Alter",
+								"NewFile": "/Applications/Alter.app"
+							}
+						},
+						{
+							"MacroActionType": "ExecuteAppleScript",
+							"IncludedVariables": [
+								"9999"
+							],
+							"TrimResults": true,
+							"IncludeStdErr": false,
+							"ActionUID": 15616515,
+							"UseText": true,
+							"TrimResultsNew": true,
+							"TimeOutAbortsMacro": true,
+							"Path": "",
+							"DisplayKind": "Window",
+							"HonourFailureSettings": true,
+							"Text": "tell application \"Bartender 5\"\n\tactivate \"com.wearedevx.alter-Item-0\"\nend tell"
+						}
+					],
+					"Conditions": {
+						"ConditionListMatch": "All",
+						"ConditionList": [
+							{
+								"Application": {
+									"BundleIdentifier": "com.wearedevx.alter",
+									"Name": "Alter",
+									"NewFile": "/Applications/Alter.app"
+								},
+								"ApplicationConditionType": "Running",
+								"ConditionType": "Application"
+							}
+						]
+					},
+					"ThenActions": [
+						{
+							"MacroActionType": "ExecuteAppleScript",
+							"IncludedVariables": [
+								"9999"
+							],
+							"TrimResults": true,
+							"IncludeStdErr": false,
+							"ActionUID": 15616513,
+							"UseText": true,
+							"TrimResultsNew": true,
+							"TimeOutAbortsMacro": true,
+							"Path": "",
+							"DisplayKind": "Window",
+							"HonourFailureSettings": true,
+							"Text": "tell application \"Bartender 5\"\n\tactivate \"com.wearedevx.alter-Item-0\"\nend tell"
+						}
+					],
+					"TimeOutAbortsMacro": true,
+					"ActionUID": 15616512
+				}
+			],
+			"TimeOutAbortsMacro": true,
+			"ActionUID": 15616511
+		}
+	]
+}

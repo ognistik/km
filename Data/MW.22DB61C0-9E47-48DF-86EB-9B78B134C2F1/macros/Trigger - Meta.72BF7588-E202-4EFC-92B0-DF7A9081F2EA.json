@@ -1,7 +1,7 @@
 {
 	"UID": "72BF7588-E202-4EFC-92B0-DF7A9081F2EA",
 	"CreationDate": 766114270.990562,
-	"ModificationDate": 766962453.159627,
+	"ModificationDate": 769132506.759104,
 	"Triggers": [],
 	"Actions": [
 		{
@@ -641,10 +641,9 @@
 						},
 						{
 							"MacroActionType": "ExecuteShortcut",
-							"ActionUID": 15609587,
-							"ExecuteOrEdit": "Execute",
-							"IsDisclosed": false,
 							"Source": "Text",
+							"ExecuteOrEdit": "Execute",
+							"ActionUID": 15609587,
 							"TimeOutAbortsMacro": true,
 							"TrimResults": true,
 							"Shortcut": "AI Memos",
@@ -760,7 +759,7 @@
 			"DisplayKind": "None",
 			"IsDisclosed": false,
 			"HonourFailureSettings": true,
-			"Text": "tell application \"System Events\"\r\tkey code 53 -- 53 is the key code for the Escape key\rend tell\rset kmInst to system attribute \"KMINSTANCE\"\rtell application \"Keyboard Maestro Engine\"\r\tset sw_actionMode to getvariable \"sw_actionMode\"\r\tset sw_autoReturn to getvariable \"sw_autoReturn\"\r\tset voice to getvariable \"localVoice\" instance kmInst\r\tset result to getvariable \"localResult\" instance kmInst\rend tell\r\rif sw_actionMode is \"pasteChat\" then\r\tset textToPaste to \"## USER\" & return & voice & return & return & \"## AI\" & return & result & return & return & \"---\" & return\relse if sw_actionMode is \"pasteResult\" or sw_actionMode is \"\" then\r\tset textToPaste to result\relse if sw_actionMode is \"textChat\" then\r\tset textToPaste to return & \"## AI\" & return & result & return & return & \"---\" & return & \"## USER\" & return\rend if\r\rset the clipboard to textToPaste\rdelay 0.02\r\rtell application \"System Events\" to keystroke \"v\" using command down\r\rif sw_autoReturn is \"on\" then\r\tdelay 0.02\r\ttell application \"System Events\" to keystroke return\r\ttell application \"Keyboard Maestro Engine\" to setvariable \"sw_autoReturn\" to \"off\"\rend if"
+			"Text": "tell application \"System Events\"\r\tkey code 53 -- 53 is the key code for the Escape key\rend tell\rset kmInst to system attribute \"KMINSTANCE\"\rtell application \"Keyboard Maestro Engine\"\r\tset sw_actionMode to getvariable \"sw_actionMode\"\r\tset sw_autoReturn to getvariable \"sw_autoReturn\"\r\tset voice to getvariable \"localVoice\" instance kmInst\r\tset result to getvariable \"localResult\" instance kmInst\rend tell\r\rif sw_actionMode is \"pasteChat\" then\r\tset textToPaste to \"## USER\" & return & voice & return & return & \"## AI\" & return & result & return & return & \"---\" & return\relse if sw_actionMode is \"pasteResult\" or sw_actionMode is \"\" then\r\tset textToPaste to result\relse if sw_actionMode is \"textChat\" then\r\tset textToPaste to return & \"## AI\" & return & result & return & return & \"---\" & return & \"## USER\" & return\rend if\r\rset the clipboard to textToPaste\rdelay 0.02\r\rtell application \"System Events\" to keystroke \"v\" using command down\r\rif sw_autoReturn is \"on\" then\r\tdelay 0.15\r\ttell application \"System Events\" to keystroke return\r\ttell application \"Keyboard Maestro Engine\" to setvariable \"sw_autoReturn\" to \"off\"\rend if"
 		},
 		{
 			"MacroActionType": "Pause",

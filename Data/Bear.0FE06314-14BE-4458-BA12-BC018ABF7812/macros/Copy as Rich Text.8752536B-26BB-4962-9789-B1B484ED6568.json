@@ -1,7 +1,7 @@
 {
 	"UID": "8752536B-26BB-4962-9789-B1B484ED6568",
 	"CreationDate": 650927715.106816,
-	"ModificationDate": 766788762.473793,
+	"ModificationDate": 768100886.258181,
 	"Triggers": [],
 	"Actions": [
 		{
@@ -20,9 +20,6 @@
 		},
 		{
 			"MacroActionType": "IfThenElse",
-			"ActionUID": 15607166,
-			"IsDisclosed": false,
-			"TimeOutAbortsMacro": true,
 			"ElseActions": [
 				{
 					"MacroActionType": "InsertText",
@@ -87,7 +84,9 @@
 					"Subtitle": "Copied",
 					"SoundName": "Glass"
 				}
-			]
+			],
+			"TimeOutAbortsMacro": true,
+			"ActionUID": 15607166
 		},
 		{
 			"MacroActionType": "Pause",

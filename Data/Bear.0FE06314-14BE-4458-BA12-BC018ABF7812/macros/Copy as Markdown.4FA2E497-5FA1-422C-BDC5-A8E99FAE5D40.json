@@ -1,0 +1,27 @@
+{
+	"CreationDate": 768100939.787114,
+	"UID": "4FA2E497-5FA1-422C-BDC5-A8E99FAE5D40",
+	"Name": "Copy as Markdown",
+	"Triggers": [
+		{
+			"KeyCode": 8,
+			"MacroTriggerType": "HotKey",
+			"Modifiers": 768,
+			"FireType": "Pressed"
+		}
+	],
+	"ModificationDate": 768100988.356966,
+	"Actions": [
+		{
+			"MacroActionType": "SelectMenuItem",
+			"TargetingType": "Front",
+			"TargetApplication": {},
+			"Menu": [
+				"Edit",
+				"Copy As",
+				"Markdown"
+			],
+			"ActionUID": 15617711
+		}
+	]
+}

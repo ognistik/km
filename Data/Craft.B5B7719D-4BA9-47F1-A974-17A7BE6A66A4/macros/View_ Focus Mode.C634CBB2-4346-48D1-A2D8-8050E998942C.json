@@ -1,0 +1,25 @@
+{
+	"CreationDate": 767913185.688122,
+	"UID": "C634CBB2-4346-48D1-A2D8-8050E998942C",
+	"Name": "View: Focus Mode",
+	"Triggers": [
+		{
+			"KeyCode": 49,
+			"MacroTriggerType": "HotKey",
+			"Modifiers": 4096,
+			"FireType": "Pressed"
+		}
+	],
+	"ModificationDate": 767913194.941418,
+	"Actions": [
+		{
+			"MacroActionType": "SimulateKeystroke",
+			"ActionUID": 15616929,
+			"ReleaseAll": false,
+			"TargetApplication": {},
+			"TargetingType": "Front",
+			"KeyCode": 47,
+			"Modifiers": 256
+		}
+	]
+}

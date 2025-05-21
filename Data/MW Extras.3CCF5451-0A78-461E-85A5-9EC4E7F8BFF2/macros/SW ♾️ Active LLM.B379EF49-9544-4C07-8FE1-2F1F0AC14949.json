@@ -1,7 +1,7 @@
 {
 	"UID": "B379EF49-9544-4C07-8FE1-2F1F0AC14949",
 	"CreationDate": 761107799.610874,
-	"ModificationDate": 767117731.632922,
+	"ModificationDate": 767206555.98166,
 	"Triggers": [
 		{
 			"AutoRun": false,
@@ -20,9 +20,8 @@
 		{
 			"MacroActionType": "SetVariableToText",
 			"ActionName": "First we set all available models in their respective keys",
-			"IsDisclosed": false,
 			"Variable": "localModels",
-			"Text": "{\n  \"Claude 3.7 Sonnet\": \"sw-claude-3-7-sonnet\",\n  \"GPT-4o Mini\": \"sw-gpt-4o-mini\",\n  \"GPT-4.1\": \"4B0D9A17-1A5E-4B08-AF19-AC43A8B54FC4\",\n  \"GPT-4.1 Mini\": \"4B0D9A17-1A5E-4B08-AF19-AC43A8B54FC3\",\n  \"Claude 3.5 Haiku\": \"sw-claude-instant-1.2\",\n  \"LM Studio\": \"F1D0D9C2-05CB-4F61-A864-DF5BAE67EB1B\"\n}",
+			"Text": "{\n  \"Claude 3.7 Sonnet\": \"sw-claude-3-7-sonnet\",\n  \"GPT-4o Mini\": \"sw-gpt-4o-mini\",\n  \"GPT-4.1\": \"sw-gpt-4.1\",\n  \"Claude 3.5 Haiku\": \"sw-claude-instant-1.2\",\n  \"LM Studio\": \"F1D0D9C2-05CB-4F61-A864-DF5BAE67EB1B\"\n}",
 			"ActionUID": 15599597
 		},
 		{

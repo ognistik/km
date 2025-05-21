@@ -1,7 +1,7 @@
 {
 	"UID": "53EC3205-7EE0-4515-84A0-BC1C2FB113AC",
 	"CreationDate": 750374497.744676,
-	"ModificationDate": 766789400.943457,
+	"ModificationDate": 769485472.056349,
 	"Triggers": [
 		{
 			"MacroTriggerType": "Folder",
@@ -344,7 +344,6 @@
 			"MacroActionType": "IfThenElse",
 			"ActionName": "Transcription Request - Depending on Language",
 			"ActionUID": 15552004,
-			"IsDisclosed": false,
 			"ElseActions": [
 				{
 					"MacroActionType": "ExecuteShellScript",

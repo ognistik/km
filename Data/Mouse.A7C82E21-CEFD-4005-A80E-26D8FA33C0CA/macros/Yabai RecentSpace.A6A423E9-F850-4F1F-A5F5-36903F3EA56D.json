@@ -10,7 +10,7 @@
 			"FireType": "Pressed"
 		}
 	],
-	"ModificationDate": 742654901.081432,
+	"ModificationDate": 767545662.084097,
 	"Actions": [
 		{
 			"MacroActionType": "ExecuteShellScript",
@@ -26,8 +26,9 @@
 			"TimeOutAbortsMacro": true,
 			"Path": "",
 			"DisplayKind": "None",
+			"IsDisclosed": false,
 			"HonourFailureSettings": true,
-			"Text": "/opt/homebrew/bin/yabai -m space --focus recent"
+			"Text": "# Try to focus on the recent space\n/opt/homebrew/bin/yabai -m space --focus recent\n\n# Check the exit status of the previous command\nif [ $? -ne 0 ]; then\n    # Get the current space number\n    CURRENT_SPACE=$(/opt/homebrew/bin/yabai -m query --spaces --space | jq '.index')\n    \n    # Get total number of spaces\n    TOTAL_SPACES=$(/opt/homebrew/bin/yabai -m query --spaces | jq 'length')\n    \n    if [ \"$CURRENT_SPACE\" -eq 1 ]; then\n        # If currently on Space 1 and there are more than one spaces\n        if [ \"$TOTAL_SPACES\" -gt 1 ]; then\n            # Focus on Space 2\n            /opt/homebrew/bin/yabai -m space --focus 2\n        fi\n        # If only one space exists, do nothing\n    else\n        # If not on Space 1, focus on Space 1\n        /opt/homebrew/bin/yabai -m space --focus 1\n    fi\nfi"
 		}
 	]
 }
