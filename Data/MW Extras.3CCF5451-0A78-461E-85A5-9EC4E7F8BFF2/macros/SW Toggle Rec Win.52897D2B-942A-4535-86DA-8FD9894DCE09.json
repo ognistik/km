@@ -1,7 +1,7 @@
 {
 	"UID": "52897D2B-942A-4535-86DA-8FD9894DCE09",
 	"CreationDate": 763179542.894914,
-	"ModificationDate": 768156325.468812,
+	"ModificationDate": 771452533.778258,
 	"Triggers": [],
 	"Actions": [
 		{
@@ -70,7 +70,7 @@
 			"TrimResults": true,
 			"Variable": "localTog",
 			"IncludeStdErr": false,
-			"ActionUID": 15586515,
+			"ActionUID": 15619672,
 			"UseText": true,
 			"TrimResultsNew": true,
 			"TimeOutAbortsMacro": true,
@@ -78,7 +78,7 @@
 			"DisplayKind": "Variable",
 			"IsDisclosed": false,
 			"HonourFailureSettings": true,
-			"Text": "tell application \"System Events\"\n    -- Get the first window of the frontmost application\n    set frontApp to first application process whose frontmost is true\n    set appWindow to first window of frontApp\n    \n    -- Get the window position and size\n    set {x, y} to position of appWindow\n    set {width, height} to size of appWindow\n    \n    -- Calculate corner coordinates (top-right corner in this example)\n    set cornerX to x + width - 20  -- 5 pixels from edge\n    set cornerY to y + 20          -- 5 pixels from top\n    \n    -- Move mouse and click\n    tell application \"System Events\"\n        set mousePosition to {cornerX, cornerY}\n    end tell\nend tell\n\nreturn mousePosition",
+			"Text": "tell application \"System Events\"\r\t-- Get the first window of the frontmost application\r\tset frontApp to first application process whose frontmost is true\r\tset appWindow to first window of frontApp\r\t\r\t-- Get the window position and size\r\tset {x, y} to position of appWindow\r\tset {width, height} to size of appWindow\r\t\r\t-- Calculate corner coordinates based on window width\r\tif width < 300 then\r\t\t-- For small windows\r\t\tset cornerX to x + width - 75 -- 5 pixels from edge\r\t\tset cornerY to y - 20 -- 5 pixels from top\r\telse\r\t\t-- For larger windows\r\t\tset cornerX to x + width - 20 -- Different value for larger windows\r\t\tset cornerY to y + 20 -- Different value for larger windows\r\tend if\r\t\r\t-- Move mouse and click\r\ttell application \"System Events\"\r\t\tset mousePosition to {cornerX, cornerY}\r\tend tell\rend tell\rreturn mousePosition",
 			"NotifyOnFailure": false
 		},
 		{

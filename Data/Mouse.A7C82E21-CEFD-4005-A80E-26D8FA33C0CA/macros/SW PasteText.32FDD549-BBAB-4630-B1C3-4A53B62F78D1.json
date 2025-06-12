@@ -10,14 +10,14 @@
 			"FireType": "Pressed"
 		}
 	],
-	"ModificationDate": 766177857.528709,
+	"ModificationDate": 771163831.747166,
 	"Actions": [
 		{
 			"MacroActionType": "ExecuteMacro",
-			"MacroUID": "8EBAFA85-7DB2-427F-8CCC-9CC78E5CA6E9",
+			"MacroUID": "154C6928-62FB-45BD-A26C-36D81A60330C",
 			"ActionUID": 15582968,
 			"TimeOutAbortsMacro": true,
-			"Parameter": "pasteText",
+			"Parameter": "autoPaste",
 			"UseParameter": true,
 			"Asynchronously": false
 		}

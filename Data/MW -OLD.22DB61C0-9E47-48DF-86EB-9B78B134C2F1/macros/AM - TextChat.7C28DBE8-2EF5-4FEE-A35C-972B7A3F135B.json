@@ -1,8 +1,9 @@
 {
 	"UID": "7C28DBE8-2EF5-4FEE-A35C-972B7A3F135B",
 	"CreationDate": 763660648.194313,
-	"ModificationDate": 766545635.874874,
+	"ModificationDate": 771271830.223477,
 	"Triggers": [],
+	"IsActive": false,
 	"Actions": [
 		{
 			"MacroActionType": "Comment",

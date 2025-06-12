@@ -10,7 +10,7 @@
 			"FireType": "Pressed"
 		}
 	],
-	"ModificationDate": 742614061.648504,
+	"ModificationDate": 769624297.577693,
 	"Actions": [
 		{
 			"MacroActionType": "Semaphore",
@@ -24,7 +24,7 @@
 		{
 			"MacroActionType": "ExecuteMacro",
 			"UseParameter": false,
-			"MacroUID": "9A812F68-7857-4ACE-A7BD-8AF3AEEE57CE",
+			"MacroUID": "0FD6D652-66F1-4473-B6F2-E3F20BDA31D5",
 			"TimeOutAbortsMacro": true,
 			"Asynchronously": false,
 			"ActionUID": 15515874

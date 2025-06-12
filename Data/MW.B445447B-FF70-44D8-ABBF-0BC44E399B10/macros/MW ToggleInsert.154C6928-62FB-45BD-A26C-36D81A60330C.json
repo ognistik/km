@@ -1,0 +1,210 @@
+{
+	"UID": "154C6928-62FB-45BD-A26C-36D81A60330C",
+	"CreationDate": 751177102.296912,
+	"ModificationDate": 771271388.099412,
+	"Triggers": [
+		{
+			"AutoRun": false,
+			"Display": "Clear Active Insert",
+			"MacroTriggerType": "GroupStatusMenu"
+		}
+	],
+	"Actions": [
+		{
+			"MacroActionType": "Comment",
+			"Title": "How to set action",
+			"ActionName": "How to set an Action Mode",
+			"IsDisclosed": false,
+			"StyledText": "\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\tcnRmZAAAAAADAAAAAgAA\n\t\t\t\t\t\t\tAAcAAABUWFQucnRmAQAA\n\t\t\t\t\t\t\tAC5SAgAAKwAAAAEAAABK\n\t\t\t\t\t\t\tAgAAe1xydGYxXGFuc2lc\n\t\t\t\t\t\t\tYW5zaWNwZzEyNTJcY29j\n\t\t\t\t\t\t\tb2FydGYyODIyClxjb2Nv\n\t\t\t\t\t\t\tYXRleHRzY2FsaW5nMFxj\n\t\t\t\t\t\t\tb2NvYXBsYXRmb3JtMHtc\n\t\t\t\t\t\t\tZm9udHRibFxmMFxmc3dp\n\t\t\t\t\t\t\tc3NcZmNoYXJzZXQwIEhl\n\t\t\t\t\t\t\tbHZldGljYTt9CntcY29s\n\t\t\t\t\t\t\tb3J0Ymw7XHJlZDI1NVxn\n\t\t\t\t\t\t\tcmVlbjI1NVxibHVlMjU1\n\t\t\t\t\t\t\tO1xyZWQwXGdyZWVuMFxi\n\t\t\t\t\t\t\tbHVlMDt9CntcKlxleHBh\n\t\t\t\t\t\t\tbmRlZGNvbG9ydGJsOztc\n\t\t\t\t\t\t\tY3NzcmdiXGMwXGMwXGMw\n\t\t\t\t\t\t\tXGM4NDcwNlxjbmFtZSBj\n\t\t\t\t\t\t\tb250cm9sVGV4dENvbG9y\n\t\t\t\t\t\t\tO30KXHBhcmRcdHg1NjBc\n\t\t\t\t\t\t\tdHgxMTIwXHR4MTY4MFx0\n\t\t\t\t\t\t\teDIyNDBcdHgyODAwXHR4\n\t\t\t\t\t\t\tMzM2MFx0eDM5MjBcdHg0\n\t\t\t\t\t\t\tNDgwXHR4NTA0MFx0eDU2\n\t\t\t\t\t\t\tMDBcdHg2MTYwXHR4Njcy\n\t\t\t\t\t\t\tMFxwYXJkaXJuYXR1cmFs\n\t\t\t\t\t\t\tXHBhcnRpZ2h0ZW5mYWN0\n\t\t\t\t\t\t\tb3IwCgpcZjBcZnMyNiBc\n\t\t\t\t\t\t\tY2YyIFRvIHNldCBhbiBh\n\t\t\t\t\t\t\tY3Rpb24gdGhpcyBtYWNy\n\t\t\t\t\t\t\tbyBtdXN0IGJlIHJ1biBl\n\t\t\t\t\t\t\teHRlcm5hbGx5IHdpdGgg\n\t\t\t\t\t\t\tdGhlIG5hbWUgb2YgeW91\n\t\t\t\t\t\t\tciBpbnNlcnQgYWN0aW9u\n\t\t\t\t\t\t\tLi4gVG8gY2xlYW4gdGhl\n\t\t\t\t\t\t\tIGFjdGl2ZSBpbnNlcnQs\n\t\t\t\t\t\t\tIHlvdSBuZWVkIHRvIHNl\n\t\t\t\t\t\t\tbmQgdGhlIGV4YWN0IHNh\n\t\t\t\t\t\t\tbWUgYXJndW1lbnQgKG9y\n\t\t\t\t\t\t\tIHNpbXBseSB0cmlnZ2Vy\n\t\t\t\t\t\t\tIHRoaXMgbWFjcm8gd2l0\n\t\t\t\t\t\t\taG91dCBhbiBhcmd1bWVu\n\t\t\t\t\t\t\tdCkufQEAAAAjAAAAAQAA\n\t\t\t\t\t\t\tAAcAAABUWFQucnRmEAAA\n\t\t\t\t\t\t\tAFi9Q2i2AQAAAAAAAAAA\n\t\t\t\t\t\t\tAAA=\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\t",
+			"ActionUID": 15621300
+		},
+		{
+			"MacroActionType": "SetVariableToText",
+			"ActionName": "Name of Default Insert action (empty for no insert)",
+			"ActionUID": 15621330,
+			"IsDisclosed": false,
+			"Variable": "localDefault",
+			"Text": "",
+			"ActionColor": "Orange"
+		},
+		{
+			"MacroActionType": "Semaphore",
+			"IsDisclosed": false,
+			"SemaphoreAction": "Lock",
+			"SemaphoreName": "MW SetInsert",
+			"TimeOutAbortsMacro": true,
+			"ActionUID": 15621301
+		},
+		{
+			"MacroActionType": "SetVariableToText",
+			"ActionName": "First we grab the incoming argument (or set insert name)",
+			"IsDisclosed": false,
+			"Variable": "localTrigger",
+			"Text": "%TriggerValue%",
+			"ActionUID": 15621325
+		},
+		{
+			"MacroActionType": "ExecuteShellScript",
+			"ActionName": "Then we grab the active insert from the running cli",
+			"IncludedVariables": [
+				"9999"
+			],
+			"TrimResults": true,
+			"Source": "Nothing",
+			"Variable": "localCurrentInsert",
+			"IncludeStdErr": false,
+			"ActionUID": 15621319,
+			"UseText": true,
+			"TrimResultsNew": true,
+			"TimeOutAbortsMacro": true,
+			"Path": "",
+			"DisplayKind": "Variable",
+			"IsDisclosed": false,
+			"HonourFailureSettings": true,
+			"Text": "$KMVAR_sw_mwPath --get-insert",
+			"NotifyOnFailure": false
+		},
+		{
+			"MacroActionType": "IfThenElse",
+			"ActionName": "This toggles an insert OFF if the previous one is toggled again. Otherwise it sets it.",
+			"ActionUID": 15621302,
+			"IsDisclosed": false,
+			"ElseActions": [
+				{
+					"MacroActionType": "IfThenElse",
+					"ActionUID": 15621327,
+					"IsDisclosed": false,
+					"TimeOutAbortsMacro": true,
+					"ElseActions": [
+						{
+							"MacroActionType": "ExecuteShellScript",
+							"ActionName": "User ran macro with a different insert name to activate",
+							"IncludedVariables": [
+								"9999"
+							],
+							"TrimResults": true,
+							"Source": "Nothing",
+							"IncludeStdErr": false,
+							"ActionUID": 15621322,
+							"UseText": true,
+							"TrimResultsNew": true,
+							"TimeOutAbortsMacro": true,
+							"Path": "",
+							"DisplayKind": "None",
+							"IsDisclosed": false,
+							"HonourFailureSettings": true,
+							"Text": "$KMVAR_sw_mwPath --insert $KMVAR_localTrigger"
+						},
+						{
+							"MacroActionType": "ExecuteMacro",
+							"ActionName": "Update MW Menu Bar macro",
+							"MacroUID": "4DB1D78F-EBEF-42D9-AF6C-2002098637C3",
+							"NotifyOnFailure": false,
+							"IsDisclosed": false,
+							"ActionUID": 15621323,
+							"TimeOutAbortsMacro": true,
+							"UseParameter": false,
+							"Asynchronously": false
+						}
+					],
+					"Conditions": {
+						"ConditionListMatch": "All",
+						"ConditionList": [
+							{
+								"ConditionType": "Variable",
+								"VariableValue": "",
+								"Variable": "localTrigger",
+								"VariableConditionType": "Is"
+							}
+						]
+					},
+					"ThenActions": [
+						{
+							"MacroActionType": "ExecuteShellScript",
+							"ActionName": "User ran with nothing... wants to set default insert",
+							"IncludedVariables": [
+								"9999"
+							],
+							"TrimResults": true,
+							"Source": "Nothing",
+							"IncludeStdErr": false,
+							"ActionUID": 15621328,
+							"UseText": true,
+							"TrimResultsNew": true,
+							"TimeOutAbortsMacro": true,
+							"Path": "",
+							"DisplayKind": "None",
+							"IsDisclosed": false,
+							"HonourFailureSettings": true,
+							"Text": "$KMVAR_sw_mwPath --insert $KMVAR_localDefault"
+						},
+						{
+							"MacroActionType": "ExecuteMacro",
+							"ActionName": "Update MW Menu Bar macro",
+							"MacroUID": "4DB1D78F-EBEF-42D9-AF6C-2002098637C3",
+							"NotifyOnFailure": false,
+							"IsDisclosed": false,
+							"ActionUID": 15621329,
+							"TimeOutAbortsMacro": true,
+							"UseParameter": false,
+							"Asynchronously": false
+						}
+					]
+				}
+			],
+			"TimeOutAbortsMacro": true,
+			"Conditions": {
+				"ConditionListMatch": "All",
+				"ConditionList": [
+					{
+						"ConditionType": "Variable",
+						"VariableValue": "%localTrigger%",
+						"Variable": "localCurrentInsert",
+						"VariableConditionType": "Is"
+					}
+				]
+			},
+			"ThenActions": [
+				{
+					"MacroActionType": "ExecuteShellScript",
+					"ActionName": "Incoming Argument is already Active Insert - Turn Off",
+					"IncludedVariables": [
+						"9999"
+					],
+					"TrimResults": true,
+					"Source": "Nothing",
+					"IncludeStdErr": false,
+					"ActionUID": 15621321,
+					"UseText": true,
+					"TrimResultsNew": true,
+					"TimeOutAbortsMacro": true,
+					"Path": "",
+					"DisplayKind": "None",
+					"IsDisclosed": false,
+					"HonourFailureSettings": true,
+					"Text": "$KMVAR_sw_mwPath --insert $KMVAR_localDefault"
+				},
+				{
+					"MacroActionType": "ExecuteMacro",
+					"ActionName": "Update MW Menu Bar macro",
+					"MacroUID": "4DB1D78F-EBEF-42D9-AF6C-2002098637C3",
+					"NotifyOnFailure": false,
+					"IsDisclosed": false,
+					"ActionUID": 15621304,
+					"TimeOutAbortsMacro": true,
+					"UseParameter": false,
+					"Asynchronously": false
+				}
+			]
+		},
+		{
+			"MacroActionType": "Semaphore",
+			"IsDisclosed": false,
+			"SemaphoreAction": "Unlock",
+			"SemaphoreName": "MW SetInsert",
+			"ActionUID": 15621317
+		}
+	],
+	"Name": "MW ToggleInsert",
+	"CustomIconData": "KMEC=Rounded=KMCOLOR:0,0,255,0=📌=86=0=0=1=KMCOLOR:0,0,0,255"
+}

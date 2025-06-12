@@ -9,6 +9,7 @@
 			"MacroTriggerType": "GroupStatusMenu"
 		}
 	],
+	"IsActive": false,
 	"Actions": [
 		{
 			"MacroActionType": "ExecuteMacro",

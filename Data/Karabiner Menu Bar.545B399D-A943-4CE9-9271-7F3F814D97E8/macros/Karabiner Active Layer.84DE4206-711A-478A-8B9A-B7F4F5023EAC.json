@@ -3,7 +3,7 @@
 	"UID": "84DE4206-711A-478A-8B9A-B7F4F5023EAC",
 	"Name": "Karabiner Active Layer",
 	"Triggers": [],
-	"ModificationDate": 767303953.73628,
+	"ModificationDate": 771179974.902168,
 	"Actions": [
 		{
 			"MacroActionType": "Semaphore",
@@ -35,6 +35,7 @@
 					"TimeOutAbortsMacro": true,
 					"Path": "",
 					"DisplayKind": "Variable",
+					"IsDisclosed": false,
 					"HonourFailureSettings": true,
 					"Text": "jq --arg layer \"$KMVAR_kara_layer\" '.variables[$layer]' \"/Library/Application Support/org.pqrs/tmp/karabiner_grabber_manipulator_environment.json\""
 				},
@@ -190,7 +191,6 @@
 									"MacroActionType": "IfThenElse",
 									"ActionName": "First we clear the actual top layer or sublayer if one",
 									"ActionUID": 15598403,
-									"IsDisclosed": false,
 									"ElseActions": [
 										{
 											"MacroActionType": "SetVariableToText",
@@ -224,7 +224,6 @@
 								},
 								{
 									"MacroActionType": "SetVariableToText",
-									"IsDisclosed": false,
 									"Variable": "kara_layer",
 									"Text": "",
 									"ActionUID": 15598406
@@ -234,7 +233,6 @@
 									"ActionName": "It means Im jumping from a layer to sublayer... so we turn off the current overlay",
 									"MacroUID": "D61813F2-69FB-4CD0-9100-148B8018DB07",
 									"ActionUID": 15598385,
-									"IsDisclosed": false,
 									"ActionColor": "Red",
 									"TimeOutAbortsMacro": true,
 									"UseParameter": false,
@@ -245,7 +243,6 @@
 									"ActionName": "We run this for the sublayer",
 									"MacroUID": "84DE4206-711A-478A-8B9A-B7F4F5023EAC",
 									"ActionUID": 15598386,
-									"IsDisclosed": false,
 									"TimeOutAbortsMacro": true,
 									"Parameter": "%TriggerValue%",
 									"UseParameter": true,
@@ -264,7 +261,6 @@
 									}
 								]
 							},
-							"ElseActionListDisclosed": false,
 							"ThenActions": [
 								{
 									"MacroActionType": "SearchRegEx",
@@ -286,14 +282,12 @@
 									"ElseActions": [
 										{
 											"MacroActionType": "SetVariableToText",
-											"IsDisclosed": false,
 											"Variable": "kara_layer_2",
 											"Text": "%localTemp%",
 											"ActionUID": 15598389
 										},
 										{
 											"MacroActionType": "SetVariableToText",
-											"IsDisclosed": false,
 											"Variable": "kara_layer",
 											"Text": "%localTemp%",
 											"ActionUID": 15598391
@@ -343,7 +337,6 @@
 									"TimeOutAbortsMacro": true,
 									"Path": "",
 									"DisplayKind": "Variable",
-									"IsDisclosed": false,
 									"HonourFailureSettings": true,
 									"Text": "#!/bin/bash\n\n# Read and echo contents of the Karabiner layer file\ncat \"/Users/ognistik/Dropbox/2-Areas/SystemAndApps/BetterTouchTool/Karabiner Layers/$KMVAR_kara_layer.txt\"\n",
 									"NotifyOnFailure": false
@@ -364,7 +357,6 @@
 									"TimeOutAbortsMacro": true,
 									"Path": "",
 									"DisplayKind": "Variable",
-									"IsDisclosed": false,
 									"HonourFailureSettings": true,
 									"Text": "jq --arg layer \"$KMVAR_kara_layer\" '.variables[$layer]' \"/Library/Application Support/org.pqrs/tmp/karabiner_grabber_manipulator_environment.json\""
 								},
@@ -372,7 +364,6 @@
 									"MacroActionType": "IfThenElse",
 									"ActionName": "Cancel if no longer presed",
 									"ActionUID": 15598374,
-									"IsDisclosed": false,
 									"ActionColor": "Red",
 									"ElseActions": [],
 									"TimeOutAbortsMacro": true,
@@ -498,7 +489,6 @@
 								},
 								{
 									"MacroActionType": "SetVariableToText",
-									"IsDisclosed": false,
 									"Variable": "kara_menu",
 									"Text": "%kara_letter%",
 									"ActionUID": 15598380
@@ -518,6 +508,7 @@
 									"TimeOutAbortsMacro": true,
 									"Path": "",
 									"DisplayKind": "Asynchronously",
+									"IsDisclosed": false,
 									"HonourFailureSettings": true,
 									"Text": "# Start fswatch in the background and write its PID to a temporary file - it's anynchronous script, doesn't work with local KM variables\n/opt/homebrew/bin/fswatch -o -l 0.5 -0 \"/Library/Application Support/org.pqrs/tmp/karabiner_grabber_manipulator_environment.json\" | while read -d \"\" event; do\n  osascript -e 'tell application \"Keyboard Maestro Engine\" to do script \"Karabiner Active Layer\" with parameter \"kara_watcher\"'\ndone & echo $! > /tmp/fswatch_karaWatcher.pid",
 									"TimeOutPeriod": 356400

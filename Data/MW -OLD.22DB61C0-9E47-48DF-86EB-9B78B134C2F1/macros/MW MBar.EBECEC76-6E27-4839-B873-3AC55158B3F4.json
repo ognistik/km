@@ -1,7 +1,7 @@
 {
 	"UID": "EBECEC76-6E27-4839-B873-3AC55158B3F4",
 	"CreationDate": 766170666.064721,
-	"ModificationDate": 768333894.553893,
+	"ModificationDate": 770929698.802149,
 	"Triggers": [
 		{
 			"AutoRun": false,
@@ -9,6 +9,7 @@
 			"MacroTriggerType": "GroupStatusMenu"
 		}
 	],
+	"IsActive": false,
 	"Actions": [
 		{
 			"MacroActionType": "Comment",
@@ -59,7 +60,6 @@
 			"MacroActionType": "IfThenElse",
 			"ActionName": "Display Action Mode if one is active, or clear if not",
 			"ActionUID": 15609655,
-			"IsDisclosed": false,
 			"ElseActions": [
 				{
 					"MacroActionType": "SetVariableToText",
@@ -145,10 +145,11 @@
 		},
 		{
 			"MacroActionType": "ExecuteAppleScript",
-			"ActionName": "Grab Active Mode from SW Menu",
+			"ActionName": "1.45.14 and below - Grab Active Mode from SW Menu",
 			"IncludedVariables": [
 				"9999"
 			],
+			"TimeOutPeriod": 3600,
 			"TrimResults": true,
 			"StopOnFailure": false,
 			"Variable": "localPreMenuBar",
@@ -159,13 +160,14 @@
 			"TimeOutAbortsMacro": true,
 			"Path": "",
 			"DisplayKind": "Variable",
-			"HonourFailureSettings": true,
+			"IsDisclosed": false,
+			"IsActive": false,
 			"Text": "tell application \"System Events\"\r\ttell process \"superwhisper\"\n\t\ttry\r\t\tset menuItemName to name of menu item 7 of menu \"superwhisper\" of menu bar item 1 of menu bar 2\n\t\treturn menuItemName\n\t\tend try\r\tend tell\rend tell",
-			"TimeOutPeriod": 3600
+			"HonourFailureSettings": true
 		},
 		{
 			"MacroActionType": "SearchReplace",
-			"ActionName": "Clean up parentheses from active mode from SW Menu",
+			"ActionName": "1.45.14 and below - Clean up parentheses from active mode from SW Menu",
 			"Source": "Variable",
 			"Variable": "localPreMenuBar",
 			"Action": "IgnoreCaseRegEx",
@@ -175,7 +177,29 @@
 			"Search": "\\s*\\([^()]*\\)(?=[^()]*$)",
 			"IsDisclosed": false,
 			"Destination": "Variable",
+			"IsActive": false,
 			"Which": "All"
+		},
+		{
+			"MacroActionType": "ExecuteAppleScript",
+			"ActionName": "1.46.0 and above - Grab Active Mode from SW Menu",
+			"IncludedVariables": [
+				"9999"
+			],
+			"TrimResults": true,
+			"StopOnFailure": false,
+			"Variable": "sw_currentMode",
+			"IncludeStdErr": false,
+			"ActionUID": 15619671,
+			"UseText": true,
+			"TrimResultsNew": true,
+			"TimeOutAbortsMacro": true,
+			"Path": "",
+			"DisplayKind": "Variable",
+			"IsDisclosed": false,
+			"HonourFailureSettings": true,
+			"Text": "tell application \"System Events\"\n\ttell process \"superwhisper\"\n\t\ttry\n\t\t\t-- Get the submenu\n\t\t\tset theSubmenu to menu 1 of menu item 7 of menu \"superwhisper\" of menu bar item 1 of menu bar 2\n\t\t\t\n\t\t\t-- Look through all items in the submenu to find one with a checkmark\n\t\t\tset checkedItem to \"\"\n\t\t\trepeat with menuItem in menu items of theSubmenu\n\t\t\t\tif value of attribute \"AXMenuItemMarkChar\" of menuItem is not missing value then\n\t\t\t\t\tset checkedItem to name of menuItem\n\t\t\t\t\texit repeat\n\t\t\t\tend if\n\t\t\tend repeat\n\t\t\t\n\t\t\treturn checkedItem\n\t\tend try\n\tend tell\nend tell",
+			"TimeOutPeriod": 3600
 		},
 		{
 			"MacroActionType": "SetVariableToText",

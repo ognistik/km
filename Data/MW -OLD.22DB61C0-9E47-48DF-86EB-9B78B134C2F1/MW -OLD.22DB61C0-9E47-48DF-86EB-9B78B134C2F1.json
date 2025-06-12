@@ -1,12 +1,12 @@
 {
 	"AddToMacroPalette": false,
 	"Modifiers": 0,
-	"CreationDate": 747928786.946383,
+	"CreationDate": 766159660.830514,
 	"AddToStatusMenu": false,
-	"Name": "SW Menu Bar",
+	"Name": "MW -OLD",
 	"CustomIconData": "KMEP-GenericApplication-/Applications/superwhisper.app",
 	"PaletteUnderMouse": false,
-	"UID": "132BDCC1-9AD1-4B27-809F-DD43C773C810",
+	"UID": "22DB61C0-9E47-48DF-86EB-9B78B134C2F1",
 	"Targeting": {
 		"Targeting": "All",
 		"TargetingApps": []
@@ -20,7 +20,7 @@
 		"Display": true,
 		"TitleVariable": "sw_menubar"
 	},
-	"ToggleMacroUID": "4EDEA052-8D95-463A-8BB3-37DFA5FBF1B2",
+	"ToggleMacroUID": "8BE8168C-8722-4B74-A85E-61F8CF9AF140",
 	"Activate": "Normal",
 	"IsActive": false,
 	"DisplayToggle": false,

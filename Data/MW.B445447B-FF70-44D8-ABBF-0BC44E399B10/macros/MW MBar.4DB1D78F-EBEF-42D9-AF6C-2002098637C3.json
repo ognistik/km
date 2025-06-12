@@ -1,0 +1,132 @@
+{
+	"CreationDate": 770928507.019929,
+	"UID": "4DB1D78F-EBEF-42D9-AF6C-2002098637C3",
+	"Name": "MW MBar",
+	"Triggers": [
+		{
+			"MacroTriggerType": "Folder",
+			"Interest": {
+				"ObserveWhen": "IgnorePartial",
+				"UID2": "65E25C4F-7BA5-464D-809B-10ECE9BD63FA",
+				"Observe": "Add",
+				"Path": "~/Documents/superwhisper/recordings"
+			}
+		}
+	],
+	"ModificationDate": 771203759.124407,
+	"Actions": [
+		{
+			"MacroActionType": "SetVariableToText",
+			"IsDisclosed": false,
+			"Text": "/Users/ognistik/Desktop/macrowhisper",
+			"Variable": "sw_mwPath",
+			"ActionColor": "Orange",
+			"ActionUID": 15621318
+		},
+		{
+			"MacroActionType": "Semaphore",
+			"ActionName": "Run only one instance of this macro at the time",
+			"ActionUID": 15621295,
+			"IsDisclosed": false,
+			"TimeOutAbortsMacro": true,
+			"SemaphoreName": "MBar",
+			"SemaphoreAction": "Lock"
+		},
+		{
+			"MacroActionType": "SetVariableToText",
+			"ActionName": "Check if there's an input argument",
+			"IsDisclosed": false,
+			"Variable": "localInput",
+			"Text": "%TriggerValue%",
+			"ActionUID": 15621720
+		},
+		{
+			"MacroActionType": "IfThenElse",
+			"ActionName": "Macro Version Check",
+			"ActionUID": 15621721,
+			"IsDisclosed": false,
+			"ElseActions": [],
+			"TimeOutAbortsMacro": true,
+			"Conditions": {
+				"ConditionListMatch": "All",
+				"ConditionList": [
+					{
+						"ConditionType": "Variable",
+						"VariableValue": "versionCheck",
+						"Variable": "localInput",
+						"VariableConditionType": "Is"
+					}
+				]
+			},
+			"ThenActions": [
+				{
+					"MacroActionType": "Return",
+					"ActionUID": 15621722,
+					"Text": "1.0.3"
+				},
+				{
+					"MacroActionType": "Cancel",
+					"ActionUID": 15621725,
+					"Action": "CancelThisMacro"
+				}
+			]
+		},
+		{
+			"MacroActionType": "ExecuteShellScript",
+			"ActionName": "Grab Active Insert Icon",
+			"IncludedVariables": [
+				"9999"
+			],
+			"TrimResults": true,
+			"Source": "Nothing",
+			"Variable": "localCurrentInsert",
+			"IncludeStdErr": false,
+			"ActionUID": 15621299,
+			"UseText": true,
+			"TrimResultsNew": true,
+			"TimeOutAbortsMacro": true,
+			"Path": "",
+			"DisplayKind": "Variable",
+			"IsDisclosed": false,
+			"HonourFailureSettings": true,
+			"Text": "$KMVAR_sw_mwPath --get-icon",
+			"NotifyOnFailure": false
+		},
+		{
+			"MacroActionType": "ExecuteAppleScript",
+			"ActionName": "Grab Active Mode from SW Menu",
+			"IncludedVariables": [
+				"9999"
+			],
+			"TrimResults": true,
+			"StopOnFailure": false,
+			"Variable": "sw_currentMode",
+			"IncludeStdErr": false,
+			"ActionUID": 15621296,
+			"UseText": true,
+			"TrimResultsNew": true,
+			"TimeOutAbortsMacro": true,
+			"Path": "",
+			"DisplayKind": "Variable",
+			"HonourFailureSettings": true,
+			"Text": "tell application \"System Events\"\n\ttell process \"superwhisper\"\n\t\ttry\n\t\t\t-- Get the submenu\n\t\t\tset theSubmenu to menu 1 of menu item 7 of menu \"superwhisper\" of menu bar item 1 of menu bar 2\n\t\t\t\n\t\t\t-- Look through all items in the submenu to find one with a checkmark\n\t\t\tset checkedItem to \"\"\n\t\t\trepeat with menuItem in menu items of theSubmenu\n\t\t\t\tif value of attribute \"AXMenuItemMarkChar\" of menuItem is not missing value then\n\t\t\t\t\tset checkedItem to name of menuItem\n\t\t\t\t\texit repeat\n\t\t\t\tend if\n\t\t\tend repeat\n\t\t\t\n\t\t\treturn checkedItem\n\t\tend try\n\tend tell\nend tell",
+			"TimeOutPeriod": 3600
+		},
+		{
+			"MacroActionType": "SetVariableToText",
+			"ActionName": "Menu Bar text",
+			"ActionUID": 15621297,
+			"IsDisclosed": false,
+			"Variable": "sw_menubar",
+			"Text": "%localCurrentInsert%  %sw_currentMode%",
+			"ActionColor": "Green"
+		},
+		{
+			"MacroActionType": "Semaphore",
+			"IsDisclosed": false,
+			"SemaphoreAction": "Unlock",
+			"SemaphoreName": "MBar",
+			"ActionUID": 15621298
+		}
+	]
+}

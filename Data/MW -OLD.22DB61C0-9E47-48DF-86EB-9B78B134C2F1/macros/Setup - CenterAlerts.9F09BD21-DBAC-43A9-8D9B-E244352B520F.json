@@ -1,9 +1,9 @@
 {
-	"CreationDate": 741116854.392514,
 	"UID": "9F09BD21-DBAC-43A9-8D9B-E244352B520F",
-	"Name": "Setup - CenterAlerts",
-	"Triggers": [],
+	"CreationDate": 741116854.392514,
 	"ModificationDate": 766669538.795975,
+	"Triggers": [],
+	"IsActive": false,
 	"Actions": [
 		{
 			"MacroActionType": "Comment",
@@ -31,5 +31,6 @@
 			"HeightExpression": "300",
 			"WindowIndexExpression": "2"
 		}
-	]
+	],
+	"Name": "Setup - CenterAlerts"
 }

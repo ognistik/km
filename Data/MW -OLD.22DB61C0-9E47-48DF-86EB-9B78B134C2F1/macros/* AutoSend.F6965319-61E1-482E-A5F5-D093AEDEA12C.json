@@ -3,6 +3,7 @@
 	"CreationDate": 751740389.643209,
 	"ModificationDate": 768880440.717043,
 	"Triggers": [],
+	"IsActive": false,
 	"Actions": [
 		{
 			"MacroActionType": "ExecuteMacro",

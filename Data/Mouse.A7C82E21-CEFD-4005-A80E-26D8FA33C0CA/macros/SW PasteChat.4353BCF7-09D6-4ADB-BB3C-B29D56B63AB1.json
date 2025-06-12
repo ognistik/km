@@ -10,11 +10,11 @@
 			"FireType": "Pressed"
 		}
 	],
-	"ModificationDate": 766177832.331515,
+	"ModificationDate": 771273069.45173,
 	"Actions": [
 		{
 			"MacroActionType": "ExecuteMacro",
-			"MacroUID": "8EBAFA85-7DB2-427F-8CCC-9CC78E5CA6E9",
+			"MacroUID": "154C6928-62FB-45BD-A26C-36D81A60330C",
 			"ActionUID": 15539652,
 			"TimeOutAbortsMacro": true,
 			"Parameter": "pasteChat",

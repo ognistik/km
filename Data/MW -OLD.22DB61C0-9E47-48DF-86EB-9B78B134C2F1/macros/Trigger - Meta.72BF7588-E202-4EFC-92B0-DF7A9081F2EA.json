@@ -1,31 +1,46 @@
 {
-	"UID": "64F37989-34C2-4EC3-B9C5-217EF23D8E3F",
-	"CreationDate": 751078784.067752,
-	"ModificationDate": 766170370.121521,
+	"UID": "72BF7588-E202-4EFC-92B0-DF7A9081F2EA",
+	"CreationDate": 766114270.990562,
+	"ModificationDate": 771380285.418653,
 	"Triggers": [],
+	"IsActive": false,
 	"Actions": [
-		{
-			"MacroActionType": "Comment",
-			"Title": "NOTE",
-			"ActionName": "NOTE",
-			"IsDisclosed": false,
-			"StyledText": "\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\tcnRmZAAAAAADAAAAAgAA\n\t\t\t\t\t\t\tAAcAAABUWFQucnRmAQAA\n\t\t\t\t\t\t\tAC7YAQAAKwAAAAEAAADQ\n\t\t\t\t\t\t\tAQAAe1xydGYxXGFuc2lc\n\t\t\t\t\t\t\tYW5zaWNwZzEyNTJcY29j\n\t\t\t\t\t\t\tb2FydGYyODIxClxjb2Nv\n\t\t\t\t\t\t\tYXRleHRzY2FsaW5nMFxj\n\t\t\t\t\t\t\tb2NvYXBsYXRmb3JtMHtc\n\t\t\t\t\t\t\tZm9udHRibFxmMFxmc3dp\n\t\t\t\t\t\t\tc3NcZmNoYXJzZXQwIEhl\n\t\t\t\t\t\t\tbHZldGljYTt9CntcY29s\n\t\t\t\t\t\t\tb3J0Ymw7XHJlZDI1NVxn\n\t\t\t\t\t\t\tcmVlbjI1NVxibHVlMjU1\n\t\t\t\t\t\t\tO1xyZWQwXGdyZWVuMFxi\n\t\t\t\t\t\t\tbHVlMDt9CntcKlxleHBh\n\t\t\t\t\t\t\tbmRlZGNvbG9ydGJsOztc\n\t\t\t\t\t\t\tY3NzcmdiXGMwXGMwXGMw\n\t\t\t\t\t\t\tXGM4NDcwNlxjbmFtZSBj\n\t\t\t\t\t\t\tb250cm9sVGV4dENvbG9y\n\t\t\t\t\t\t\tO30KXHBhcmRcdHg1NjBc\n\t\t\t\t\t\t\tdHgxMTIwXHR4MTY4MFx0\n\t\t\t\t\t\t\teDIyNDBcdHgyODAwXHR4\n\t\t\t\t\t\t\tMzM2MFx0eDM5MjBcdHg0\n\t\t\t\t\t\t\tNDgwXHR4NTA0MFx0eDU2\n\t\t\t\t\t\t\tMDBcdHg2MTYwXHR4Njcy\n\t\t\t\t\t\t\tMFxwYXJkaXJuYXR1cmFs\n\t\t\t\t\t\t\tXHBhcnRpZ2h0ZW5mYWN0\n\t\t\t\t\t\t\tb3IwCgpcZjBcZnMyNiBc\n\t\t\t\t\t\t\tY2YyIFRoaXMgbWFjcm8g\n\t\t\t\t\t\t\taXMgdHJpZ2dlcmVkIGRp\n\t\t\t\t\t\t\tcmVjdGx5IGJ5IFN1cGVy\n\t\t\t\t\t\t\td2hpc3BlciBhZnRlciBw\n\t\t\t\t\t\t\tcm9jZXNzaW5nIG9mIGRp\n\t\t\t\t\t\t\tY3RhdGlvbiBpcyBkb25l\n\t\t\t\t\t\t\tLn0BAAAAIwAAAAEAAAAH\n\t\t\t\t\t\t\tAAAAVFhULnJ0ZhAAAAA4\n\t\t\t\t\t\t\tWpxntgEAAAAAAAAAAAAA\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\t",
-			"ActionUID": 15554842
-		},
 		{
 			"MacroActionType": "Semaphore",
 			"IsDisclosed": false,
 			"SemaphoreAction": "Lock",
-			"SemaphoreName": "SW Action Action",
+			"SemaphoreName": "Trigger - Meta",
 			"TimeOutAbortsMacro": true,
-			"ActionUID": 15593205
+			"ActionUID": 15609536
 		},
 		{
 			"MacroActionType": "SetVariableToText",
+			"ActionName": "Path to Superwhisper folder - under user's home directory",
+			"ActionUID": 15611689,
 			"IsDisclosed": false,
-			"Variable": "localClipboard",
-			"Text": "%SystemClipboard%",
-			"ActionUID": 15576951
+			"Variable": "localDir",
+			"Text": "/Documents/superwhisper",
+			"ActionColor": "Orange"
+		},
+		{
+			"MacroActionType": "ExecuteShellScript",
+			"ActionName": "Get the most recent recording folder",
+			"IncludedVariables": [
+				"9999"
+			],
+			"TrimResults": true,
+			"Source": "Nothing",
+			"Variable": "localDir",
+			"IncludeStdErr": false,
+			"ActionUID": 15611688,
+			"UseText": true,
+			"TrimResultsNew": true,
+			"TimeOutAbortsMacro": true,
+			"Path": "",
+			"DisplayKind": "Variable",
+			"IsDisclosed": false,
+			"HonourFailureSettings": true,
+			"Text": "#!/bin/bash\n\n# Find the most recently modified subfolder in the current directory\nmost_recent_folder=$(find \"$HOME$KMVAR_localDir/recordings\" -type d -maxdepth 1 | sort -t/ -k1,1 | tail -1)\n\n# Echo the full path to the most recent folder\necho \"$most_recent_folder\""
 		},
 		{
 			"MacroActionType": "Group",
@@ -33,51 +48,82 @@
 			"Actions": [
 				{
 					"MacroActionType": "ReadFile",
-					"Source": "%sw_recentFolder%/meta.json",
+					"IsDisclosed": false,
+					"Source": "%localDir%/meta.json",
 					"Variable": "localMeta",
 					"Destination": "Variable",
-					"ActionUID": 15550424
+					"ActionUID": 15609539
 				},
 				{
 					"MacroActionType": "SetVariableToText",
 					"IsDisclosed": false,
 					"Variable": "localRaw",
 					"Text": "%JSONValue%localMeta.rawResult%",
-					"ActionUID": 15550426
+					"ActionUID": 15609540
 				},
 				{
 					"MacroActionType": "SetVariableToText",
 					"IsDisclosed": false,
-					"Variable": "localPrompt",
+					"Variable": "localVoice",
 					"Text": "%JSONValue%localMeta.result%",
-					"ActionUID": 15551606
+					"ActionUID": 15609541
 				},
 				{
 					"MacroActionType": "IfThenElse",
-					"ActionName": "Set localResult... the macro will paste this if no voice command is detected and action mode is set",
-					"ActionUID": 15551215,
+					"ActionName": "Set Result or Cancel if Empty",
+					"ActionUID": 15609546,
 					"IsDisclosed": false,
 					"ElseActions": [
 						{
-							"MacroActionType": "SearchReplace",
-							"Action": "IgnoreCaseString",
-							"ActionUID": 15597162,
-							"ActionColor": "Red",
-							"Destination": "Variable",
-							"Search": ".  ",
-							"Source": "Text",
-							"Text": "%JSONValue%localMeta.result%",
-							"Which": "All",
-							"Replace": ". ",
-							"DestinationVariable": "localResult"
-						},
-						{
-							"MacroActionType": "SetVariableToText",
+							"MacroActionType": "IfThenElse",
+							"ActionName": "Set localResult - Whether there's LLM or not",
+							"ActionUID": 15609542,
 							"IsDisclosed": false,
-							"Variable": "localResult",
-							"Text": "%JSONValue%localMeta.result%",
-							"IsActive": false,
-							"ActionUID": 15597552
+							"ElseActions": [
+								{
+									"MacroActionType": "SearchReplace",
+									"ActionName": "Temp solution for double temp space bug on Voice-only modes",
+									"Source": "Text",
+									"DestinationVariable": "localResult",
+									"Action": "IgnoreCaseString",
+									"Replace": ". ",
+									"ActionUID": 15609549,
+									"ActionColor": "Red",
+									"Search": ".  ",
+									"Destination": "Variable",
+									"Text": "%JSONValue%localMeta.result%",
+									"Which": "All"
+								},
+								{
+									"MacroActionType": "SetVariableToText",
+									"IsDisclosed": false,
+									"Variable": "localResult",
+									"Text": "%JSONValue%localMeta.result%",
+									"IsActive": false,
+									"ActionUID": 15609550
+								}
+							],
+							"ThenActionListDisclosed": false,
+							"TimeOutAbortsMacro": true,
+							"Conditions": {
+								"ConditionListMatch": "All",
+								"ConditionList": [
+									{
+										"ConditionType": "Text",
+										"TextValue": "",
+										"Text": "%JSONValue%localMeta.llmResult%",
+										"TextConditionType": "IsNot"
+									}
+								]
+							},
+							"ThenActions": [
+								{
+									"MacroActionType": "SetVariableToText",
+									"Variable": "localResult",
+									"Text": "%JSONValue%localMeta.llmResult%",
+									"ActionUID": 15609548
+								}
+							]
 						}
 					],
 					"TimeOutAbortsMacro": true,
@@ -85,33 +131,64 @@
 						"ConditionListMatch": "All",
 						"ConditionList": [
 							{
-								"ConditionType": "Text",
-								"TextValue": "",
-								"Text": "%JSONValue%localMeta.llmResult%",
-								"TextConditionType": "IsNot"
+								"ConditionType": "Variable",
+								"VariableValue": "",
+								"Variable": "localVoice",
+								"VariableConditionType": "Is"
 							}
 						]
 					},
 					"ThenActions": [
 						{
-							"MacroActionType": "SetVariableToText",
-							"IsDisclosed": false,
-							"Variable": "localResult",
-							"Text": "%JSONValue%localMeta.llmResult%",
-							"ActionUID": 15551216
+							"MacroActionType": "Cancel",
+							"ActionUID": 15609547,
+							"Action": "CancelThisMacro"
 						}
 					]
 				}
 			],
 			"IsDisclosed": false,
 			"TimeOutAbortsMacro": true,
-			"ActionUID": 15550825
+			"ActionUID": 15609538
+		},
+		{
+			"MacroActionType": "IfThenElse",
+			"ActionName": "Auto trigger only one action per file",
+			"ActionUID": 15613670,
+			"IsDisclosed": false,
+			"ElseActions": [
+				{
+					"MacroActionType": "SetVariableToText",
+					"IsDisclosed": false,
+					"Variable": "sw_lastFile",
+					"Text": "%localDir%",
+					"ActionUID": 15613672
+				}
+			],
+			"TimeOutAbortsMacro": true,
+			"Conditions": {
+				"ConditionListMatch": "All",
+				"ConditionList": [
+					{
+						"ConditionType": "Variable",
+						"VariableValue": "%localDir%",
+						"Variable": "sw_lastFile",
+						"VariableConditionType": "Is"
+					}
+				]
+			},
+			"ThenActions": [
+				{
+					"MacroActionType": "Cancel",
+					"ActionUID": 15613671,
+					"Action": "CancelThisMacro"
+				}
+			]
 		},
 		{
 			"MacroActionType": "IfThenElse",
 			"ActionName": "VOICE COMMANDS",
-			"ActionUID": 15554367,
-			"IsDisclosed": false,
+			"ActionUID": 15609551,
 			"ActionColor": "Green",
 			"ElseActions": [],
 			"TimeOutAbortsMacro": true,
@@ -130,10 +207,9 @@
 			"ThenActions": [
 				{
 					"MacroActionType": "SimulateKeystroke",
-					"ActionName": "Assuming User has Rec window active, and that ESC is set to close it",
-					"ActionUID": 15574158,
+					"ActionName": "ESC to close rec window",
+					"ActionUID": 15609552,
 					"IsDisclosed": false,
-					"ActionColor": "Red",
 					"ReleaseAll": false,
 					"TargetApplication": {},
 					"TargetingType": "Front",
@@ -143,8 +219,7 @@
 				{
 					"MacroActionType": "IfThenElse",
 					"ActionName": "* ASK GOOGLE",
-					"ActionUID": 15550431,
-					"IsDisclosed": false,
+					"ActionUID": 15609553,
 					"ElseActions": [],
 					"TimeOutAbortsMacro": true,
 					"Conditions": {
@@ -164,9 +239,10 @@
 							"MacroActionType": "SearchReplace",
 							"Search": "^\\s*(ask google)[^a-zA-Z]?\\s*|\\s*[^a-zA-Z\\s]*\\s*$",
 							"Source": "Variable",
-							"Variable": "localRaw",
+							"IsDisclosed": false,
 							"Action": "IgnoreCaseRegEx",
-							"ActionUID": 15554370,
+							"ActionUID": 15609554,
+							"Variable": "localRaw",
 							"Replace": "",
 							"Which": "All"
 						},
@@ -176,20 +252,20 @@
 							"Source": "Variable",
 							"Action": "PercentEncodeForURL",
 							"Variable": "localRaw",
-							"ActionUID": 15554371
+							"ActionUID": 15609555
 						},
 						{
 							"MacroActionType": "SetVariableToText",
 							"Variable": "localUrl",
 							"Text": "https://www.google.com/search?q=%localRaw%",
-							"ActionUID": 15557210
+							"ActionUID": 15609556
 						}
 					]
 				},
 				{
 					"MacroActionType": "IfThenElse",
 					"ActionName": "* ASK YOUTUBE",
-					"ActionUID": 15553580,
+					"ActionUID": 15609557,
 					"IsDisclosed": false,
 					"ElseActions": [],
 					"TimeOutAbortsMacro": true,
@@ -212,7 +288,7 @@
 							"Source": "Variable",
 							"IsDisclosed": false,
 							"Action": "IgnoreCaseRegEx",
-							"ActionUID": 15553583,
+							"ActionUID": 15609558,
 							"Variable": "localRaw",
 							"Replace": "",
 							"Which": "All"
@@ -223,20 +299,20 @@
 							"Source": "Variable",
 							"Action": "PercentEncodeForURL",
 							"Variable": "localRaw",
-							"ActionUID": 15553584
+							"ActionUID": 15609559
 						},
 						{
 							"MacroActionType": "SetVariableToText",
 							"Variable": "localUrl",
 							"Text": "https://www.youtube.com/results?search_query=%localRaw%",
-							"ActionUID": 15557211
+							"ActionUID": 15609560
 						}
 					]
 				},
 				{
 					"MacroActionType": "IfThenElse",
 					"ActionName": "* ASK PERPLEXITY",
-					"ActionUID": 15552395,
+					"ActionUID": 15609561,
 					"IsDisclosed": false,
 					"ElseActions": [],
 					"TimeOutAbortsMacro": true,
@@ -259,7 +335,7 @@
 							"Source": "Variable",
 							"IsDisclosed": false,
 							"Action": "IgnoreCaseRegEx",
-							"ActionUID": 15552396,
+							"ActionUID": 15609562,
 							"Variable": "localRaw",
 							"Replace": "",
 							"Which": "All"
@@ -270,20 +346,20 @@
 							"Source": "Variable",
 							"Action": "PercentEncodeForURL",
 							"Variable": "localRaw",
-							"ActionUID": 15552397
+							"ActionUID": 15609563
 						},
 						{
 							"MacroActionType": "SetVariableToText",
 							"Variable": "localUrl",
 							"Text": "https://www.perplexity.ai/?q=%localRaw%",
-							"ActionUID": 15557212
+							"ActionUID": 15609564
 						}
 					]
 				},
 				{
 					"MacroActionType": "IfThenElse",
 					"ActionName": "* ASK OPENAI",
-					"ActionUID": 15556013,
+					"ActionUID": 15609565,
 					"IsDisclosed": false,
 					"ElseActions": [],
 					"TimeOutAbortsMacro": true,
@@ -306,7 +382,7 @@
 							"Source": "Variable",
 							"IsDisclosed": false,
 							"Action": "IgnoreCaseRegEx",
-							"ActionUID": 15556016,
+							"ActionUID": 15609566,
 							"Variable": "localRaw",
 							"Replace": "",
 							"Which": "All"
@@ -317,20 +393,20 @@
 							"Source": "Variable",
 							"Action": "PercentEncodeForURL",
 							"Variable": "localRaw",
-							"ActionUID": 15556017
+							"ActionUID": 15609567
 						},
 						{
 							"MacroActionType": "SetVariableToText",
 							"Variable": "localUrl",
 							"Text": "https://chat.openai.com/?q=%localRaw%",
-							"ActionUID": 15557213
+							"ActionUID": 15609568
 						}
 					]
 				},
 				{
 					"MacroActionType": "IfThenElse",
 					"ActionName": "* ASK CLAUDE",
-					"ActionUID": 15556020,
+					"ActionUID": 15609569,
 					"IsDisclosed": false,
 					"ElseActions": [],
 					"TimeOutAbortsMacro": true,
@@ -353,7 +429,7 @@
 							"Source": "Variable",
 							"IsDisclosed": false,
 							"Action": "IgnoreCaseRegEx",
-							"ActionUID": 15556023,
+							"ActionUID": 15609570,
 							"Variable": "localRaw",
 							"Replace": "",
 							"Which": "All"
@@ -364,20 +440,20 @@
 							"Source": "Variable",
 							"Action": "PercentEncodeForURL",
 							"Variable": "localRaw",
-							"ActionUID": 15556024
+							"ActionUID": 15609571
 						},
 						{
 							"MacroActionType": "SetVariableToText",
 							"Variable": "localUrl",
 							"Text": "https://claude.ai/new?q=%localRaw%",
-							"ActionUID": 15557214
+							"ActionUID": 15609572
 						}
 					]
 				},
 				{
 					"MacroActionType": "IfThenElse",
 					"ActionName": "* ASK ROTTEN",
-					"ActionUID": 15556814,
+					"ActionUID": 15609573,
 					"IsDisclosed": false,
 					"ElseActions": [],
 					"TimeOutAbortsMacro": true,
@@ -400,7 +476,7 @@
 							"Source": "Variable",
 							"IsDisclosed": false,
 							"Action": "IgnoreCaseRegEx",
-							"ActionUID": 15556817,
+							"ActionUID": 15609574,
 							"Variable": "localRaw",
 							"Replace": "",
 							"Which": "All"
@@ -411,21 +487,21 @@
 							"Source": "Variable",
 							"Action": "PercentEncodeForURL",
 							"Variable": "localRaw",
-							"ActionUID": 15556818
+							"ActionUID": 15609575
 						},
 						{
 							"MacroActionType": "SetVariableToText",
 							"IsDisclosed": false,
 							"Variable": "localUrl",
 							"Text": "https://www.rottentomatoes.com/search?search=%localRaw%",
-							"ActionUID": 15557215
+							"ActionUID": 15609576
 						}
 					]
 				},
 				{
 					"MacroActionType": "IfThenElse",
 					"ActionName": "* ASK LETTERBOXD",
-					"ActionUID": 15557998,
+					"ActionUID": 15609577,
 					"IsDisclosed": false,
 					"ElseActions": [],
 					"TimeOutAbortsMacro": true,
@@ -444,12 +520,11 @@
 					"ThenActions": [
 						{
 							"MacroActionType": "SearchReplace",
-							"Search": "^\\s*(Ask Letterboxd)[^a-zA-Z]?\\s*|\\s*[^a-zA-Z\\s]*\\s*$",
+							"Search": "^\\s*(Ask Letterboxd|Ask Letterboxed)[^a-zA-Z]?\\s*|\\s*[^a-zA-Z\\s]*\\s*$",
 							"Source": "Variable",
-							"IsDisclosed": false,
-							"Action": "IgnoreCaseRegEx",
-							"ActionUID": 15558001,
 							"Variable": "localRaw",
+							"Action": "IgnoreCaseRegEx",
+							"ActionUID": 15609578,
 							"Replace": "",
 							"Which": "All"
 						},
@@ -459,23 +534,23 @@
 							"Source": "Variable",
 							"Action": "PercentEncodeForURL",
 							"Variable": "localRaw",
-							"ActionUID": 15558002
+							"ActionUID": 15609579
 						},
 						{
 							"MacroActionType": "SetVariableToText",
 							"IsDisclosed": false,
 							"Variable": "localUrl",
 							"Text": "https://letterboxd.com/search/%localRaw%",
-							"ActionUID": 15558003
+							"ActionUID": 15609580
 						}
 					]
 				},
 				{
 					"MacroActionType": "IfThenElse",
-					"ActionName": "For Web Commands, open URL",
-					"ActionUID": 15570986,
+					"ActionName": "👆️ Open URL - Web searches should be above this 👆️",
+					"ActionUID": 15609581,
 					"IsDisclosed": false,
-					"ActionColor": "Red",
+					"ActionColor": "Magenta",
 					"ElseActions": [],
 					"TimeOutAbortsMacro": true,
 					"Conditions": {
@@ -497,23 +572,22 @@
 							"TimeOutAbortsMacro": true,
 							"URL": "%localUrl%",
 							"IsDefaultApplication": true,
-							"ActionUID": 15556028
+							"ActionUID": 15609582
 						}
 					]
 				},
 				{
 					"MacroActionType": "Comment",
 					"Title": "About Commands with Result",
-					"ActionName": "ABOUT COMMANDS WITH RESULT 👇️",
-					"ActionUID": 15554824,
+					"ActionName": "👆️ ABOUT COMMANDS WITH RESULT 👇️",
 					"IsDisclosed": false,
-					"ActionColor": "Orange",
-					"StyledText": "\n\t\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\t\tcnRmZAAAAAAD\n\t\t\t\t\t\t\t\tAAAAAgAAAAcA\n\t\t\t\t\t\t\t\tAABUWFQucnRm\n\t\t\t\t\t\t\t\tAQAAAC5YBAAA\n\t\t\t\t\t\t\t\tKwAAAAEAAABQ\n\t\t\t\t\t\t\t\tBAAAe1xydGYx\n\t\t\t\t\t\t\t\tXGFuc2lcYW5z\n\t\t\t\t\t\t\t\taWNwZzEyNTJc\n\t\t\t\t\t\t\t\tY29jb2FydGYy\n\t\t\t\t\t\t\t\tODIxClxjb2Nv\n\t\t\t\t\t\t\t\tYXRleHRzY2Fs\n\t\t\t\t\t\t\t\taW5nMFxjb2Nv\n\t\t\t\t\t\t\t\tYXBsYXRmb3Jt\n\t\t\t\t\t\t\t\tMHtcZm9udHRi\n\t\t\t\t\t\t\t\tbFxmMFxmc3dp\n\t\t\t\t\t\t\t\tc3NcZmNoYXJz\n\t\t\t\t\t\t\t\tZXQwIEhlbHZl\n\t\t\t\t\t\t\t\tdGljYTt9Cntc\n\t\t\t\t\t\t\t\tY29sb3J0Ymw7\n\t\t\t\t\t\t\t\tXHJlZDI1NVxn\n\t\t\t\t\t\t\t\tcmVlbjI1NVxi\n\t\t\t\t\t\t\t\tbHVlMjU1O1xy\n\t\t\t\t\t\t\t\tZWQwXGdyZWVu\n\t\t\t\t\t\t\t\tMFxibHVlMDt9\n\t\t\t\t\t\t\t\tCntcKlxleHBh\n\t\t\t\t\t\t\t\tbmRlZGNvbG9y\n\t\t\t\t\t\t\t\tdGJsOztcY3Nz\n\t\t\t\t\t\t\t\tcmdiXGMwXGMw\n\t\t\t\t\t\t\t\tXGMwXGM4NDcw\n\t\t\t\t\t\t\t\tNlxjbmFtZSBj\n\t\t\t\t\t\t\t\tb250cm9sVGV4\n\t\t\t\t\t\t\t\tdENvbG9yO30K\n\t\t\t\t\t\t\t\tXHBhcmRcdHg1\n\t\t\t\t\t\t\t\tNjBcdHgxMTIw\n\t\t\t\t\t\t\t\tXHR4MTY4MFx0\n\t\t\t\t\t\t\t\teDIyNDBcdHgy\n\t\t\t\t\t\t\t\tODAwXHR4MzM2\n\t\t\t\t\t\t\t\tMFx0eDM5MjBc\n\t\t\t\t\t\t\t\tdHg0NDgwXHR4\n\t\t\t\t\t\t\t\tNTA0MFx0eDU2\n\t\t\t\t\t\t\t\tMDBcdHg2MTYw\n\t\t\t\t\t\t\t\tXHR4NjcyMFxw\n\t\t\t\t\t\t\t\tYXJkaXJuYXR1\n\t\t\t\t\t\t\t\tcmFsXHBhcnRp\n\t\t\t\t\t\t\t\tZ2h0ZW5mYWN0\n\t\t\t\t\t\t\t\tb3IwCgpcZjBc\n\t\t\t\t\t\t\t\tZnMyNiBcY2Yy\n\t\t\t\t\t\t\t\tIFNpbXBsZSBj\n\t\t\t\t\t\t\t\tb21tYW5kcywg\n\t\t\t\t\t\t\t\tc3VjaCBhcyBV\n\t\t\t\t\t\t\t\tUkwgc2VhcmNo\n\t\t\t\t\t\t\t\tZXMsIGRvIHRh\n\t\t\t\t\t\t\t\ta2UgaW50byBh\n\t\t\t\t\t\t\t\tY2NvdW50IHRo\n\t\t\t\t\t\t\t\tZSBMTE0gcmVz\n\t\t\t\t\t\t\t\tdWx0LiBVc2lu\n\t\t\t\t\t\t\t\tZyBzaW1wbGUg\n\t\t\t\t\t\t\t\tbW9kZXMgd2l0\n\t\t\t\t\t\t\t\taG91dCBBSSBw\n\t\t\t\t\t\t\t\tcm9jZXNzaW5n\n\t\t\t\t\t\t\t\tIHdvcmsgYmVz\n\t\t\t\t\t\t\t\tdC4gVGhlIHRl\n\t\t\t\t\t\t\t\teHQgc2VudCB0\n\t\t\t\t\t\t\t\tbyB0aGUgVVJM\n\t\t\t\t\t\t\t\tIHdpbGwgYmUg\n\t\t\t\t\t\t\t\tdGhlIHJhdyB0\n\t\t\t\t\t\t\t\tZXh0IGRpY3Rh\n\t\t\t\t\t\t\t\tdGVkIGJ5IHRo\n\t\t\t\t\t\t\t\tZSB1c2VyXCc5\n\t\t\t\t\t\t\t\tN3dpdGggdGhl\n\t\t\t\t\t\t\t\tIGFjdHVhbCBj\n\t\t\t\t\t\t\t\tb21tYW5kIHJl\n\t\t\t\t\t\t\t\tbW92ZWQgYnkg\n\t\t\t\t\t\t\t\tcmVnZXguIElu\n\t\t\t\t\t\t\t\tIGNvbW1hbmRz\n\t\t\t\t\t\t\t\tIHdoZXJlIHRo\n\t\t\t\t\t\t\t\tZXJlIGlzIGVp\n\t\t\t\t\t\t\t\tdGhlciBMTE0g\n\t\t\t\t\t\t\t\tUHJvY2Vzc2lu\n\t\t\t\t\t\t\t\tZyAoaW4gdmFy\n\t\t\t\t\t\t\t\taWFibGUgJWxv\n\t\t\t\t\t\t\t\tY2FsUmVzdWx0\n\t\t\t\t\t\t\t\tJSkgb3IgYSBj\n\t\t\t\t\t\t\t\tbGVhbiBkaWN0\n\t\t\t\t\t\t\t\tYXRpb24gKGlu\n\t\t\t\t\t\t\t\tIHZhcmlhYmxl\n\t\t\t\t\t\t\t\tICVsb2NhbFBy\n\t\t\t\t\t\t\t\tb21wdCUpIHRo\n\t\t\t\t\t\t\t\tYXQgbmVlZHMg\n\t\t\t\t\t\t\t\tdG8gYmUgcGFz\n\t\t\t\t\t\t\t\tc2VkIHRvIGFu\n\t\t\t\t\t\t\t\tb3RoZXIgS2V5\n\t\t\t\t\t\t\t\tYm9hcmQgTWFl\n\t\t\t\t\t\t\t\tc3RybyBhY3Rp\n\t\t\t\t\t\t\t\tb24sIGJlIGF3\n\t\t\t\t\t\t\t\tYXJlIHRoYXQg\n\t\t\t\t\t\t\t\tdGhpcyB2b2lj\n\t\t\t\t\t\t\t\tZSBjb21tYW5k\n\t\t\t\t\t\t\t\tIHdpbGwgYWxz\n\t\t\t\t\t\t\t\tbyBiZSBwYXNz\n\t\t\t\t\t\t\t\tZWQgdG8gdGhl\n\t\t\t\t\t\t\t\tIExMTSBhbmQg\n\t\t\t\t\t\t\t\tY291bGQgcG90\n\t\t\t\t\t\t\t\tZW50aWFsbHkg\n\t\t\t\t\t\t\t\tYWZmZWN0IHRo\n\t\t\t\t\t\t\t\tZSBxdWFsaXR5\n\t\t\t\t\t\t\t\tIG9mIHRoZSBy\n\t\t\t\t\t\t\t\tZXNwb25zZSB5\n\t\t\t\t\t\t\t\tb3UgZ2V0IGZy\n\t\t\t\t\t\t\t\tb20gaXQuIEN1\n\t\t\t\t\t\t\t\tcnJlbnRseSwg\n\t\t\t\t\t\t\t\tdGhlcmUncyBu\n\t\t\t\t\t\t\t\tbyB3b3JrYXJv\n\t\t\t\t\t\t\t\tdW5kIGZvciB0\n\t\t\t\t\t\t\t\taGlzLlwKXApC\n\t\t\t\t\t\t\t\tZWxvdywgdGhl\n\t\t\t\t\t\t\t\tcmUncyBvbmUg\n\t\t\t\t\t\t\t\tZXhhbXBsZSBv\n\t\t\t\t\t\t\t\tZiBhIFNob3J0\n\t\t\t\t\t\t\t\tY3V0IEkgaGF2\n\t\t\t\t\t\t\t\tZSBzZXR1cCB0\n\t\t\t\t\t\t\t\tbyBjcmVhdGUg\n\t\t\t\t\t\t\t\tYSBub3RlIHdp\n\t\t\t\t\t\t\t\tdGggYm90aCBt\n\t\t\t\t\t\t\t\teSB2b2ljZSBj\n\t\t\t\t\t\t\t\tb21tYW5kIGFu\n\t\t\t\t\t\t\t\tZCB0aGUgTExN\n\t\t\t\t\t\t\t\tIFJlc3VsdC59\n\t\t\t\t\t\t\t\tAQAAACMAAAAB\n\t\t\t\t\t\t\t\tAAAABwAAAFRY\n\t\t\t\t\t\t\t\tVC5ydGYQAAAA\n\t\t\t\t\t\t\t\tB9yJZ7YBAAAA\n\t\t\t\t\t\t\t\tAAAAAAAAAA==\n\t\t\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\t\t"
+					"StyledText": "\n\t\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\t\tcnRmZAAAAAAD\n\t\t\t\t\t\t\t\tAAAAAgAAAAcA\n\t\t\t\t\t\t\t\tAABUWFQucnRm\n\t\t\t\t\t\t\t\tAQAAAC7YBAAA\n\t\t\t\t\t\t\t\tKwAAAAEAAADQ\n\t\t\t\t\t\t\t\tBAAAe1xydGYx\n\t\t\t\t\t\t\t\tXGFuc2lcYW5z\n\t\t\t\t\t\t\t\taWNwZzEyNTJc\n\t\t\t\t\t\t\t\tY29jb2FydGYy\n\t\t\t\t\t\t\t\tODIyClxjb2Nv\n\t\t\t\t\t\t\t\tYXRleHRzY2Fs\n\t\t\t\t\t\t\t\taW5nMFxjb2Nv\n\t\t\t\t\t\t\t\tYXBsYXRmb3Jt\n\t\t\t\t\t\t\t\tMHtcZm9udHRi\n\t\t\t\t\t\t\t\tbFxmMFxmc3dp\n\t\t\t\t\t\t\t\tc3NcZmNoYXJz\n\t\t\t\t\t\t\t\tZXQwIEhlbHZl\n\t\t\t\t\t\t\t\tdGljYTt9Cntc\n\t\t\t\t\t\t\t\tY29sb3J0Ymw7\n\t\t\t\t\t\t\t\tXHJlZDI1NVxn\n\t\t\t\t\t\t\t\tcmVlbjI1NVxi\n\t\t\t\t\t\t\t\tbHVlMjU1O1xy\n\t\t\t\t\t\t\t\tZWQwXGdyZWVu\n\t\t\t\t\t\t\t\tMFxibHVlMDt9\n\t\t\t\t\t\t\t\tCntcKlxleHBh\n\t\t\t\t\t\t\t\tbmRlZGNvbG9y\n\t\t\t\t\t\t\t\tdGJsOztcY3Nz\n\t\t\t\t\t\t\t\tcmdiXGMwXGMw\n\t\t\t\t\t\t\t\tXGMwXGM4NDcw\n\t\t\t\t\t\t\t\tNlxjbmFtZSBj\n\t\t\t\t\t\t\t\tb250cm9sVGV4\n\t\t\t\t\t\t\t\tdENvbG9yO30K\n\t\t\t\t\t\t\t\tXHBhcmRcdHg1\n\t\t\t\t\t\t\t\tNjBcdHgxMTIw\n\t\t\t\t\t\t\t\tXHR4MTY4MFx0\n\t\t\t\t\t\t\t\teDIyNDBcdHgy\n\t\t\t\t\t\t\t\tODAwXHR4MzM2\n\t\t\t\t\t\t\t\tMFx0eDM5MjBc\n\t\t\t\t\t\t\t\tdHg0NDgwXHR4\n\t\t\t\t\t\t\t\tNTA0MFx0eDU2\n\t\t\t\t\t\t\t\tMDBcdHg2MTYw\n\t\t\t\t\t\t\t\tXHR4NjcyMFxw\n\t\t\t\t\t\t\t\tYXJkaXJuYXR1\n\t\t\t\t\t\t\t\tcmFsXHBhcnRp\n\t\t\t\t\t\t\t\tZ2h0ZW5mYWN0\n\t\t\t\t\t\t\t\tb3IwCgpcZjBc\n\t\t\t\t\t\t\t\tZnMyNiBcY2Yy\n\t\t\t\t\t\t\t\tIEZvciBzaW1w\n\t\t\t\t\t\t\t\tbGUgd2ViIHNl\n\t\t\t\t\t\t\t\tYXJjaGVzLCBz\n\t\t\t\t\t\t\t\taW5jZSBubyBM\n\t\t\t\t\t\t\t\tTE0gaXMgbmVj\n\t\t\t\t\t\t\t\tZXNzYXJ5LCBW\n\t\t\t\t\t\t\t\tb2ljZS1vbmx5\n\t\t\t\t\t\t\t\tIG1vZGVzIHdp\n\t\t\t\t\t\t\t\tbGwgd29yayBi\n\t\t\t\t\t\t\t\tZXN0LiBUaGUg\n\t\t\t\t\t\t\t\tdGV4dCB1c2Vk\n\t\t\t\t\t\t\t\tIHdpbGwgYmUg\n\t\t\t\t\t\t\t\tdGhlIHJhdyB0\n\t\t\t\t\t\t\t\tZXh0IGRpY3Rh\n\t\t\t\t\t\t\t\tdGVkIGJ5IHRo\n\t\t\t\t\t\t\t\tZSB1c2VyXCc5\n\t\t\t\t\t\t\t\tN3dpdGggdGhl\n\t\t\t\t\t\t\t\tIGFjdHVhbCBj\n\t\t\t\t\t\t\t\tb21tYW5kIHJl\n\t\t\t\t\t\t\t\tbW92ZWQgYnkg\n\t\t\t\t\t\t\t\tcmVnZXguXApc\n\t\t\t\t\t\t\t\tCkZvciBvdGhl\n\t\t\t\t\t\t\t\tciBjb21tYW5k\n\t\t\t\t\t\t\t\tcyB3aGVyZSB0\n\t\t\t\t\t\t\t\taGVyZSBpcyBl\n\t\t\t\t\t\t\t\taXRoZXIgTExN\n\t\t\t\t\t\t\t\tIFByb2Nlc3Np\n\t\t\t\t\t\t\t\tbmcgKGluIHZh\n\t\t\t\t\t\t\t\tcmlhYmxlICVs\n\t\t\t\t\t\t\t\tb2NhbFJlc3Vs\n\t\t\t\t\t\t\t\tdCUpIG9yIGEg\n\t\t\t\t\t\t\t\tY2xlYW4gZGlj\n\t\t\t\t\t\t\t\tdGF0aW9uIChp\n\t\t\t\t\t\t\t\tbiB2YXJpYWJs\n\t\t\t\t\t\t\t\tZSAlbG9jYWxQ\n\t\t\t\t\t\t\t\tcm9tcHQlKSB0\n\t\t\t\t\t\t\t\taGF0IG5lZWRz\n\t\t\t\t\t\t\t\tIHRvIGJlIHBh\n\t\t\t\t\t\t\t\tc3NlZCB0byBh\n\t\t\t\t\t\t\t\tbm90aGVyIEtl\n\t\t\t\t\t\t\t\teWJvYXJkIE1h\n\t\t\t\t\t\t\t\tZXN0cm8gYWN0\n\t\t\t\t\t\t\t\taW9uLCBiZSBh\n\t\t\t\t\t\t\t\td2FyZSB0aGF0\n\t\t\t\t\t\t\t\tIHRoaXMgdm9p\n\t\t\t\t\t\t\t\tY2UgY29tbWFu\n\t\t\t\t\t\t\t\tZCB3aWxsIGFs\n\t\t\t\t\t\t\t\tc28gYmUgcGFz\n\t\t\t\t\t\t\t\tc2VkIHRvIHRo\n\t\t\t\t\t\t\t\tZSBMTE0gYW5k\n\t\t\t\t\t\t\t\tIGNvdWxkIHBv\n\t\t\t\t\t\t\t\tdGVudGlhbGx5\n\t\t\t\t\t\t\t\tIGFmZmVjdCB0\n\t\t\t\t\t\t\t\taGUgcXVhbGl0\n\t\t\t\t\t\t\t\teSBvZiB0aGUg\n\t\t\t\t\t\t\t\tcmVzcG9uc2Ug\n\t\t\t\t\t\t\t\teW91IGdldCBm\n\t\t\t\t\t\t\t\tcm9tIGl0LiBD\n\t\t\t\t\t\t\t\tdXJyZW50bHks\n\t\t\t\t\t\t\t\tIHRoZXJlJ3Mg\n\t\t\t\t\t\t\t\tbm8gd29ya2Fy\n\t\t\t\t\t\t\t\tb3VuZCBmb3Ig\n\t\t\t\t\t\t\t\tdGhpcyAob3Ro\n\t\t\t\t\t\t\t\tZXIgdGhhbiBh\n\t\t\t\t\t\t\t\tc2tpbmcgdGhl\n\t\t\t\t\t\t\t\tIExMTSB0byBp\n\t\t\t\t\t\t\t\tZ25vcmUgaXRc\n\t\t\t\t\t\t\t\tJzk3d2hpY2gg\n\t\t\t\t\t\t\t\tSSBkbykuXApc\n\t\t\t\t\t\t\t\tCkJlbG93LCB0\n\t\t\t\t\t\t\t\taGVyZSdzIG9u\n\t\t\t\t\t\t\t\tZSBleGFtcGxl\n\t\t\t\t\t\t\t\tIG9mIGEgU2hv\n\t\t\t\t\t\t\t\tcnRjdXQgSSBo\n\t\t\t\t\t\t\t\tYXZlIHNldHVw\n\t\t\t\t\t\t\t\tIHRvIGNyZWF0\n\t\t\t\t\t\t\t\tZSBhIG5vdGUg\n\t\t\t\t\t\t\t\td2l0aCBib3Ro\n\t\t\t\t\t\t\t\tIG15IHZvaWNl\n\t\t\t\t\t\t\t\tIGNvbW1hbmQg\n\t\t\t\t\t\t\t\tYW5kIHRoZSBM\n\t\t\t\t\t\t\t\tTE0gUmVzdWx0\n\t\t\t\t\t\t\t\tLiBZb3UgaGF2\n\t\t\t\t\t\t\t\tZSB0aGUgZm9s\n\t\t\t\t\t\t\t\tbG93aW5nIHZh\n\t\t\t\t\t\t\t\tcmlhYmxlcyB5\n\t\t\t\t\t\t\t\tb3UgY2FuIHBh\n\t\t\t\t\t\t\t\tc3MgdG8gYW55\n\t\t\t\t\t\t\t\tIFNob3J0Y3V0\n\t\t\t\t\t\t\t\tIG9yIGFjdGlv\n\t\t\t\t\t\t\t\tbjpcClwKJWxv\n\t\t\t\t\t\t\t\tY2FsUmF3JVwK\n\t\t\t\t\t\t\t\tJWxvY2FsUHJv\n\t\t\t\t\t\t\t\tbXB0JVwKJWxv\n\t\t\t\t\t\t\t\tY2FsUmVzdWx0\n\t\t\t\t\t\t\t\tJX0BAAAAIwAA\n\t\t\t\t\t\t\t\tAAEAAAAHAAAA\n\t\t\t\t\t\t\t\tVFhULnJ0ZhAA\n\t\t\t\t\t\t\t\tAAAAc/1ntgEA\n\t\t\t\t\t\t\t\tAAAAAAAAAAAA\n\t\t\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\t\t",
+					"ActionUID": 15609583
 				},
 				{
 					"MacroActionType": "IfThenElse",
 					"ActionName": "* MAKE NOTE",
-					"ActionUID": 15551607,
+					"ActionUID": 15609584,
 					"IsDisclosed": false,
 					"ElseActions": [],
 					"TimeOutAbortsMacro": true,
@@ -534,15 +608,16 @@
 							"MacroActionType": "SearchReplace",
 							"Search": "^\\s*(Make note)[^a-zA-Z]?\\s*",
 							"Source": "Variable",
-							"Variable": "localPrompt",
+							"IsDisclosed": false,
 							"Action": "IgnoreCaseRegEx",
-							"ActionUID": 15570988,
+							"ActionUID": 15609585,
+							"Variable": "localRaw",
 							"Replace": "...",
 							"Which": "All"
 						},
 						{
 							"MacroActionType": "ExecuteJavaScriptForAutomation",
-							"ActionName": "Escape Result",
+							"ActionName": "Escape Result - To avoid issues in the dictionary below",
 							"IncludedVariables": [
 								"9999"
 							],
@@ -551,12 +626,13 @@
 							"Variable": "localResult",
 							"IncludeStdErr": false,
 							"UseModernSyntax": false,
-							"ActionUID": 15570987,
+							"ActionUID": 15609586,
 							"UseText": true,
 							"TrimResultsNew": true,
 							"TimeOutAbortsMacro": true,
 							"Path": "",
 							"DisplayKind": "Variable",
+							"IsDisclosed": false,
 							"HonourFailureSettings": true,
 							"Text": "(function(inDesignMode, designModeParams) {\n\t'use strict';\n    const _kme = Application(\"Keyboard Maestro Engine\");\n    const _currentApp = Application.currentApplication();\n    _currentApp.includeStandardAdditions = true;\n\n\tfunction getKMVariable(name, required) {\n\t\tvar result = undefined;\n\t\tif (inDesignMode && designModeParams)\n\t\t\tresult = designModeParams[name];\n\t\tif (result === undefined) {\n            if (name.match(/^Instance|^local/)) {\n                var inst = _currentApp.systemAttribute(\"KMINSTANCE\");\n                result = _kme.getvariable(name, {instance: inst});\n            } else {\n                result = _kme.getvariable(name);\n            }\n        }\n        if (required && !result)\n\t\t\tthrow new Error(\"Variable '\" + name + \"' is empty\");\n\t\treturn result;\n\t}\n\t// #endregion\n\nfunction execute() {\n    var str = getKMVariable(\"localResult\", true);\n    str = str.replace(/[\\u201C\\u201D]/g, '\"');\n    return JSON.stringify(str).slice(1, -1);\n}\n\n\ttry {\n\t\treturn execute();\n\t} catch (e) {\n\t\treturn \"Error on line: \" + e.line + \": \" + e.message;\n\t}\n\n})(false);",
 							"NotifyOnFailure": false
@@ -565,37 +641,82 @@
 							"MacroActionType": "ExecuteShortcut",
 							"Source": "Text",
 							"ExecuteOrEdit": "Execute",
-							"ActionUID": 15551613,
+							"ActionUID": 15609587,
 							"TimeOutAbortsMacro": true,
 							"TrimResults": true,
 							"Shortcut": "AI Memos",
 							"IncludeStdErr": false,
 							"DisplayKind": "None",
-							"SourceText": "{\"cmd\": \"process\",\"details\": \"%ICUDateTime%yyMMdd_hhmmss%\",\"memo\": \"%localResult%\",\"rawMemo\": \"%localPrompt%\",\"specialCase\": \"Yes\"}"
+							"SourceText": "{\"cmd\": \"process\",\"details\": \"%ICUDateTime%yyMMdd_hhmmss%\",\"memo\": \"%localResult%\",\"rawMemo\": \"%localRaw%\",\"specialCase\": \"Yes\"}"
+						}
+					]
+				},
+				{
+					"MacroActionType": "IfThenElse",
+					"ActionName": "* SAMPLE SHORTCUT",
+					"ActionUID": 15613274,
+					"IsDisclosed": false,
+					"ElseActions": [],
+					"TimeOutAbortsMacro": true,
+					"Conditions": {
+						"ConditionListMatch": "All",
+						"ConditionList": [
+							{
+								"ConditionType": "Variable",
+								"VariableValue": "(?i)^\\s*(Make sample)",
+								"Variable": "localRaw",
+								"VariableConditionType": "Matches"
+							}
+						]
+					},
+					"ElseActionListDisclosed": false,
+					"ThenActions": [
+						{
+							"MacroActionType": "SearchReplace",
+							"Search": "^\\s*(Make sample)[^a-zA-Z]?\\s*",
+							"Source": "Variable",
+							"IsDisclosed": false,
+							"Action": "IgnoreCaseRegEx",
+							"ActionUID": 15613278,
+							"Variable": "localResult",
+							"Replace": "...",
+							"Which": "All"
+						},
+						{
+							"MacroActionType": "ExecuteShortcut",
+							"ActionUID": 15613277,
+							"ExecuteOrEdit": "Execute",
+							"IsDisclosed": false,
+							"Source": "Variable",
+							"SourceVariable": "localResult",
+							"TimeOutAbortsMacro": true,
+							"Shortcut": "AI Memos",
+							"TrimResults": true,
+							"IncludeStdErr": false,
+							"DisplayKind": "None"
 						}
 					]
 				},
 				{
 					"MacroActionType": "Cancel",
-					"ActionName": "Cancel Just This Macro for all voice commands",
+					"ActionName": "Cancel macro after voice command is performed",
 					"IsDisclosed": false,
 					"Action": "CancelJustThisMacro",
-					"ActionColor": "Red",
-					"ActionUID": 15554373
+					"ActionUID": 15609588
 				}
 			]
 		},
 		{
 			"MacroActionType": "IfThenElse",
-			"ActionName": "Only continue if there's an active Action Mode",
-			"ActionUID": 15549947,
+			"ActionName": "Only continue if there's an active \"Action Mode\"",
+			"ActionUID": 15609589,
 			"IsDisclosed": false,
 			"ElseActions": [
 				{
 					"MacroActionType": "Cancel",
 					"IsDisclosed": false,
 					"Action": "CancelThisMacro",
-					"ActionUID": 15549948
+					"ActionUID": 15609590
 				}
 			],
 			"ThenActionListDisclosed": false,
@@ -617,42 +738,58 @@
 					}
 				]
 			},
-			"ElseActionListDisclosed": false,
 			"ThenActions": []
 		},
 		{
 			"MacroActionType": "ExecuteAppleScript",
-			"ActionName": "Executes same as following conditions, but faster",
+			"ActionName": "Closes window and performs action mode's action",
 			"IncludedVariables": [
 				"9999"
 			],
 			"TrimResults": true,
 			"IncludeStdErr": false,
-			"ActionUID": 15602793,
+			"ActionUID": 15609591,
 			"UseText": true,
 			"TrimResultsNew": true,
+			"ActionColor": "Green",
 			"TimeOutAbortsMacro": true,
 			"Path": "",
 			"DisplayKind": "None",
 			"IsDisclosed": false,
 			"HonourFailureSettings": true,
-			"Text": "tell application \"System Events\"\r\tkey code 53 -- 53 is the key code for the Escape key\rend tell\rset kmInst to system attribute \"KMINSTANCE\"\rtell application \"Keyboard Maestro Engine\"\r\tset sw_actionMode to getvariable \"sw_actionMode\"\r\tset sw_autoReturn to getvariable \"sw_autoReturn\"\r\tset prompt to getvariable \"localPrompt\" instance kmInst\r\tset result to getvariable \"localResult\" instance kmInst\rend tell\r\rif sw_actionMode is \"pasteChat\" then\r\tset textToPaste to \"## USER\" & return & prompt & return & return & \"## AI\" & return & result & return & return & \"---\" & return\relse if sw_actionMode is \"pasteResult\" or sw_actionMode is \"\" then\r\tset textToPaste to result\relse if sw_actionMode is \"pasteText\" then\r\tset textToPaste to return & \"## AI\" & return & result & return & return & \"---\" & return & \"## USER\" & return\rend if\r\rset the clipboard to textToPaste\rdelay .02\n\rtell application \"System Events\" to keystroke \"v\" using command down\r\rif sw_autoReturn is \"on\" then\r\tdelay 0.02\r\ttell application \"System Events\" to keystroke return\r\ttell application \"Keyboard Maestro Engine\" to setvariable \"sw_autoReturn\" to \"off\"\rend if"
+			"Text": "tell application \"System Events\"\r\tkey code 53 -- 53 is the key code for the Escape key\rend tell\rset kmInst to system attribute \"KMINSTANCE\"\rtell application \"Keyboard Maestro Engine\"\r\tset sw_actionMode to getvariable \"sw_actionMode\"\r\tset sw_autoReturn to getvariable \"sw_autoReturn\"\r\tset voice to getvariable \"localVoice\" instance kmInst\r\tset result to getvariable \"localResult\" instance kmInst\rend tell\r\rif sw_actionMode is \"pasteChat\" then\r\tset textToPaste to \"## USER\" & return & voice & return & return & \"## AI\" & return & result & return & return & \"---\" & return\relse if sw_actionMode is \"pasteResult\" or sw_actionMode is \"\" then\r\tset textToPaste to result\relse if sw_actionMode is \"textChat\" then\r\tset textToPaste to return & \"## AI\" & return & result & return & return & \"---\" & return & \"## USER\" & return\rend if\r\rset the clipboard to textToPaste\rdelay 0.02\r\rtell application \"System Events\" to keystroke \"v\" using command down\r\rif sw_autoReturn is \"on\" then\r\tdelay 0.15\r\ttell application \"System Events\" to keystroke return\r\ttell application \"Keyboard Maestro Engine\" to setvariable \"sw_autoReturn\" to \"off\"\rend if"
 		},
 		{
 			"MacroActionType": "Pause",
 			"IsDisclosed": false,
 			"TimeOutAbortsMacro": true,
-			"Time": "0.5",
-			"ActionUID": 15605541
+			"Time": ".5",
+			"ActionUID": 15609592
 		},
 		{
-			"MacroActionType": "SetClipboardToText",
+			"MacroActionType": "DeletePastClipboard",
+			"ActionName": "Clears Clipboard from KM",
 			"IsDisclosed": false,
-			"JustDisplay": false,
-			"Text": "%localClipboard%",
-			"ActionUID": 15576952
+			"NotifyOnFailure": false,
+			"PastExpression": "0",
+			"ActionUID": 15610078
+		},
+		{
+			"MacroActionType": "DeletePastClipboard",
+			"ActionName": "Clears Clipboard from SW",
+			"IsDisclosed": false,
+			"NotifyOnFailure": false,
+			"PastExpression": "0",
+			"ActionUID": 15610079
+		},
+		{
+			"MacroActionType": "Semaphore",
+			"IsDisclosed": false,
+			"SemaphoreAction": "Unlock",
+			"SemaphoreName": "Trigger - Meta",
+			"ActionUID": 15610471
 		}
 	],
-	"Name": "SW Action_Action",
-	"CustomIconData": "KMEC=Rounded=KMCOLOR:0,0,255,0=🔮=86=0=0=1=KMCOLOR:0,0,0,255"
+	"Name": "Trigger - Meta",
+	"CustomIconData": "KMEC=Rounded=KMCOLOR:0,0,255,0=🔆=86=0=0=1=KMCOLOR:0,0,0,255"
 }

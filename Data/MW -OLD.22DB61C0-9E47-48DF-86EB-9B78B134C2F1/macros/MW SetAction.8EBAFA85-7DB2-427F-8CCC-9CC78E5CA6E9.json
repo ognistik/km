@@ -1,7 +1,7 @@
 {
 	"UID": "8EBAFA85-7DB2-427F-8CCC-9CC78E5CA6E9",
 	"CreationDate": 751177102.296912,
-	"ModificationDate": 766669544.545494,
+	"ModificationDate": 770767138.825022,
 	"Triggers": [
 		{
 			"AutoRun": false,
@@ -9,6 +9,7 @@
 			"MacroTriggerType": "GroupStatusMenu"
 		}
 	],
+	"IsActive": false,
 	"Actions": [
 		{
 			"MacroActionType": "Comment",
@@ -35,7 +36,6 @@
 				{
 					"MacroActionType": "SetVariableToText",
 					"ActionName": "Will proceed to set action mode.",
-					"IsDisclosed": false,
 					"Variable": "sw_actionMode",
 					"Text": "%TriggerValue%",
 					"ActionUID": 15609641
@@ -45,7 +45,6 @@
 					"ActionName": "Update MW Menu Bar",
 					"MacroUID": "EBECEC76-6E27-4839-B873-3AC55158B3F4",
 					"NotifyOnFailure": false,
-					"IsDisclosed": false,
 					"ActionUID": 15609648,
 					"TimeOutAbortsMacro": true,
 					"UseParameter": false,

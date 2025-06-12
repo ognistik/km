@@ -1,20 +1,18 @@
 {
 	"CreationDate": 740181822.845748,
-	"UID": "B7086F5E-8E00-4646-891C-84E4B31A63EA",
-	"Name": "rcmd: Craft",
+	"UID": "E5D225F2-0A88-4949-AE3E-451529672DC3",
+	"Name": "rcmd: XCode",
 	"Triggers": [],
-	"ModificationDate": 769743769.714495,
+	"ModificationDate": 770350297.688649,
 	"Actions": [
 		{
 			"MacroActionType": "SetVariableToText",
 			"Variable": "localAction",
 			"Text": "%TriggerValue%",
-			"ActionUID": 15605938
+			"ActionUID": 15620860
 		},
 		{
 			"MacroActionType": "IfThenElse",
-			"ActionUID": 15605939,
-			"TimeOutAbortsMacro": true,
 			"ElseActions": [
 				{
 					"MacroActionType": "IfThenElse",
@@ -57,31 +55,31 @@
 																					"ThenActions": [
 																						{
 																							"MacroActionType": "ActivateApplication",
-																							"ActionUID": 15605981,
+																							"ActionUID": 15620903,
 																							"ReopenWindows": false,
 																							"AllWindows": true,
 																							"TimeOutAbortsMacro": true,
 																							"AlreadyActivatedActionType": "BringAllWindows",
 																							"Application": {
-																								"BundleIdentifier": "com.lukilabs.lukiapp",
-																								"Name": "Craft",
-																								"NewFile": "/Applications/Craft.app"
+																								"BundleIdentifier": "com.apple.dt.Xcode",
+																								"Name": "XCode",
+																								"NewFile": "/Applications/Xcode.app"
 																							}
 																						},
 																						{
 																							"MacroActionType": "Pause",
 																							"TimeOutAbortsMacro": true,
 																							"Time": ".3",
-																							"ActionUID": 15605982
+																							"ActionUID": 15620904
 																						},
 																						{
 																							"MacroActionType": "HideOthers",
-																							"ActionUID": 15605983,
+																							"ActionUID": 15620905,
 																							"HonorExcluded": true
 																						}
 																					],
 																					"TimeOutAbortsMacro": true,
-																					"ActionUID": 15605980
+																					"ActionUID": 15620902
 																				}
 																			],
 																			"Conditions": {
@@ -98,20 +96,20 @@
 																			"ThenActions": [
 																				{
 																					"MacroActionType": "ActivateApplication",
-																					"ActionUID": 15605979,
+																					"ActionUID": 15620901,
 																					"ReopenWindows": false,
 																					"AllWindows": true,
 																					"TimeOutAbortsMacro": true,
 																					"AlreadyActivatedActionType": "BringAllWindows",
 																					"Application": {
-																						"BundleIdentifier": "com.lukilabs.lukiapp",
-																						"Name": "Craft",
-																						"NewFile": "/Applications/Craft.app"
+																						"BundleIdentifier": "com.apple.dt.Xcode",
+																						"Name": "XCode",
+																						"NewFile": "/Applications/Xcode.app"
 																					}
 																				}
 																			],
 																			"TimeOutAbortsMacro": true,
-																			"ActionUID": 15605978
+																			"ActionUID": 15620900
 																		}
 																	],
 																	"Conditions": {
@@ -128,31 +126,31 @@
 																	"ThenActions": [
 																		{
 																			"MacroActionType": "ActivateApplication",
-																			"ActionUID": 15605975,
+																			"ActionUID": 15620897,
 																			"ReopenWindows": false,
 																			"AllWindows": true,
 																			"TimeOutAbortsMacro": true,
 																			"AlreadyActivatedActionType": "BringAllWindows",
 																			"Application": {
-																				"BundleIdentifier": "com.lukilabs.lukiapp",
-																				"Name": "Craft",
-																				"NewFile": "/Applications/Craft.app"
+																				"BundleIdentifier": "com.apple.dt.Xcode",
+																				"Name": "XCode",
+																				"NewFile": "/Applications/Xcode.app"
 																			}
 																		},
 																		{
 																			"MacroActionType": "Pause",
 																			"TimeOutAbortsMacro": true,
 																			"Time": ".3",
-																			"ActionUID": 15605976
+																			"ActionUID": 15620898
 																		},
 																		{
 																			"MacroActionType": "HideOthers",
-																			"ActionUID": 15605977,
+																			"ActionUID": 15620899,
 																			"HonorExcluded": true
 																		}
 																	],
 																	"TimeOutAbortsMacro": true,
-																	"ActionUID": 15605974
+																	"ActionUID": 15620896
 																}
 															],
 															"Conditions": {
@@ -173,11 +171,11 @@
 																	"SoundName": "",
 																	"Subtitle": "",
 																	"Text": "App is not running.",
-																	"ActionUID": 15605973
+																	"ActionUID": 15620895
 																}
 															],
 															"TimeOutAbortsMacro": true,
-															"ActionUID": 15605972
+															"ActionUID": 15620894
 														}
 													],
 													"Conditions": {
@@ -198,11 +196,11 @@
 															"SoundName": "",
 															"Subtitle": "",
 															"Text": "App is not running.",
-															"ActionUID": 15605971
+															"ActionUID": 15620893
 														}
 													],
 													"TimeOutAbortsMacro": true,
-													"ActionUID": 15605970
+													"ActionUID": 15620892
 												}
 											],
 											"Conditions": {
@@ -223,11 +221,11 @@
 													"SoundName": "",
 													"Subtitle": "",
 													"Text": "App is not running.",
-													"ActionUID": 15605969
+													"ActionUID": 15620891
 												}
 											],
 											"TimeOutAbortsMacro": true,
-											"ActionUID": 15605968
+											"ActionUID": 15620890
 										}
 									],
 									"Conditions": {
@@ -248,11 +246,11 @@
 											"SoundName": "",
 											"Subtitle": "",
 											"Text": "App is not running.",
-											"ActionUID": 15605967
+											"ActionUID": 15620889
 										}
 									],
 									"TimeOutAbortsMacro": true,
-									"ActionUID": 15605966
+									"ActionUID": 15620888
 								}
 							],
 							"Conditions": {
@@ -273,11 +271,11 @@
 									"SoundName": "",
 									"Subtitle": "",
 									"Text": "App is not running.",
-									"ActionUID": 15605965
+									"ActionUID": 15620887
 								}
 							],
 							"TimeOutAbortsMacro": true,
-							"ActionUID": 15605964
+							"ActionUID": 15620886
 						}
 					],
 					"Conditions": {
@@ -285,9 +283,9 @@
 						"ConditionList": [
 							{
 								"Application": {
-									"BundleIdentifier": "com.lukilabs.lukiapp",
-									"Name": "Craft",
-									"NewFile": "/Applications/Craft.app"
+									"BundleIdentifier": "com.apple.dt.Xcode",
+									"Name": "XCode",
+									"NewFile": "/Applications/Xcode.app"
 								},
 								"ApplicationConditionType": "Running",
 								"ConditionType": "Application"
@@ -339,36 +337,36 @@
 																							"TrimResults": true,
 																							"Source": "Nothing",
 																							"IncludeStdErr": false,
-																							"ActionUID": 15605961,
+																							"ActionUID": 15620883,
 																							"UseText": true,
 																							"TrimResultsNew": true,
 																							"TimeOutAbortsMacro": true,
 																							"Path": "",
 																							"DisplayKind": "None",
 																							"HonourFailureSettings": true,
-																							"Text": "~/Documents/GitHubRepos/dotfiles/Yabai/Scripts/moveAppToCurrentSpace.sh \"Craft\""
+																							"Text": "~/Documents/GitHubRepos/dotfiles/Yabai/Scripts/moveAppToCurrentSpace.sh \"XCode\""
 																						},
 																						{
 																							"MacroActionType": "ActivateApplication",
-																							"ActionUID": 15605962,
+																							"ActionUID": 15620884,
 																							"ReopenWindows": true,
 																							"AllWindows": true,
 																							"TimeOutAbortsMacro": true,
 																							"AlreadyActivatedActionType": "BringAllWindows",
 																							"Application": {
-																								"BundleIdentifier": "com.lukilabs.lukiapp",
-																								"Name": "Craft",
-																								"NewFile": "/Applications/Craft.app"
+																								"BundleIdentifier": "com.apple.dt.Xcode",
+																								"Name": "XCode",
+																								"NewFile": "/Applications/Xcode.app"
 																							}
 																						},
 																						{
 																							"MacroActionType": "HideOthers",
-																							"ActionUID": 15605963,
+																							"ActionUID": 15620885,
 																							"HonorExcluded": true
 																						}
 																					],
 																					"TimeOutAbortsMacro": true,
-																					"ActionUID": 15605960
+																					"ActionUID": 15620882
 																				}
 																			],
 																			"Conditions": {
@@ -391,31 +389,31 @@
 																					"TrimResults": true,
 																					"Source": "Nothing",
 																					"IncludeStdErr": false,
-																					"ActionUID": 15605958,
+																					"ActionUID": 15620880,
 																					"UseText": true,
 																					"TrimResultsNew": true,
 																					"TimeOutAbortsMacro": true,
 																					"Path": "",
 																					"DisplayKind": "None",
 																					"HonourFailureSettings": true,
-																					"Text": "~/Documents/GitHubRepos/dotfiles/Yabai/Scripts/moveAppToCurrentSpace.sh \"Craft\""
+																					"Text": "~/Documents/GitHubRepos/dotfiles/Yabai/Scripts/moveAppToCurrentSpace.sh \"XCode\""
 																				},
 																				{
 																					"MacroActionType": "ActivateApplication",
-																					"ActionUID": 15605959,
+																					"ActionUID": 15620881,
 																					"ReopenWindows": true,
 																					"AllWindows": true,
 																					"TimeOutAbortsMacro": true,
 																					"AlreadyActivatedActionType": "BringAllWindows",
 																					"Application": {
-																						"BundleIdentifier": "com.lukilabs.lukiapp",
-																						"Name": "Craft",
-																						"NewFile": "/Applications/Craft.app"
+																						"BundleIdentifier": "com.apple.dt.Xcode",
+																						"Name": "XCode",
+																						"NewFile": "/Applications/Xcode.app"
 																					}
 																				}
 																			],
 																			"TimeOutAbortsMacro": true,
-																			"ActionUID": 15605957
+																			"ActionUID": 15620879
 																		}
 																	],
 																	"Conditions": {
@@ -432,25 +430,25 @@
 																	"ThenActions": [
 																		{
 																			"MacroActionType": "ActivateApplication",
-																			"ActionUID": 15605955,
+																			"ActionUID": 15620877,
 																			"ReopenWindows": true,
 																			"AllWindows": true,
 																			"TimeOutAbortsMacro": true,
 																			"AlreadyActivatedActionType": "BringAllWindows",
 																			"Application": {
-																				"BundleIdentifier": "com.lukilabs.lukiapp",
-																				"Name": "Craft",
-																				"NewFile": "/Applications/Craft.app"
+																				"BundleIdentifier": "com.apple.dt.Xcode",
+																				"Name": "XCode",
+																				"NewFile": "/Applications/Xcode.app"
 																			}
 																		},
 																		{
 																			"MacroActionType": "HideOthers",
-																			"ActionUID": 15605956,
+																			"ActionUID": 15620878,
 																			"HonorExcluded": true
 																		}
 																	],
 																	"TimeOutAbortsMacro": true,
-																	"ActionUID": 15605954
+																	"ActionUID": 15620876
 																}
 															],
 															"Conditions": {
@@ -468,18 +466,18 @@
 																{
 																	"MacroActionType": "QuitSpecificApp",
 																	"Application": {
-																		"BundleIdentifier": "com.lukilabs.lukiapp",
-																		"Name": "Craft",
-																		"NewFile": "/Applications/Craft.app"
+																		"BundleIdentifier": "com.apple.dt.Xcode",
+																		"Name": "XCode",
+																		"NewFile": "/Applications/Xcode.app"
 																	},
 																	"TimeOutAbortsMacro": true,
 																	"Target": "Specific",
 																	"Action": "Quit",
-																	"ActionUID": 15605953
+																	"ActionUID": 15620875
 																}
 															],
 															"TimeOutAbortsMacro": true,
-															"ActionUID": 15605952
+															"ActionUID": 15620874
 														}
 													],
 													"Conditions": {
@@ -496,16 +494,16 @@
 													"ThenActions": [
 														{
 															"MacroActionType": "HideSpecificApp",
-															"ActionUID": 15605951,
+															"ActionUID": 15620873,
 															"Application": {
-																"BundleIdentifier": "com.lukilabs.lukiapp",
-																"Name": "Craft",
-																"NewFile": "/Applications/Craft.app"
+																"BundleIdentifier": "com.apple.dt.Xcode",
+																"Name": "XCode",
+																"NewFile": "/Applications/Xcode.app"
 															}
 														}
 													],
 													"TimeOutAbortsMacro": true,
-													"ActionUID": 15605950
+													"ActionUID": 15620872
 												}
 											],
 											"Conditions": {
@@ -528,18 +526,18 @@
 													"TrimResults": true,
 													"Source": "Nothing",
 													"IncludeStdErr": false,
-													"ActionUID": 15605949,
+													"ActionUID": 15620871,
 													"UseText": true,
 													"TrimResultsNew": true,
 													"TimeOutAbortsMacro": true,
 													"Path": "",
 													"DisplayKind": "Window",
 													"HonourFailureSettings": true,
-													"Text": "~/Documents/GitHubRepos/dotfiles/Yabai/Scripts/closeAppWindows.sh \"Craft\""
+													"Text": "~/Documents/GitHubRepos/dotfiles/Yabai/Scripts/closeAppWindows.sh \"XCode\""
 												}
 											],
 											"TimeOutAbortsMacro": true,
-											"ActionUID": 15605948
+											"ActionUID": 15620870
 										}
 									],
 									"Conditions": {
@@ -562,18 +560,18 @@
 											"TrimResults": true,
 											"Source": "Nothing",
 											"IncludeStdErr": false,
-											"ActionUID": 15605947,
+											"ActionUID": 15620869,
 											"UseText": true,
 											"TrimResultsNew": true,
 											"TimeOutAbortsMacro": true,
 											"Path": "",
 											"DisplayKind": "Window",
 											"HonourFailureSettings": true,
-											"Text": "~/Documents/GitHubRepos/dotfiles/Yabai/Scripts/deminimizeWindowsOfApp.sh \"Craft\""
+											"Text": "~/Documents/GitHubRepos/dotfiles/Yabai/Scripts/deminimizeWindowsOfApp.sh \"XCode\""
 										}
 									],
 									"TimeOutAbortsMacro": true,
-									"ActionUID": 15605946
+									"ActionUID": 15620868
 								}
 							],
 							"Conditions": {
@@ -596,22 +594,22 @@
 									"TrimResults": true,
 									"Source": "Nothing",
 									"IncludeStdErr": false,
-									"ActionUID": 15605945,
+									"ActionUID": 15620867,
 									"UseText": true,
 									"TrimResultsNew": true,
 									"TimeOutAbortsMacro": true,
 									"Path": "",
 									"DisplayKind": "Window",
 									"HonourFailureSettings": true,
-									"Text": "~/Documents/GitHubRepos/dotfiles/Yabai/Scripts/minimizeAllWindowsOfApp.sh \"Craft\""
+									"Text": "~/Documents/GitHubRepos/dotfiles/Yabai/Scripts/minimizeAllWindowsOfApp.sh \"XCode\""
 								}
 							],
 							"TimeOutAbortsMacro": true,
-							"ActionUID": 15605944
+							"ActionUID": 15620866
 						}
 					],
 					"TimeOutAbortsMacro": true,
-					"ActionUID": 15605943
+					"ActionUID": 15620865
 				}
 			],
 			"Conditions": {
@@ -625,22 +623,21 @@
 					}
 				]
 			},
-			"ElseActionListDisclosed": false,
 			"ThenActions": [
 				{
 					"MacroActionType": "IfThenElse",
 					"ElseActions": [
 						{
 							"MacroActionType": "ActivateApplication",
-							"ActionUID": 15605942,
+							"ActionUID": 15620864,
 							"ReopenWindows": false,
 							"AllWindows": false,
 							"TimeOutAbortsMacro": true,
 							"AlreadyActivatedActionType": "Normal",
 							"Application": {
-								"BundleIdentifier": "com.lukilabs.lukiapp",
-								"Name": "Craft",
-								"NewFile": "/Applications/Craft.app"
+								"BundleIdentifier": "com.apple.dt.Xcode",
+								"Name": "XCode",
+								"NewFile": "/Applications/Xcode.app"
 							}
 						}
 					],
@@ -649,9 +646,9 @@
 						"ConditionList": [
 							{
 								"Application": {
-									"BundleIdentifier": "com.lukilabs.lukiapp",
-									"Name": "Craft",
-									"NewFile": "/Applications/Craft.app"
+									"BundleIdentifier": "com.apple.dt.Xcode",
+									"Name": "XCode",
+									"NewFile": "/Applications/Xcode.app"
 								},
 								"ApplicationConditionType": "Running",
 								"ConditionType": "Application"
@@ -660,63 +657,25 @@
 					},
 					"ThenActions": [
 						{
-							"MacroActionType": "IfThenElse",
-							"ElseActions": [
-								{
-									"MacroActionType": "ActivateApplication",
-									"ActionUID": 15605941,
-									"ReopenWindows": true,
-									"AllWindows": true,
-									"TimeOutAbortsMacro": true,
-									"AlreadyActivatedActionType": "Hide",
-									"Application": {
-										"BundleIdentifier": "com.lukilabs.lukiapp",
-										"Name": "Craft",
-										"NewFile": "/Applications/Craft.app"
-									}
-								}
-							],
-							"Conditions": {
-								"ConditionListMatch": "All",
-								"ConditionList": [
-									{
-										"Application": {
-											"BundleIdentifier": "com.lukilabs.lukiapp",
-											"Name": "Craft",
-											"NewFile": "/Applications/Craft.app"
-										},
-										"ApplicationConditionType": "Active",
-										"ConditionType": "Application"
-									}
-								]
-							},
-							"ThenActions": [
-								{
-									"MacroActionType": "ExecuteShellScript",
-									"IncludedVariables": [
-										"9999"
-									],
-									"TrimResults": true,
-									"Source": "Nothing",
-									"IncludeStdErr": false,
-									"ActionUID": 15620459,
-									"UseText": true,
-									"TrimResultsNew": true,
-									"TimeOutAbortsMacro": true,
-									"Path": "",
-									"DisplayKind": "None",
-									"HonourFailureSettings": true,
-									"Text": "osascript -e 'tell application \"System Events\" to set visible of process (name of first application process whose frontmost is true) to false'"
-								}
-							],
+							"MacroActionType": "ActivateApplication",
+							"ActionUID": 15620863,
+							"ReopenWindows": true,
+							"AllWindows": true,
 							"TimeOutAbortsMacro": true,
-							"ActionUID": 15620456
+							"AlreadyActivatedActionType": "Hide",
+							"Application": {
+								"BundleIdentifier": "com.apple.dt.Xcode",
+								"Name": "XCode",
+								"NewFile": "/Applications/Xcode.app"
+							}
 						}
 					],
 					"TimeOutAbortsMacro": true,
-					"ActionUID": 15605940
+					"ActionUID": 15620862
 				}
-			]
+			],
+			"TimeOutAbortsMacro": true,
+			"ActionUID": 15620861
 		}
 	]
 }

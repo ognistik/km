@@ -1,0 +1,50 @@
+{
+	"CreationDate": 769623617.405739,
+	"UID": "0FD6D652-66F1-4473-B6F2-E3F20BDA31D5",
+	"Name": "Delete Active Note",
+	"Triggers": [],
+	"ModificationDate": 769628485.385056,
+	"Actions": [
+		{
+			"MacroActionType": "SelectMenuItem",
+			"IsDisclosed": false,
+			"TargetApplication": {},
+			"TargetingType": "Front",
+			"Menu": [
+				"Note",
+				"Copy Identifier"
+			],
+			"ActionUID": 15620062
+		},
+		{
+			"MacroActionType": "ExecuteShellScript",
+			"IncludedVariables": [
+				"9999"
+			],
+			"TrimResults": true,
+			"Source": "Nothing",
+			"IncludeStdErr": false,
+			"ActionUID": 15620064,
+			"UseText": true,
+			"TrimResultsNew": true,
+			"TimeOutAbortsMacro": true,
+			"Path": "",
+			"DisplayKind": "Window",
+			"IsDisclosed": false,
+			"HonourFailureSettings": true,
+			"Text": "#!/bin/bash\n\n# Get the ID of the currently focused window\nwindow_id=$(/opt/homebrew/bin/yabai -m query --windows --window | jq '.id')\n\n# Check if the window has a scratchpad property with a non-empty value\nhas_scratchpad=$(/opt/homebrew/bin/yabai -m query --windows --window $window_id | jq '.scratchpad != null and .scratchpad != \"\"')\n\n# If it's a scratchpad with a non-empty value, send Command+W to close it\nif [ \"$has_scratchpad\" = \"true\" ]; then\n    osascript -e 'tell application \"System Events\" to keystroke \"w\" using command down'\nfi"
+		},
+		{
+			"MacroActionType": "ExecuteShortcut",
+			"ActionUID": 15620063,
+			"ExecuteOrEdit": "Execute",
+			"IsDisclosed": false,
+			"Source": "Nothing",
+			"TimeOutAbortsMacro": true,
+			"TrimResults": true,
+			"Shortcut": "Delete Active Note",
+			"IncludeStdErr": false,
+			"DisplayKind": "None"
+		}
+	]
+}

@@ -1,7 +1,7 @@
 {
 	"UID": "B379EF49-9544-4C07-8FE1-2F1F0AC14949",
 	"CreationDate": 761107799.610874,
-	"ModificationDate": 767206555.98166,
+	"ModificationDate": 770953404.170797,
 	"Triggers": [
 		{
 			"AutoRun": false,
@@ -12,7 +12,6 @@
 	"Actions": [
 		{
 			"MacroActionType": "SetVariableToText",
-			"IsDisclosed": false,
 			"Variable": "localActiveMode",
 			"Text": "%sw_currentMode%",
 			"ActionUID": 15599638
@@ -41,7 +40,6 @@
 			"TimeOutAbortsMacro": true,
 			"Path": "",
 			"DisplayKind": "Variable",
-			"IsDisclosed": false,
 			"HonourFailureSettings": true,
 			"Text": "/usr/bin/python3 \"$HOME/Documents/superwhisper/scripts/queryLLM.py\" \"$KMVAR_localActiveMode\""
 		},

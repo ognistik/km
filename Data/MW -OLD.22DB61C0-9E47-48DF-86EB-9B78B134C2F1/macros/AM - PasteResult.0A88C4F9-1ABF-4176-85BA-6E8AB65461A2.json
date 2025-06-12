@@ -1,7 +1,7 @@
 {
 	"UID": "0A88C4F9-1ABF-4176-85BA-6E8AB65461A2",
 	"CreationDate": 751740389.643209,
-	"ModificationDate": 766669552.129414,
+	"ModificationDate": 770594444.693594,
 	"Triggers": [
 		{
 			"AutoRun": false,
@@ -9,13 +9,13 @@
 			"MacroTriggerType": "GroupStatusMenu"
 		}
 	],
+	"IsActive": false,
 	"Actions": [
 		{
 			"MacroActionType": "ExecuteMacro",
 			"ActionName": "Action Mode - Paste Result",
 			"MacroUID": "8EBAFA85-7DB2-427F-8CCC-9CC78E5CA6E9",
 			"ActionUID": 15555622,
-			"IsDisclosed": false,
 			"TimeOutAbortsMacro": true,
 			"Parameter": "pasteResult",
 			"UseParameter": true,
