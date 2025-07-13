@@ -1,7 +1,7 @@
 {
 	"UID": "86079F59-6BD7-4C74-A1EC-D473A630E1F7",
 	"CreationDate": 760102913.350257,
-	"ModificationDate": 769538521.520511,
+	"ModificationDate": 772817475.255141,
 	"Triggers": [],
 	"Actions": [
 		{
@@ -36,8 +36,9 @@
 		{
 			"MacroActionType": "IfThenElse",
 			"ActionUID": 15609626,
-			"TimeOutAbortsMacro": true,
+			"IsDisclosed": false,
 			"ElseActions": [],
+			"TimeOutAbortsMacro": true,
 			"Conditions": {
 				"ConditionListMatch": "All",
 				"ConditionList": [

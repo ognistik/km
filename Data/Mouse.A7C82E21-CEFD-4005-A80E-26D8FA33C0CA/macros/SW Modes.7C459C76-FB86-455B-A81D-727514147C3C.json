@@ -10,7 +10,7 @@
 			"FireType": "Pressed"
 		}
 	],
-	"ModificationDate": 766177824.66654,
+	"ModificationDate": 772817322.269885,
 	"Actions": [
 		{
 			"MacroActionType": "ExecuteAppleScript",
@@ -25,7 +25,6 @@
 			"TimeOutAbortsMacro": true,
 			"Path": "",
 			"DisplayKind": "None",
-			"IsDisclosed": false,
 			"HonourFailureSettings": true,
 			"Text": "tell application id \"com.runningwithcrayons.Alfred\" to run trigger \"sw\" in workflow \"com.superwhisper.aft\" with argument \"selectMode\""
 		}

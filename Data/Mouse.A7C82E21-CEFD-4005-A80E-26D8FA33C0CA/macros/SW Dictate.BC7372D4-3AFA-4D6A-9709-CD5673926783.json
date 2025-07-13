@@ -10,11 +10,11 @@
 			"FireType": "Pressed"
 		}
 	],
-	"ModificationDate": 766442193.848923,
+	"ModificationDate": 772817451.836894,
 	"Actions": [
 		{
 			"MacroActionType": "ExecuteAppleScript",
-			"ActionName": "Starts the recording using the Alfred workflow",
+			"ActionName": "Starts the recording using the Alfred workflow & Closes BTT Rec Window if open",
 			"IncludedVariables": [
 				"9999"
 			],
@@ -28,15 +28,17 @@
 			"DisplayKind": "None",
 			"IsDisclosed": false,
 			"HonourFailureSettings": true,
-			"Text": "tell application id \"com.runningwithcrayons.Alfred\" to run trigger \"sw\" in workflow \"com.superwhisper.aft\" with argument \"record\""
+			"Text": "tell application id \"com.runningwithcrayons.Alfred\" to run trigger \"sw\" in workflow \"com.superwhisper.aft\" with argument \"record\"\r\rtell application \"BetterTouchTool\"\r\ttrigger_named \"swResultKara\"\rend tell"
 		},
 		{
 			"MacroActionType": "ExecuteMacro",
-			"UseParameter": false,
 			"MacroUID": "8B525AD9-F5D4-47D2-96A4-5E570D8A32C8",
+			"ActionUID": 15596772,
+			"IsDisclosed": false,
 			"TimeOutAbortsMacro": true,
-			"Asynchronously": false,
-			"ActionUID": 15596772
+			"IsActive": false,
+			"UseParameter": false,
+			"Asynchronously": false
 		}
 	]
 }

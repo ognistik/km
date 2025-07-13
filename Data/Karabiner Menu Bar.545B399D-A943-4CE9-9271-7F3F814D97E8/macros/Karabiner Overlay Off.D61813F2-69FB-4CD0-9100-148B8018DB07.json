@@ -3,7 +3,7 @@
 	"UID": "D61813F2-69FB-4CD0-9100-148B8018DB07",
 	"Name": "Karabiner Overlay Off",
 	"Triggers": [],
-	"ModificationDate": 771132819.89292,
+	"ModificationDate": 772987639.262537,
 	"Actions": [
 		{
 			"MacroActionType": "Semaphore",
@@ -104,6 +104,7 @@
 		},
 		{
 			"MacroActionType": "SetVariableToText",
+			"IsDisclosed": false,
 			"Variable": "kara_menu",
 			"Text": " ",
 			"ActionUID": 15597977

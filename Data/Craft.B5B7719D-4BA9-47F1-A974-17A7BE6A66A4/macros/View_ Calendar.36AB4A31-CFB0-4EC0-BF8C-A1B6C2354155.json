@@ -10,7 +10,7 @@
 			"FireType": "Pressed"
 		}
 	],
-	"ModificationDate": 765382559.676363,
+	"ModificationDate": 773767864.553223,
 	"Actions": [
 		{
 			"MacroActionType": "SelectMenuItem",
@@ -18,7 +18,7 @@
 			"TargetApplication": {},
 			"Menu": [
 				"Navigation",
-				"Open Calendar"
+				"Calendar"
 			],
 			"ActionUID": 15606768
 		}

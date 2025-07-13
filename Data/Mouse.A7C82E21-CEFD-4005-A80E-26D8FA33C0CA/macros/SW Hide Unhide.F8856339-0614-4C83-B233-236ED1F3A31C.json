@@ -10,7 +10,7 @@
 			"FireType": "Pressed"
 		}
 	],
-	"ModificationDate": 769538541.091677,
+	"ModificationDate": 773036223.871228,
 	"Actions": [
 		{
 			"MacroActionType": "ExecuteShellScript",
@@ -18,6 +18,7 @@
 			"IncludedVariables": [
 				"9999"
 			],
+			"Text": "#!/bin/bash\n\n# Get all windows in current space\nwindow_list=$(/opt/homebrew/bin/yabai -m query --windows --space)\n\n# Find superwhisper window with AXDialog subrole\nwindow_id=$(echo \"$window_list\" | jq -r '.[] | select(.app==\"superwhisper\" and .subrole==\"AXSystemDialog\") | .id')\n\nif [ -n \"$window_id\" ]; then\n    echo \"$window_id\"\nelse\n    echo \"no\"\nfi",
 			"TrimResults": true,
 			"Source": "Nothing",
 			"Variable": "localSwWin",
@@ -29,15 +30,17 @@
 			"Path": "",
 			"DisplayKind": "Variable",
 			"IsDisclosed": false,
+			"IsActive": false,
 			"HonourFailureSettings": true,
-			"Text": "#!/bin/bash\n\n# Get all windows in current space\nwindow_list=$(/opt/homebrew/bin/yabai -m query --windows --space)\n\n# Find superwhisper window with AXDialog subrole\nwindow_id=$(echo \"$window_list\" | jq -r '.[] | select(.app==\"superwhisper\" and .subrole==\"AXSystemDialog\") | .id')\n\nif [ -n \"$window_id\" ]; then\n    echo \"$window_id\"\nelse\n    echo \"no\"\nfi",
 			"NotifyOnFailure": false
 		},
 		{
 			"MacroActionType": "IfThenElse",
 			"ActionUID": 15575368,
-			"TimeOutAbortsMacro": true,
+			"IsDisclosed": false,
 			"ElseActions": [],
+			"TimeOutAbortsMacro": true,
+			"IsActive": false,
 			"Conditions": {
 				"ConditionListMatch": "All",
 				"ConditionList": [
@@ -127,6 +130,23 @@
 					]
 				}
 			]
+		},
+		{
+			"MacroActionType": "ExecuteAppleScript",
+			"IncludedVariables": [
+				"9999"
+			],
+			"TrimResults": true,
+			"IncludeStdErr": false,
+			"ActionUID": 15624078,
+			"UseText": true,
+			"TrimResultsNew": true,
+			"TimeOutAbortsMacro": true,
+			"Path": "",
+			"DisplayKind": "None",
+			"IsDisclosed": false,
+			"HonourFailureSettings": true,
+			"Text": "tell application \"BetterTouchTool\"\r\ttrigger_named \"swResultToggle\"\rend tell"
 		}
 	]
 }

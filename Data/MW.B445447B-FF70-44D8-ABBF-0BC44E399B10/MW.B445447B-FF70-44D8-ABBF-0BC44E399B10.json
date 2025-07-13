@@ -3,8 +3,9 @@
 	"AddToStatusMenu": false,
 	"CreationDate": 770928461.59072,
 	"Modifiers": 0,
-	"PaletteUnderMouse": false,
 	"Name": "MW",
+	"PaletteUnderMouse": false,
+	"CustomIconData": "KMEP-GenericApplication-/Applications/superwhisper.app",
 	"UID": "B445447B-FF70-44D8-ABBF-0BC44E399B10",
 	"Targeting": {
 		"Targeting": "All",

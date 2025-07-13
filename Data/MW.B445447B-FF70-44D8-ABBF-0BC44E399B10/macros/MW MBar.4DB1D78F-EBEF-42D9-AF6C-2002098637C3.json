@@ -1,7 +1,7 @@
 {
-	"CreationDate": 770928507.019929,
 	"UID": "4DB1D78F-EBEF-42D9-AF6C-2002098637C3",
-	"Name": "MW MBar",
+	"CreationDate": 770928507.019929,
+	"ModificationDate": 772891563.417732,
 	"Triggers": [
 		{
 			"MacroTriggerType": "Folder",
@@ -13,19 +13,27 @@
 			}
 		}
 	],
-	"ModificationDate": 771203759.124407,
 	"Actions": [
 		{
-			"MacroActionType": "SetVariableToText",
+			"MacroActionType": "Comment",
+			"Title": "How this works",
+			"ActionName": "How this works",
 			"IsDisclosed": false,
-			"Text": "/Users/ognistik/Desktop/macrowhisper",
+			"StyledText": "\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\tcnRmZAAAAAADAAAAAgAA\n\t\t\t\t\t\t\tAAcAAABUWFQucnRmAQAA\n\t\t\t\t\t\t\tAC6FBAAAKwAAAAEAAAB9\n\t\t\t\t\t\t\tBAAAe1xydGYxXGFuc2lc\n\t\t\t\t\t\t\tYW5zaWNwZzEyNTJcY29j\n\t\t\t\t\t\t\tb2FydGYyODIyClxjb2Nv\n\t\t\t\t\t\t\tYXRleHRzY2FsaW5nMFxj\n\t\t\t\t\t\t\tb2NvYXBsYXRmb3JtMHtc\n\t\t\t\t\t\t\tZm9udHRibFxmMFxmc3dp\n\t\t\t\t\t\t\tc3NcZmNoYXJzZXQwIEhl\n\t\t\t\t\t\t\tbHZldGljYTtcZjFcZm5p\n\t\t\t\t\t\t\tbFxmY2hhcnNldDAgQXBw\n\t\t\t\t\t\t\tbGVDb2xvckVtb2ppO30K\n\t\t\t\t\t\t\te1xjb2xvcnRibDtccmVk\n\t\t\t\t\t\t\tMjU1XGdyZWVuMjU1XGJs\n\t\t\t\t\t\t\tdWUyNTU7XHJlZDBcZ3Jl\n\t\t\t\t\t\t\tZW4wXGJsdWUwO30Ke1wq\n\t\t\t\t\t\t\tXGV4cGFuZGVkY29sb3J0\n\t\t\t\t\t\t\tYmw7O1xjc3NyZ2JcYzBc\n\t\t\t\t\t\t\tYzBcYzBcYzg0NzA2XGNu\n\t\t\t\t\t\t\tYW1lIGNvbnRyb2xUZXh0\n\t\t\t\t\t\t\tQ29sb3I7fQpccGFyZFx0\n\t\t\t\t\t\t\teDU2MFx0eDExMjBcdHgx\n\t\t\t\t\t\t\tNjgwXHR4MjI0MFx0eDI4\n\t\t\t\t\t\t\tMDBcdHgzMzYwXHR4Mzky\n\t\t\t\t\t\t\tMFx0eDQ0ODBcdHg1MDQw\n\t\t\t\t\t\t\tXHR4NTYwMFx0eDYxNjBc\n\t\t\t\t\t\t\tdHg2NzIwXHBhcmRpcm5h\n\t\t\t\t\t\t\tdHVyYWxccGFydGlnaHRl\n\t\t\t\t\t\t\tbmZhY3RvcjAKClxmMFxm\n\t\t\t\t\t\t\tczI2IFxjZjIgTWFrZSBz\n\t\t\t\t\t\t\tdXJlIHRoZSBvcmFuZ2Ug\n\t\t\t\t\t\t\tYmxvY2sgYmVsb3cgcG9p\n\t\t\t\t\t\t\tbnRzIHRvIHRoZSBjb3Jy\n\t\t\t\t\t\t\tZWN0IE1hY3Jvd2hpc3Bl\n\t\t\t\t\t\t\tciBwYXRoLiBZb3UgY2Fu\n\t\t\t\t\t\t\tIGZpbmQgdGhpcyBwYXRo\n\t\t\t\t\t\t\tIGJ5IHJ1bm5pbmcgYHdo\n\t\t\t\t\t\t\taWNoIG1hY3Jvd2hpc3Bl\n\t\t\t\t\t\t\tcmAgaW4gVGVybWluYWwu\n\t\t\t\t\t\t\tXApcClRoaXMgbWFjcm8g\n\t\t\t\t\t\t\tZG9lcyB0d28gdGhpbmdz\n\t\t\t\t\t\t\tLiBGaXJzdCwgaXQgZ3Jh\n\t\t\t\t\t\t\tYnMgeW91ciBpY29uIGZy\n\t\t\t\t\t\t\tb20geW91ciBhY3RpdmUg\n\t\t\t\t\t\t\tYWN0aW9uIGluIE1hY3Jv\n\t\t\t\t\t\t\td2hpc3Blci4gIFRoZW4s\n\t\t\t\t\t\t\tIGl0IGdyYWJzIHRoZSBj\n\t\t\t\t\t\t\tdXJyZW50IG1vZGUgZnJv\n\t\t\t\t\t\t\tbSBTdXBlcndoaXNwZXIn\n\t\t\t\t\t\t\tcyBtZW51IGJhci4gSXQg\n\t\t\t\t\t\t\tY29tYmluZXMgYm90aCBw\n\t\t\t\t\t\t\taWVjZXMgb2YgaW5mb3Jt\n\t\t\t\t\t\t\tYXRpb24gYW5kIGRpc3Bs\n\t\t\t\t\t\t\tYXlzIHRoZW0gb24geW91\n\t\t\t\t\t\t\tciBtZW51IGJhci5cClwK\n\t\t\t\t\t\t\tTm90ZTogS2VlcCBpbiBt\n\t\t\t\t\t\t\taW5kIHRoYXQgU3VwZXJ3\n\t\t\t\t\t\t\taGlzcGVyIGRvZXNuJ3Qg\n\t\t\t\t\t\t\tbm90aWZ5IHRoaXJkLXBh\n\t\t\t\t\t\t\tcnR5IGFwcGxpY2F0aW9u\n\t\t\t\t\t\t\tcyB3aGVuIG1vZGVzIHN3\n\t\t\t\t\t\t\taXRjaC4gVGhpcyBtYWNy\n\t\t\t\t\t\t\tbyBjYW4gb25seSBkZXRl\n\t\t\t\t\t\t\tY3QgY2hhbmdlcyB3aGVu\n\t\t\t\t\t\t\tIHRyaWdnZXJlZCBtYW51\n\t\t\t\t\t\t\tYWxseSBvciB3aGVuIG5v\n\t\t\t\t\t\t\tdGljaW5nIGEgbmV3IHJl\n\t\t\t\t\t\t\tY29yZGluZyBpbiBTdXBl\n\t\t\t\t\t\t\tcndoaXNwZXIncyByZWNv\n\t\t\t\t\t\t\tcmRpbmcgZm9sZGVyLiBN\n\t\t\t\t\t\t\tYWtlIHN1cmUgdGhlIHRy\n\t\t\t\t\t\t\taWdnZXIgZm9sZGVyIGFi\n\t\t\t\t\t\t\tb3ZlIApcZjEgXHVjMFx1\n\t\t\t\t\t\t\tNTUzNTcgXHU1NjM5MCBc\n\t\t\t\t\t\t\tdTY1MDM5IApcZjAgIHBv\n\t\t\t\t\t\t\taW50cyB0byB0aGUgY29y\n\t\t\t\t\t\t\tcmVjdCBTdXBlcndoaXNw\n\t\t\t\t\t\t\tZXIgcmVjb3JkaW5ncyBm\n\t\t\t\t\t\t\tb2xkZXIgcGF0aC59AQAA\n\t\t\t\t\t\t\tACMAAAABAAAABwAAAFRY\n\t\t\t\t\t\t\tVC5ydGYQAAAACixhaLYB\n\t\t\t\t\t\t\tAAAAAAAAAAAAAA==\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\t",
+			"ActionUID": 15623688
+		},
+		{
+			"MacroActionType": "SetVariableToText",
+			"ActionName": "🌟 MUST POINT TO MACROWHISPER APP",
+			"ActionUID": 15621318,
+			"IsDisclosed": false,
 			"Variable": "sw_mwPath",
-			"ActionColor": "Orange",
-			"ActionUID": 15621318
+			"Text": "/opt/homebrew/bin/macrowhisper",
+			"ActionColor": "Orange"
 		},
 		{
 			"MacroActionType": "Semaphore",
-			"ActionName": "Run only one instance of this macro at the time",
+			"ActionName": "Semaphore - Run only one instance of this macro at the time",
 			"ActionUID": 15621295,
 			"IsDisclosed": false,
 			"TimeOutAbortsMacro": true,
@@ -33,53 +41,14 @@
 			"SemaphoreAction": "Lock"
 		},
 		{
-			"MacroActionType": "SetVariableToText",
-			"ActionName": "Check if there's an input argument",
-			"IsDisclosed": false,
-			"Variable": "localInput",
-			"Text": "%TriggerValue%",
-			"ActionUID": 15621720
-		},
-		{
-			"MacroActionType": "IfThenElse",
-			"ActionName": "Macro Version Check",
-			"ActionUID": 15621721,
-			"IsDisclosed": false,
-			"ElseActions": [],
-			"TimeOutAbortsMacro": true,
-			"Conditions": {
-				"ConditionListMatch": "All",
-				"ConditionList": [
-					{
-						"ConditionType": "Variable",
-						"VariableValue": "versionCheck",
-						"Variable": "localInput",
-						"VariableConditionType": "Is"
-					}
-				]
-			},
-			"ThenActions": [
-				{
-					"MacroActionType": "Return",
-					"ActionUID": 15621722,
-					"Text": "1.0.3"
-				},
-				{
-					"MacroActionType": "Cancel",
-					"ActionUID": 15621725,
-					"Action": "CancelThisMacro"
-				}
-			]
-		},
-		{
 			"MacroActionType": "ExecuteShellScript",
-			"ActionName": "Grab Active Insert Icon",
+			"ActionName": "Grab Active Action Icon",
 			"IncludedVariables": [
 				"9999"
 			],
 			"TrimResults": true,
 			"Source": "Nothing",
-			"Variable": "localCurrentInsert",
+			"Variable": "localCurrentIcon",
 			"IncludeStdErr": false,
 			"ActionUID": 15621299,
 			"UseText": true,
@@ -93,8 +62,44 @@
 			"NotifyOnFailure": false
 		},
 		{
+			"MacroActionType": "IfThenElse",
+			"ActionName": "We clean up the active icon if current action doesn't have one (blank space is returned)",
+			"ActionUID": 15622897,
+			"IsDisclosed": false,
+			"ElseActions": [
+				{
+					"MacroActionType": "SetVariableToText",
+					"ActionName": "We add a space after current icon",
+					"Variable": "localCurrentIcon",
+					"Text": "%localCurrentIcon% ",
+					"ActionUID": 15622899
+				}
+			],
+			"TimeOutAbortsMacro": true,
+			"Conditions": {
+				"ConditionListMatch": "All",
+				"ConditionList": [
+					{
+						"ConditionType": "Variable",
+						"VariableValue": " ",
+						"Variable": "localCurrentIcon",
+						"VariableConditionType": "Is"
+					}
+				]
+			},
+			"ThenActions": [
+				{
+					"MacroActionType": "SetVariableToText",
+					"ActionName": "We clean the current icon",
+					"Variable": "localCurrentIcon",
+					"Text": "",
+					"ActionUID": 15622898
+				}
+			]
+		},
+		{
 			"MacroActionType": "ExecuteAppleScript",
-			"ActionName": "Grab Active Mode from SW Menu",
+			"ActionName": "Grab Mode from SW Menu",
 			"IncludedVariables": [
 				"9999"
 			],
@@ -108,25 +113,29 @@
 			"TimeOutAbortsMacro": true,
 			"Path": "",
 			"DisplayKind": "Variable",
+			"IsDisclosed": false,
 			"HonourFailureSettings": true,
 			"Text": "tell application \"System Events\"\n\ttell process \"superwhisper\"\n\t\ttry\n\t\t\t-- Get the submenu\n\t\t\tset theSubmenu to menu 1 of menu item 7 of menu \"superwhisper\" of menu bar item 1 of menu bar 2\n\t\t\t\n\t\t\t-- Look through all items in the submenu to find one with a checkmark\n\t\t\tset checkedItem to \"\"\n\t\t\trepeat with menuItem in menu items of theSubmenu\n\t\t\t\tif value of attribute \"AXMenuItemMarkChar\" of menuItem is not missing value then\n\t\t\t\t\tset checkedItem to name of menuItem\n\t\t\t\t\texit repeat\n\t\t\t\tend if\n\t\t\tend repeat\n\t\t\t\n\t\t\treturn checkedItem\n\t\tend try\n\tend tell\nend tell",
 			"TimeOutPeriod": 3600
 		},
 		{
 			"MacroActionType": "SetVariableToText",
-			"ActionName": "Menu Bar text",
+			"ActionName": "Menu Bar Content",
 			"ActionUID": 15621297,
 			"IsDisclosed": false,
 			"Variable": "sw_menubar",
-			"Text": "%localCurrentInsert%  %sw_currentMode%",
+			"Text": "%localCurrentIcon%%sw_currentMode%",
 			"ActionColor": "Green"
 		},
 		{
 			"MacroActionType": "Semaphore",
+			"ActionName": "Semaphore Unlock",
 			"IsDisclosed": false,
 			"SemaphoreAction": "Unlock",
 			"SemaphoreName": "MBar",
 			"ActionUID": 15621298
 		}
-	]
+	],
+	"Name": "MW MBar",
+	"CustomIconData": "KMEP-GenericApplication-/Applications/superwhisper.app"
 }

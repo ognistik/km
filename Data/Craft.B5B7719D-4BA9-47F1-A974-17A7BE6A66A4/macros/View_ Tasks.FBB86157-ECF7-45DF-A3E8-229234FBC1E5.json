@@ -10,7 +10,7 @@
 			"FireType": "Pressed"
 		}
 	],
-	"ModificationDate": 765382576.394435,
+	"ModificationDate": 773434125.933328,
 	"Actions": [
 		{
 			"MacroActionType": "SelectMenuItem",
@@ -18,7 +18,7 @@
 			"TargetApplication": {},
 			"Menu": [
 				"Navigation",
-				"Open Tasks"
+				"Tasks"
 			],
 			"ActionUID": 15606767
 		}

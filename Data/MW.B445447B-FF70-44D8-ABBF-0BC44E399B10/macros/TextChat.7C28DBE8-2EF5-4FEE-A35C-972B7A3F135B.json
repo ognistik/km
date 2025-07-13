@@ -1,0 +1,96 @@
+{
+	"UID": "7C28DBE8-2EF5-4FEE-A35C-972B7A3F135B",
+	"CreationDate": 763660648.194313,
+	"ModificationDate": 772891629.055134,
+	"Triggers": [],
+	"Actions": [
+		{
+			"MacroActionType": "Comment",
+			"Title": "How this works",
+			"ActionName": "How this works",
+			"IsDisclosed": false,
+			"StyledText": "\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\tcnRmZAAAAAADAAAAAgAA\n\t\t\t\t\t\t\tAAcAAABUWFQucnRmAQAA\n\t\t\t\t\t\t\tAC6ZBAAAKwAAAAEAAACR\n\t\t\t\t\t\t\tBAAAe1xydGYxXGFuc2lc\n\t\t\t\t\t\t\tYW5zaWNwZzEyNTJcY29j\n\t\t\t\t\t\t\tb2FydGYyODIyClxjb2Nv\n\t\t\t\t\t\t\tYXRleHRzY2FsaW5nMFxj\n\t\t\t\t\t\t\tb2NvYXBsYXRmb3JtMHtc\n\t\t\t\t\t\t\tZm9udHRibFxmMFxmc3dp\n\t\t\t\t\t\t\tc3NcZmNoYXJzZXQwIEhl\n\t\t\t\t\t\t\tbHZldGljYTt9CntcY29s\n\t\t\t\t\t\t\tb3J0Ymw7XHJlZDI1NVxn\n\t\t\t\t\t\t\tcmVlbjI1NVxibHVlMjU1\n\t\t\t\t\t\t\tO1xyZWQwXGdyZWVuMFxi\n\t\t\t\t\t\t\tbHVlMDt9CntcKlxleHBh\n\t\t\t\t\t\t\tbmRlZGNvbG9ydGJsOztc\n\t\t\t\t\t\t\tY3NzcmdiXGMwXGMwXGMw\n\t\t\t\t\t\t\tXGM4NDcwNlxjbmFtZSBj\n\t\t\t\t\t\t\tb250cm9sVGV4dENvbG9y\n\t\t\t\t\t\t\tO30KXHBhcmRcdHg1NjBc\n\t\t\t\t\t\t\tdHgxMTIwXHR4MTY4MFx0\n\t\t\t\t\t\t\teDIyNDBcdHgyODAwXHR4\n\t\t\t\t\t\t\tMzM2MFx0eDM5MjBcdHg0\n\t\t\t\t\t\t\tNDgwXHR4NTA0MFx0eDU2\n\t\t\t\t\t\t\tMDBcdHg2MTYwXHR4Njcy\n\t\t\t\t\t\t\tMFxwYXJkaXJuYXR1cmFs\n\t\t\t\t\t\t\tXHBhcnRpZ2h0ZW5mYWN0\n\t\t\t\t\t\t\tb3IwCgpcZjBcZnMyNiBc\n\t\t\t\t\t\t\tY2YyIFRoaXMgbWFjcm8g\n\t\t\t\t\t\t\tZG9lcyB0d28gdGhpbmdz\n\t\t\t\t\t\t\tLiBGaXJzdCwgaWYgdGhl\n\t\t\t\t\t\t\tIHRleHRDaGF0IEluc2Vy\n\t\t\t\t\t\t\tdCBhY3Rpb24gaXMgbm90\n\t\t\t\t\t\t\tIGVuYWJsZWQsIGl0IHdp\n\t\t\t\t\t\t\tbGwgZW5hYmxlIGl0LiBB\n\t\t\t\t\t\t\tbmQgc2Vjb25kLCBpdCB3\n\t\t\t\t\t\t\taWxsIGNvbW1hbmQgU3Vw\n\t\t\t\t\t\t\tZXJ3aGlzcGVyIHRvIHBy\n\t\t\t\t\t\t\tb2Nlc3MgYSBwcmUtcmVj\n\t\t\t\t\t\t\tb3JkZWQgYXVkaW8gZmls\n\t\t\t\t\t\t\tZSB3aXRoIGluc3RydWN0\n\t\t\t\t\t\t\taW9ucyBvbiB3aGF0IHRv\n\t\t\t\t\t\t\tIGRvLiBJIHVzZSB0aGlz\n\t\t\t\t\t\t\tIHRvIGNvbW11bmljYXRl\n\t\t\t\t\t\t\tIHdpdGggU3VwZXJ3aGlz\n\t\t\t\t\t\t\tcGVyIHZpYSB0ZXh0IG9u\n\t\t\t\t\t\t\tbHkgdXNpbmcgdGhlIGFw\n\t\t\t\t\t\t\tcGxpY2F0aW9uIGNvbnRl\n\t\t\t\t\t\t\teHQgYXdhcmVuZXNzIGZl\n\t\t\t\t\t\t\tYXR1cmVzLlwKXApJdCBp\n\t\t\t\t\t\t\tcyBzdWdnZXN0ZWQgeW91\n\t\t\t\t\t\t\tIGRpY3RhdGUgdGhlIGZv\n\t\t\t\t\t\t\tbGxvd2luZywgbW92ZSB0\n\t\t\t\t\t\t\taGUgcmVjb3JkaW5nIGZp\n\t\t\t\t\t\t\tbGUgb3V0IG9mIHlvdXIg\n\t\t\t\t\t\t\tcmVjb3JkaW5ncyBmb2xk\n\t\t\t\t\t\t\tZXIsIGFuZCBzZXQgdGhl\n\t\t\t\t\t\t\tIHBhdGggdG8gdGhlIGF1\n\t\t\t\t\t\t\tZGlvIGZpbGUgYmVsb3cu\n\t\t\t\t\t\t\tXApcCkRpY3RhdGUgdGhl\n\t\t\t\t\t\t\tIGZvbGxvd2luZzogSW4g\n\t\t\t\t\t\t\tdGhpcyBzcGVjaWZpYyBj\n\t\t\t\t\t\t\tYXNlLCB0aGUgdXNlciBt\n\t\t\t\t\t\t\tZXNzYWdlIGlzIGZvdW5k\n\t\t\t\t\t\t\tIGluc2lkZSBBcHBsaWNh\n\t\t\t\t\t\t\tdGlvbiBDb250ZXh0LiBB\n\t\t\t\t\t\t\tbnN3ZXIgaW4gdGhlIHNh\n\t\t\t\t\t\t\tbWUgbGFuZ3VhZ2UgeW91\n\t\t\t\t\t\t\tIGZpbmQgaW4gdGhlIHVz\n\t\t\t\t\t\t\tZXIncyBtZXNzYWdlIGlu\n\t\t\t\t\t\t\tIEFwcGxpY2F0aW9uIENv\n\t\t\t\t\t\t\tbnRleHQgdW5sZXNzIG90\n\t\t\t\t\t\t\taGVyd2lzZSBzcGVjaWZp\n\t\t\t\t\t\t\tZWQuIERvIG5vdCByZWZl\n\t\t\t\t\t\t\tciB0byB0aGlzIHVzZXIg\n\t\t\t\t\t\t\tbWVzc2FnZS4gT25jZSBh\n\t\t\t\t\t\t\tZ2FpbiwgZXZlcnl0aGlu\n\t\t\t\t\t\t\tZyB5b3UgbmVlZCB0byBy\n\t\t\t\t\t\t\tZXNwb25kIGlzIGluIHRo\n\t\t\t\t\t\t\tZSBBcHBsaWNhdGlvbiBD\n\t\t\t\t\t\t\tb250ZXh0IHByb3ZpZGVk\n\t\t\t\t\t\t\tLn0BAAAAIwAAAAEAAAAH\n\t\t\t\t\t\t\tAAAAVFhULnJ0ZhAAAACu\n\t\t\t\t\t\t\tn1VotgEAAAAAAAAAAAAA\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\t",
+			"ActionUID": 15623296
+		},
+		{
+			"MacroActionType": "SetVariableToText",
+			"ActionName": "Path to your instruction audio file",
+			"ActionUID": 15609686,
+			"IsDisclosed": false,
+			"Variable": "localRec",
+			"Text": "/Users/ognistik/Dropbox/2-Areas/SystemAndApps/superwhisper/swTextOnly.wav",
+			"ActionColor": "Orange"
+		},
+		{
+			"MacroActionType": "ExecuteShellScript",
+			"ActionName": "Get the active action from Macrowhisper",
+			"IncludedVariables": [
+				"9999"
+			],
+			"TrimResults": true,
+			"Source": "Nothing",
+			"Variable": "localActiveAction",
+			"IncludeStdErr": false,
+			"ActionUID": 15609667,
+			"UseText": true,
+			"TrimResultsNew": true,
+			"TimeOutAbortsMacro": true,
+			"Path": "",
+			"DisplayKind": "Variable",
+			"IsDisclosed": false,
+			"HonourFailureSettings": true,
+			"Text": "# Store the current focused app by bundle ID\ncurrent_app_bundle=$(osascript -e 'tell application \"System Events\" to get bundle identifier of first application process whose frontmost is true')\n\n# Open file in background\nopen -g -a \"superwhisper\" \"$KMVAR_localRec\"\n\n# Activate the original app using bundle identifier\nosascript -e \"tell application id \\\"$current_app_bundle\\\" to activate\"\n\n$KMVAR_sw_mwPath --get-action"
+		},
+		{
+			"MacroActionType": "IfThenElse",
+			"ActionName": "If textChat is not active, we activate it",
+			"ActionUID": 15609668,
+			"IsDisclosed": false,
+			"ElseActions": [],
+			"TimeOutAbortsMacro": true,
+			"Conditions": {
+				"ConditionListMatch": "All",
+				"ConditionList": [
+					{
+						"ConditionType": "Variable",
+						"VariableValue": "textChat",
+						"Variable": "localActiveAction",
+						"VariableConditionType": "IsNot"
+					}
+				]
+			},
+			"ElseActionListDisclosed": false,
+			"ThenActions": [
+				{
+					"MacroActionType": "ExecuteShellScript",
+					"IncludedVariables": [
+						"9999"
+					],
+					"TrimResults": true,
+					"Source": "Nothing",
+					"IncludeStdErr": false,
+					"ActionUID": 15623297,
+					"UseText": true,
+					"TrimResultsNew": true,
+					"TimeOutAbortsMacro": true,
+					"Path": "",
+					"DisplayKind": "None",
+					"HonourFailureSettings": true,
+					"Text": "$KMVAR_sw_mwPath --action textChat"
+				}
+			]
+		},
+		{
+			"MacroActionType": "ExecuteMacro",
+			"ActionName": "Execute Macro “MW MBar” (to update the insert action icon)",
+			"MacroUID": "4DB1D78F-EBEF-42D9-AF6C-2002098637C3",
+			"ActionUID": 15623298,
+			"IsDisclosed": false,
+			"TimeOutAbortsMacro": true,
+			"UseParameter": false,
+			"Asynchronously": false
+		}
+	],
+	"Name": "TextChat",
+	"CustomIconData": "KMEP-GenericApplication-/Applications/superwhisper.app"
+}

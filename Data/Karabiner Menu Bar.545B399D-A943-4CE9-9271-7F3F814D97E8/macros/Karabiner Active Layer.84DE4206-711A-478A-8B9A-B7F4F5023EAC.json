@@ -3,7 +3,7 @@
 	"UID": "84DE4206-711A-478A-8B9A-B7F4F5023EAC",
 	"Name": "Karabiner Active Layer",
 	"Triggers": [],
-	"ModificationDate": 771179974.902168,
+	"ModificationDate": 772987702.313441,
 	"Actions": [
 		{
 			"MacroActionType": "Semaphore",
@@ -364,6 +364,7 @@
 									"MacroActionType": "IfThenElse",
 									"ActionName": "Cancel if no longer presed",
 									"ActionUID": 15598374,
+									"IsDisclosed": false,
 									"ActionColor": "Red",
 									"ElseActions": [],
 									"TimeOutAbortsMacro": true,
@@ -451,7 +452,6 @@
 									"MacroActionType": "IfThenElse",
 									"ActionName": "Turn On Overlay",
 									"ActionUID": 15603189,
-									"IsDisclosed": false,
 									"ElseActions": [],
 									"TimeOutAbortsMacro": true,
 									"Conditions": {
@@ -481,9 +481,8 @@
 											"TimeOutAbortsMacro": true,
 											"Path": "",
 											"DisplayKind": "None",
-											"IsDisclosed": false,
 											"HonourFailureSettings": true,
-											"Text": "set kmInst to system attribute \"KMINSTANCE\"\rtell application \"Keyboard Maestro Engine\"\r\tset karaLetter to getvariable \"kara_letter\" instance kmInst\r\tset karaMods to getvariable \"kara_mods\" instance kmInst\rend tell\r\rtell application \"BetterTouchTool\"\r\tset_string_variable \"kara_letter\" to karaLetter\r\tset_string_variable \"kara_mods\" to karaMods\r\ttrigger_named \"kara_on\"\r\t-- set test to get_string_variable \"kara_letter\"\r\t-- return test\rend tell"
+											"Text": "set kmInst to system attribute \"KMINSTANCE\"\rtell application \"Keyboard Maestro Engine\"\r\tset karaLetter to getvariable \"kara_letter\" instance kmInst\r\tset karaMods to getvariable \"kara_mods\" instance kmInst\rend tell\r\rtell application \"BetterTouchTool\"\r\tset_string_variable \"kara_letter\" to karaLetter\r\tset_string_variable \"kara_mods\" to karaMods\r\ttrigger_named \"kara_on\"\rend tell"
 										}
 									]
 								},

@@ -1,7 +1,7 @@
 {
 	"UID": "53EC3205-7EE0-4515-84A0-BC1C2FB113AC",
 	"CreationDate": 750374497.744676,
-	"ModificationDate": 769485472.056349,
+	"ModificationDate": 772749539.801187,
 	"Triggers": [
 		{
 			"MacroTriggerType": "Folder",
@@ -2154,7 +2154,7 @@
 			"MacroActionType": "IfThenElse",
 			"ActionName": "LLM REQUEST",
 			"ActionUID": 15547114,
-			"IsDisclosed": false,
+			"ThenActionListDisclosed": false,
 			"ElseActions": [
 				{
 					"MacroActionType": "ExecuteShellScript",
@@ -2183,7 +2183,7 @@
 				}
 			],
 			"ActionColor": "Red",
-			"ThenActionListDisclosed": false,
+			"TimeOutAbortsMacro": true,
 			"Conditions": {
 				"ConditionListMatch": "All",
 				"ConditionList": [
@@ -2195,7 +2195,6 @@
 					}
 				]
 			},
-			"TimeOutAbortsMacro": true,
 			"ThenActions": [
 				{
 					"MacroActionType": "ExecuteShellScript",
@@ -2228,7 +2227,7 @@
 			"MacroActionType": "IfThenElse",
 			"ActionName": "If mode is list, add to it. If not and a list exists, add to it, save, then clear. If no list exists, just save & clear.",
 			"ActionUID": 15543711,
-			"IsDisclosed": false,
+			"ThenActionListDisclosed": false,
 			"ElseActions": [
 				{
 					"MacroActionType": "IfThenElse",
@@ -2333,7 +2332,6 @@
 					"Text": ""
 				}
 			],
-			"ThenActionListDisclosed": false,
 			"TimeOutAbortsMacro": true,
 			"Conditions": {
 				"ConditionListMatch": "All",
