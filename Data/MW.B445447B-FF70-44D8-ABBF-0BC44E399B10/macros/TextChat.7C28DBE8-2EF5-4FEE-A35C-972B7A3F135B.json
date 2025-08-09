@@ -1,8 +1,9 @@
 {
 	"UID": "7C28DBE8-2EF5-4FEE-A35C-972B7A3F135B",
 	"CreationDate": 763660648.194313,
-	"ModificationDate": 772891629.055134,
+	"ModificationDate": 776457572.758853,
 	"Triggers": [],
+	"IsActive": false,
 	"Actions": [
 		{
 			"MacroActionType": "Comment",
@@ -17,9 +18,10 @@
 			"ActionName": "Path to your instruction audio file",
 			"ActionUID": 15609686,
 			"IsDisclosed": false,
-			"Variable": "localRec",
+			"ActionColor": "Orange",
 			"Text": "/Users/ognistik/Dropbox/2-Areas/SystemAndApps/superwhisper/swTextOnly.wav",
-			"ActionColor": "Orange"
+			"IsActive": false,
+			"Variable": "localRec"
 		},
 		{
 			"MacroActionType": "ExecuteShellScript",
@@ -39,7 +41,7 @@
 			"DisplayKind": "Variable",
 			"IsDisclosed": false,
 			"HonourFailureSettings": true,
-			"Text": "# Store the current focused app by bundle ID\ncurrent_app_bundle=$(osascript -e 'tell application \"System Events\" to get bundle identifier of first application process whose frontmost is true')\n\n# Open file in background\nopen -g -a \"superwhisper\" \"$KMVAR_localRec\"\n\n# Activate the original app using bundle identifier\nosascript -e \"tell application id \\\"$current_app_bundle\\\" to activate\"\n\n$KMVAR_sw_mwPath --get-action"
+			"Text": "/opt/homebrew/bin/macrowhisper --get-action"
 		},
 		{
 			"MacroActionType": "IfThenElse",
@@ -85,10 +87,27 @@
 			"ActionName": "Execute Macro “MW MBar” (to update the insert action icon)",
 			"MacroUID": "4DB1D78F-EBEF-42D9-AF6C-2002098637C3",
 			"ActionUID": 15623298,
-			"IsDisclosed": false,
 			"TimeOutAbortsMacro": true,
 			"UseParameter": false,
 			"Asynchronously": false
+		},
+		{
+			"MacroActionType": "ExecuteShellScript",
+			"IncludedVariables": [
+				"9999"
+			],
+			"TrimResults": true,
+			"Source": "Nothing",
+			"IncludeStdErr": false,
+			"ActionUID": 15624859,
+			"UseText": true,
+			"TrimResultsNew": true,
+			"TimeOutAbortsMacro": true,
+			"Path": "",
+			"DisplayKind": "Window",
+			"IsDisclosed": false,
+			"HonourFailureSettings": true,
+			"Text": "open -g \"superwhisper://record\"\nopen -g \"superwhisper://mode?key=helper\"\nsleep 0.5\nopen -g \"superwhisper://record\""
 		}
 	],
 	"Name": "TextChat",

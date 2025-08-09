@@ -1,7 +1,7 @@
 {
 	"UID": "53EC3205-7EE0-4515-84A0-BC1C2FB113AC",
 	"CreationDate": 750374497.744676,
-	"ModificationDate": 772749539.801187,
+	"ModificationDate": 776457611.080266,
 	"Triggers": [
 		{
 			"MacroTriggerType": "Folder",
@@ -13,6 +13,7 @@
 			}
 		}
 	],
+	"IsActive": false,
 	"Actions": [
 		{
 			"MacroActionType": "Comment",
@@ -344,6 +345,7 @@
 			"MacroActionType": "IfThenElse",
 			"ActionName": "Transcription Request - Depending on Language",
 			"ActionUID": 15552004,
+			"IsDisclosed": false,
 			"ElseActions": [
 				{
 					"MacroActionType": "ExecuteShellScript",
@@ -2154,7 +2156,7 @@
 			"MacroActionType": "IfThenElse",
 			"ActionName": "LLM REQUEST",
 			"ActionUID": 15547114,
-			"ThenActionListDisclosed": false,
+			"IsDisclosed": false,
 			"ElseActions": [
 				{
 					"MacroActionType": "ExecuteShellScript",
@@ -2183,7 +2185,7 @@
 				}
 			],
 			"ActionColor": "Red",
-			"TimeOutAbortsMacro": true,
+			"ThenActionListDisclosed": false,
 			"Conditions": {
 				"ConditionListMatch": "All",
 				"ConditionList": [
@@ -2195,6 +2197,7 @@
 					}
 				]
 			},
+			"TimeOutAbortsMacro": true,
 			"ThenActions": [
 				{
 					"MacroActionType": "ExecuteShellScript",
@@ -2227,7 +2230,7 @@
 			"MacroActionType": "IfThenElse",
 			"ActionName": "If mode is list, add to it. If not and a list exists, add to it, save, then clear. If no list exists, just save & clear.",
 			"ActionUID": 15543711,
-			"ThenActionListDisclosed": false,
+			"IsDisclosed": false,
 			"ElseActions": [
 				{
 					"MacroActionType": "IfThenElse",
@@ -2332,6 +2335,7 @@
 					"Text": ""
 				}
 			],
+			"ThenActionListDisclosed": false,
 			"TimeOutAbortsMacro": true,
 			"Conditions": {
 				"ConditionListMatch": "All",

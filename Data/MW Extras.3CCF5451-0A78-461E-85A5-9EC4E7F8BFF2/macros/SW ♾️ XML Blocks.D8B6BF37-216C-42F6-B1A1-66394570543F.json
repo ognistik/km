@@ -1,7 +1,7 @@
 {
 	"UID": "D8B6BF37-216C-42F6-B1A1-66394570543F",
 	"CreationDate": 764533103.134389,
-	"ModificationDate": 767280803.935618,
+	"ModificationDate": 776310517.58599,
 	"Triggers": [
 		{
 			"AutoRun": false,
@@ -29,7 +29,6 @@
 			"ActionUID": 15599646,
 			"PromptUID": "8BB078DE-FD7D-4B46-A7AA-A82FE75A509F",
 			"TimeOutAbortsMacro": false,
-			"IsDisclosed": false,
 			"Destination": "Variable",
 			"Text": "Style Requirements\nBanned Terms\nBanned Writing Structures",
 			"NotifyOnFailure": false

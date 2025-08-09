@@ -1,7 +1,7 @@
 {
-	"UID": "B8AC61D2-A0FF-474C-9973-5505E246B81B",
 	"CreationDate": 739589728.599157,
-	"ModificationDate": 768765554.099582,
+	"UID": "B8AC61D2-A0FF-474C-9973-5505E246B81B",
+	"Name": "Brilliant",
 	"Triggers": [
 		{
 			"Application": {
@@ -15,7 +15,7 @@
 			"MacroTriggerType": "Application"
 		}
 	],
-	"IsActive": false,
+	"ModificationDate": 768765554.099582,
 	"Actions": [
 		{
 			"MacroActionType": "Notification",
@@ -44,6 +44,5 @@
 				"NewFile": "/Applications/Brilliant.Design.app"
 			}
 		}
-	],
-	"Name": "Brilliant"
+	]
 }

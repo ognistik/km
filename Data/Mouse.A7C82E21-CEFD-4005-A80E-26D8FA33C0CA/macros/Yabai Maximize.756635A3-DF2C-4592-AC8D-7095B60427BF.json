@@ -10,13 +10,14 @@
 			"FireType": "Pressed"
 		}
 	],
-	"ModificationDate": 743539490.782451,
+	"ModificationDate": 775846610.698042,
 	"Actions": [
 		{
 			"MacroActionType": "ExecuteShellScript",
 			"IncludedVariables": [
 				"9999"
 			],
+			"NotifyOnTimeOut": false,
 			"TrimResults": true,
 			"Source": "Nothing",
 			"IncludeStdErr": false,
@@ -27,7 +28,8 @@
 			"Path": "",
 			"DisplayKind": "None",
 			"HonourFailureSettings": true,
-			"Text": "~/Documents/GitHubRepos/dotfiles/Yabai/Scripts/ToggleMaximize.sh"
+			"Text": "~/Documents/GitHubRepos/dotfiles/Yabai/Scripts/ToggleMaximize.sh",
+			"NotifyOnFailure": false
 		}
 	]
 }
