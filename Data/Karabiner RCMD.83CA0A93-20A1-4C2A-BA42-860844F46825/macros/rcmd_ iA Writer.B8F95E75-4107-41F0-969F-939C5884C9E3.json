@@ -62,8 +62,7 @@
 																							"AlreadyActivatedActionType": "BringAllWindows",
 																							"Application": {
 																								"BundleIdentifier": "pro.writer.mac",
-																								"Name": "ia writer",
-																								"NewFile": "/Applications/iA Writer.app"
+																								"Name": "ia writer"
 																							}
 																						},
 																						{
@@ -103,8 +102,7 @@
 																					"AlreadyActivatedActionType": "BringAllWindows",
 																					"Application": {
 																						"BundleIdentifier": "pro.writer.mac",
-																						"Name": "ia writer",
-																						"NewFile": "/Applications/iA Writer.app"
+																						"Name": "ia writer"
 																					}
 																				}
 																			],
@@ -133,8 +131,7 @@
 																			"AlreadyActivatedActionType": "BringAllWindows",
 																			"Application": {
 																				"BundleIdentifier": "pro.writer.mac",
-																				"Name": "ia writer",
-																				"NewFile": "/Applications/iA Writer.app"
+																				"Name": "ia writer"
 																			}
 																		},
 																		{
@@ -284,8 +281,7 @@
 							{
 								"Application": {
 									"BundleIdentifier": "pro.writer.mac",
-									"Name": "ia writer",
-									"NewFile": "/Applications/iA Writer.app"
+									"Name": "ia writer"
 								},
 								"ApplicationConditionType": "Running",
 								"ConditionType": "Application"
@@ -355,8 +351,7 @@
 																							"AlreadyActivatedActionType": "BringAllWindows",
 																							"Application": {
 																								"BundleIdentifier": "pro.writer.mac",
-																								"Name": "ia writer",
-																								"NewFile": "/Applications/iA Writer.app"
+																								"Name": "ia writer"
 																							}
 																						},
 																						{
@@ -407,8 +402,7 @@
 																					"AlreadyActivatedActionType": "BringAllWindows",
 																					"Application": {
 																						"BundleIdentifier": "pro.writer.mac",
-																						"Name": "ia writer",
-																						"NewFile": "/Applications/iA Writer.app"
+																						"Name": "ia writer"
 																					}
 																				}
 																			],
@@ -437,8 +431,7 @@
 																			"AlreadyActivatedActionType": "BringAllWindows",
 																			"Application": {
 																				"BundleIdentifier": "pro.writer.mac",
-																				"Name": "ia writer",
-																				"NewFile": "/Applications/iA Writer.app"
+																				"Name": "ia writer"
 																			}
 																		},
 																		{
@@ -467,8 +460,7 @@
 																	"MacroActionType": "QuitSpecificApp",
 																	"Application": {
 																		"BundleIdentifier": "pro.writer.mac",
-																		"Name": "ia writer",
-																		"NewFile": "/Applications/iA Writer.app"
+																		"Name": "ia writer"
 																	},
 																	"TimeOutAbortsMacro": true,
 																	"Target": "Specific",
@@ -497,8 +489,7 @@
 															"ActionUID": 15568909,
 															"Application": {
 																"BundleIdentifier": "pro.writer.mac",
-																"Name": "ia writer",
-																"NewFile": "/Applications/iA Writer.app"
+																"Name": "ia writer"
 															}
 														}
 													],
@@ -636,8 +627,7 @@
 							"AlreadyActivatedActionType": "Normal",
 							"Application": {
 								"BundleIdentifier": "pro.writer.mac",
-								"Name": "ia writer",
-								"NewFile": "/Applications/iA Writer.app"
+								"Name": "ia writer"
 							}
 						}
 					],
@@ -647,8 +637,7 @@
 							{
 								"Application": {
 									"BundleIdentifier": "pro.writer.mac",
-									"Name": "ia writer",
-									"NewFile": "/Applications/iA Writer.app"
+									"Name": "ia writer"
 								},
 								"ApplicationConditionType": "Running",
 								"ConditionType": "Application"
@@ -665,8 +654,7 @@
 							"AlreadyActivatedActionType": "Hide",
 							"Application": {
 								"BundleIdentifier": "pro.writer.mac",
-								"Name": "ia writer",
-								"NewFile": "/Applications/iA Writer.app"
+								"Name": "ia writer"
 							}
 						}
 					],

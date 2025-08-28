@@ -1,0 +1,27 @@
+{
+	"CreationDate": 776462506.156119,
+	"UID": "5DA51CD0-4162-47B4-8864-9E2BE5538E58",
+	"Triggers": [
+		{
+			"KeyCode": 9,
+			"MacroTriggerType": "HotKey",
+			"Modifiers": 768,
+			"FireType": "Pressed"
+		}
+	],
+	"ModificationDate": 776462543.635397,
+	"Actions": [
+		{
+			"MacroActionType": "SelectMenuItem",
+			"TargetingType": "Front",
+			"TargetApplication": {},
+			"Menu": [
+				"Edit",
+				"Paste From",
+				"Plain Text"
+			],
+			"ActionUID": 15625256
+		}
+	],
+	"Name": "Select or Show a Menu Item"
+}

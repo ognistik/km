@@ -61,8 +61,9 @@
 																							"TimeOutAbortsMacro": true,
 																							"AlreadyActivatedActionType": "BringAllWindows",
 																							"Application": {
-																								"NewFile": "/Applications/Dehancer Lightroom Plugin/Dehancer Lightroom Plugin.app",
-																								"Name": "Dehancer Lightroom Plugin"
+																								"BundleIdentifier": "com.dehancer.lightroom.plugin",
+																								"Name": "Dehancer Lightroom Plugin",
+																								"NewFile": "/Applications/Dehancer Lightroom Plugin/Dehancer Lightroom Plugin.app"
 																							}
 																						},
 																						{
@@ -101,8 +102,9 @@
 																					"TimeOutAbortsMacro": true,
 																					"AlreadyActivatedActionType": "BringAllWindows",
 																					"Application": {
-																						"NewFile": "/Applications/Dehancer Lightroom Plugin/Dehancer Lightroom Plugin.app",
-																						"Name": "Dehancer Lightroom Plugin"
+																						"BundleIdentifier": "com.dehancer.lightroom.plugin",
+																						"Name": "Dehancer Lightroom Plugin",
+																						"NewFile": "/Applications/Dehancer Lightroom Plugin/Dehancer Lightroom Plugin.app"
 																					}
 																				}
 																			],
@@ -130,8 +132,9 @@
 																			"TimeOutAbortsMacro": true,
 																			"AlreadyActivatedActionType": "BringAllWindows",
 																			"Application": {
-																				"NewFile": "/Applications/Dehancer Lightroom Plugin/Dehancer Lightroom Plugin.app",
-																				"Name": "Dehancer Lightroom Plugin"
+																				"BundleIdentifier": "com.dehancer.lightroom.plugin",
+																				"Name": "Dehancer Lightroom Plugin",
+																				"NewFile": "/Applications/Dehancer Lightroom Plugin/Dehancer Lightroom Plugin.app"
 																			}
 																		},
 																		{
@@ -280,8 +283,9 @@
 						"ConditionList": [
 							{
 								"Application": {
-									"NewFile": "/Applications/Dehancer Lightroom Plugin/Dehancer Lightroom Plugin.app",
-									"Name": "Dehancer Lightroom Plugin"
+									"BundleIdentifier": "com.dehancer.lightroom.plugin",
+									"Name": "Dehancer Lightroom Plugin",
+									"NewFile": "/Applications/Dehancer Lightroom Plugin/Dehancer Lightroom Plugin.app"
 								},
 								"ApplicationConditionType": "Running",
 								"ConditionType": "Application"
@@ -350,8 +354,9 @@
 																							"TimeOutAbortsMacro": true,
 																							"AlreadyActivatedActionType": "BringAllWindows",
 																							"Application": {
-																								"NewFile": "/Applications/Dehancer Lightroom Plugin/Dehancer Lightroom Plugin.app",
-																								"Name": "Dehancer Lightroom Plugin"
+																								"BundleIdentifier": "com.dehancer.lightroom.plugin",
+																								"Name": "Dehancer Lightroom Plugin",
+																								"NewFile": "/Applications/Dehancer Lightroom Plugin/Dehancer Lightroom Plugin.app"
 																							}
 																						},
 																						{
@@ -401,8 +406,9 @@
 																					"TimeOutAbortsMacro": true,
 																					"AlreadyActivatedActionType": "BringAllWindows",
 																					"Application": {
-																						"NewFile": "/Applications/Dehancer Lightroom Plugin/Dehancer Lightroom Plugin.app",
-																						"Name": "Dehancer Lightroom Plugin"
+																						"BundleIdentifier": "com.dehancer.lightroom.plugin",
+																						"Name": "Dehancer Lightroom Plugin",
+																						"NewFile": "/Applications/Dehancer Lightroom Plugin/Dehancer Lightroom Plugin.app"
 																					}
 																				}
 																			],
@@ -430,8 +436,9 @@
 																			"TimeOutAbortsMacro": true,
 																			"AlreadyActivatedActionType": "BringAllWindows",
 																			"Application": {
-																				"NewFile": "/Applications/Dehancer Lightroom Plugin/Dehancer Lightroom Plugin.app",
-																				"Name": "Dehancer Lightroom Plugin"
+																				"BundleIdentifier": "com.dehancer.lightroom.plugin",
+																				"Name": "Dehancer Lightroom Plugin",
+																				"NewFile": "/Applications/Dehancer Lightroom Plugin/Dehancer Lightroom Plugin.app"
 																			}
 																		},
 																		{
@@ -459,8 +466,9 @@
 																{
 																	"MacroActionType": "QuitSpecificApp",
 																	"Application": {
-																		"NewFile": "/Applications/Dehancer Lightroom Plugin/Dehancer Lightroom Plugin.app",
-																		"Name": "Dehancer Lightroom Plugin"
+																		"BundleIdentifier": "com.dehancer.lightroom.plugin",
+																		"Name": "Dehancer Lightroom Plugin",
+																		"NewFile": "/Applications/Dehancer Lightroom Plugin/Dehancer Lightroom Plugin.app"
 																	},
 																	"TimeOutAbortsMacro": true,
 																	"Target": "Specific",
@@ -488,8 +496,9 @@
 															"MacroActionType": "HideSpecificApp",
 															"ActionUID": 15519689,
 															"Application": {
-																"NewFile": "/Applications/Dehancer Lightroom Plugin/Dehancer Lightroom Plugin.app",
-																"Name": "Dehancer Lightroom Plugin"
+																"BundleIdentifier": "com.dehancer.lightroom.plugin",
+																"Name": "Dehancer Lightroom Plugin",
+																"NewFile": "/Applications/Dehancer Lightroom Plugin/Dehancer Lightroom Plugin.app"
 															}
 														}
 													],
@@ -626,8 +635,9 @@
 							"TimeOutAbortsMacro": true,
 							"AlreadyActivatedActionType": "Normal",
 							"Application": {
-								"NewFile": "/Applications/Dehancer Lightroom Plugin/Dehancer Lightroom Plugin.app",
-								"Name": "Dehancer Lightroom Plugin"
+								"BundleIdentifier": "com.dehancer.lightroom.plugin",
+								"Name": "Dehancer Lightroom Plugin",
+								"NewFile": "/Applications/Dehancer Lightroom Plugin/Dehancer Lightroom Plugin.app"
 							}
 						}
 					],
@@ -636,8 +646,9 @@
 						"ConditionList": [
 							{
 								"Application": {
-									"NewFile": "/Applications/Dehancer Lightroom Plugin/Dehancer Lightroom Plugin.app",
-									"Name": "Dehancer Lightroom Plugin"
+									"BundleIdentifier": "com.dehancer.lightroom.plugin",
+									"Name": "Dehancer Lightroom Plugin",
+									"NewFile": "/Applications/Dehancer Lightroom Plugin/Dehancer Lightroom Plugin.app"
 								},
 								"ApplicationConditionType": "Running",
 								"ConditionType": "Application"
@@ -653,8 +664,9 @@
 							"TimeOutAbortsMacro": true,
 							"AlreadyActivatedActionType": "Hide",
 							"Application": {
-								"NewFile": "/Applications/Dehancer Lightroom Plugin/Dehancer Lightroom Plugin.app",
-								"Name": "Dehancer Lightroom Plugin"
+								"BundleIdentifier": "com.dehancer.lightroom.plugin",
+								"Name": "Dehancer Lightroom Plugin",
+								"NewFile": "/Applications/Dehancer Lightroom Plugin/Dehancer Lightroom Plugin.app"
 							}
 						}
 					],

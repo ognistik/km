@@ -62,8 +62,7 @@
 																							"AlreadyActivatedActionType": "BringAllWindows",
 																							"Application": {
 																								"BundleIdentifier": "com.culturedcode.ThingsMac",
-																								"Name": "Things3",
-																								"NewFile": "/Applications/Things3.app"
+																								"Name": "Things3"
 																							}
 																						},
 																						{
@@ -103,8 +102,7 @@
 																					"AlreadyActivatedActionType": "BringAllWindows",
 																					"Application": {
 																						"BundleIdentifier": "com.culturedcode.ThingsMac",
-																						"Name": "Things3",
-																						"NewFile": "/Applications/Things3.app"
+																						"Name": "Things3"
 																					}
 																				}
 																			],
@@ -133,8 +131,7 @@
 																			"AlreadyActivatedActionType": "BringAllWindows",
 																			"Application": {
 																				"BundleIdentifier": "com.culturedcode.ThingsMac",
-																				"Name": "Things3",
-																				"NewFile": "/Applications/Things3.app"
+																				"Name": "Things3"
 																			}
 																		},
 																		{
@@ -284,8 +281,7 @@
 							{
 								"Application": {
 									"BundleIdentifier": "com.culturedcode.ThingsMac",
-									"Name": "Things3",
-									"NewFile": "/Applications/Things3.app"
+									"Name": "Things3"
 								},
 								"ApplicationConditionType": "Running",
 								"ConditionType": "Application"
@@ -355,8 +351,7 @@
 																							"AlreadyActivatedActionType": "BringAllWindows",
 																							"Application": {
 																								"BundleIdentifier": "com.culturedcode.ThingsMac",
-																								"Name": "Things3",
-																								"NewFile": "/Applications/Things3.app"
+																								"Name": "Things3"
 																							}
 																						},
 																						{
@@ -407,8 +402,7 @@
 																					"AlreadyActivatedActionType": "BringAllWindows",
 																					"Application": {
 																						"BundleIdentifier": "com.culturedcode.ThingsMac",
-																						"Name": "Things3",
-																						"NewFile": "/Applications/Things3.app"
+																						"Name": "Things3"
 																					}
 																				}
 																			],
@@ -437,8 +431,7 @@
 																			"AlreadyActivatedActionType": "BringAllWindows",
 																			"Application": {
 																				"BundleIdentifier": "com.culturedcode.ThingsMac",
-																				"Name": "Things3",
-																				"NewFile": "/Applications/Things3.app"
+																				"Name": "Things3"
 																			}
 																		},
 																		{
@@ -467,8 +460,7 @@
 																	"MacroActionType": "QuitSpecificApp",
 																	"Application": {
 																		"BundleIdentifier": "com.culturedcode.ThingsMac",
-																		"Name": "Things3",
-																		"NewFile": "/Applications/Things3.app"
+																		"Name": "Things3"
 																	},
 																	"TimeOutAbortsMacro": true,
 																	"Target": "Specific",
@@ -497,8 +489,7 @@
 															"ActionUID": 15520734,
 															"Application": {
 																"BundleIdentifier": "com.culturedcode.ThingsMac",
-																"Name": "Things3",
-																"NewFile": "/Applications/Things3.app"
+																"Name": "Things3"
 															}
 														}
 													],
@@ -636,8 +627,7 @@
 							"AlreadyActivatedActionType": "Normal",
 							"Application": {
 								"BundleIdentifier": "com.culturedcode.ThingsMac",
-								"Name": "Things3",
-								"NewFile": "/Applications/Things3.app"
+								"Name": "Things3"
 							}
 						}
 					],
@@ -647,8 +637,7 @@
 							{
 								"Application": {
 									"BundleIdentifier": "com.culturedcode.ThingsMac",
-									"Name": "Things3",
-									"NewFile": "/Applications/Things3.app"
+									"Name": "Things3"
 								},
 								"ApplicationConditionType": "Running",
 								"ConditionType": "Application"
@@ -665,8 +654,7 @@
 							"AlreadyActivatedActionType": "Hide",
 							"Application": {
 								"BundleIdentifier": "com.culturedcode.ThingsMac",
-								"Name": "Things3",
-								"NewFile": "/Applications/Things3.app"
+								"Name": "Things3"
 							}
 						}
 					],
