@@ -1,9 +1,9 @@
 {
-	"CreationDate": 743190362.553921,
 	"UID": "A815F3FA-8274-4DA2-ACB8-B4B9ED0A141A",
-	"Name": "Dropover Imgur Link",
-	"Triggers": [],
+	"CreationDate": 743190362.553921,
 	"ModificationDate": 743191148.434301,
+	"Triggers": [],
+	"IsActive": false,
 	"Actions": [
 		{
 			"MacroActionType": "SetVariableToText",
@@ -96,5 +96,6 @@
 			"Variable": "localMousePos",
 			"ActionUID": 15518269
 		}
-	]
+	],
+	"Name": "Dropover Imgur Link"
 }

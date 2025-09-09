@@ -15,7 +15,7 @@
 			"MacroTriggerType": "Application"
 		}
 	],
-	"ModificationDate": 764558220.01052,
+	"ModificationDate": 778096418.714842,
 	"Actions": [
 		{
 			"MacroActionType": "Pause",
@@ -28,10 +28,10 @@
 			"ElseActions": [
 				{
 					"MacroActionType": "Notification",
-					"Title": "SuperWhisper Closed",
+					"Title": "Superwhisper Closed",
 					"SoundName": "",
 					"Subtitle": "",
-					"Text": "SuperWhisper Quit. It will open in 5 seconds unless you cancel all Macros with ALT + ESC",
+					"Text": "Superwhisper Quit. It will open in 5 seconds unless you cancel all Macros with ALT + ESC",
 					"ActionUID": 15536112
 				},
 				{

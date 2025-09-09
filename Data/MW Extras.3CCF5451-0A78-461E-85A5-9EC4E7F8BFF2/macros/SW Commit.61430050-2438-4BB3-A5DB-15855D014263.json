@@ -3,7 +3,7 @@
 	"UID": "61430050-2438-4BB3-A5DB-15855D014263",
 	"Name": "SW Commit",
 	"Triggers": [],
-	"ModificationDate": 776301998.690314,
+	"ModificationDate": 778095470.573716,
 	"Actions": [
 		{
 			"MacroActionType": "ExecuteMacro",
@@ -47,6 +47,7 @@
 			"TimeOutAbortsMacro": true,
 			"Path": "",
 			"DisplayKind": "Window",
+			"IsDisclosed": false,
 			"HonourFailureSettings": true,
 			"Text": "#!/bin/bash\ncd \"/Users/ognistik/Documents/superwhisper\"\ngit add .\ngit commit -m \"Automated commit from KM\"\ngit push origin main\n\ncd \"/Users/ognistik/Alter Prompts\"\ngit add .\ngit commit -m \"Automated commit from KM\"\ngit push origin main"
 		}

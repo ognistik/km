@@ -3,7 +3,7 @@
 	"UID": "7A9F80E0-042D-4620-B414-11B2D74736EB",
 	"Name": "Dropover Command Bar",
 	"Triggers": [],
-	"ModificationDate": 763865488.843832,
+	"ModificationDate": 778114198.628872,
 	"Actions": [
 		{
 			"MacroActionType": "SetVariableToText",
@@ -27,18 +27,6 @@
 			"TargetingType": "Front",
 			"KeyCode": 40,
 			"Modifiers": 256
-		},
-		{
-			"MacroActionType": "Pause",
-			"TimeOutAbortsMacro": true,
-			"Time": ".01",
-			"ActionUID": 513168
-		},
-		{
-			"MacroActionType": "UseVariable",
-			"Action": "SetMouse",
-			"Variable": "localMousePos",
-			"ActionUID": 513157
 		}
 	]
 }

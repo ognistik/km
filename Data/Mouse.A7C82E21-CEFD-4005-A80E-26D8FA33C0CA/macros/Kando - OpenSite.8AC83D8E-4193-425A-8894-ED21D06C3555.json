@@ -3,7 +3,7 @@
 	"UID": "8AC83D8E-4193-425A-8894-ED21D06C3555",
 	"Name": "Kando - OpenSite",
 	"Triggers": [],
-	"ModificationDate": 762301274.616443,
+	"ModificationDate": 778297931.193036,
 	"Actions": [
 		{
 			"MacroActionType": "Semaphore",
@@ -24,13 +24,14 @@
 		{
 			"MacroActionType": "IfThenElse",
 			"ActionUID": 15558393,
-			"IsDisclosed": false,
 			"ThenActionListDisclosed": false,
+			"TimeOutAbortsMacro": true,
 			"ElseActions": [
 				{
 					"MacroActionType": "IfThenElse",
 					"ActionUID": 15526974,
 					"ThenActionListDisclosed": false,
+					"TimeOutAbortsMacro": true,
 					"ElseActions": [
 						{
 							"MacroActionType": "IfThenElse",
@@ -102,7 +103,6 @@
 							"ActionUID": 15558399
 						}
 					],
-					"TimeOutAbortsMacro": true,
 					"Conditions": {
 						"ConditionListMatch": "All",
 						"ConditionList": [
@@ -117,7 +117,6 @@
 							}
 						]
 					},
-					"ElseActionListDisclosed": false,
 					"ThenActions": [
 						{
 							"MacroActionType": "OpenURL",
@@ -134,7 +133,6 @@
 					]
 				}
 			],
-			"TimeOutAbortsMacro": true,
 			"Conditions": {
 				"ConditionListMatch": "All",
 				"ConditionList": [

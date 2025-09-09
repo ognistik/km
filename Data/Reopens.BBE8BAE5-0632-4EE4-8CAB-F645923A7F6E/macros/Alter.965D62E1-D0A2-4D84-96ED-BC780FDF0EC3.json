@@ -15,34 +15,63 @@
 			"MacroTriggerType": "Application"
 		}
 	],
-	"ModificationDate": 768763276.926593,
+	"ModificationDate": 778096413.418584,
 	"Actions": [
-		{
-			"MacroActionType": "Notification",
-			"Title": "Alter Closed",
-			"SoundName": "",
-			"Subtitle": "",
-			"Text": "Alter Quit. It will open in 5 seconds unless you cancel all Macros with ALT + ESC",
-			"ActionUID": 15618493
-		},
 		{
 			"MacroActionType": "Pause",
 			"TimeOutAbortsMacro": true,
-			"Time": "5",
-			"ActionUID": 15618494
+			"Time": "3",
+			"ActionUID": 15626428
 		},
 		{
-			"MacroActionType": "ActivateApplication",
-			"ActionUID": 15618495,
-			"ReopenWindows": false,
-			"AllWindows": false,
+			"MacroActionType": "IfThenElse",
+			"ActionUID": 15626429,
+			"IsDisclosed": false,
 			"TimeOutAbortsMacro": true,
-			"AlreadyActivatedActionType": "Normal",
-			"Application": {
-				"BundleIdentifier": "com.wearedevx.alter",
-				"Name": "Alter",
-				"NewFile": "/Applications/Alter.app"
-			}
+			"ElseActions": [
+				{
+					"MacroActionType": "Notification",
+					"Title": "Alter Closed",
+					"SoundName": "",
+					"Subtitle": "",
+					"Text": "Alter Quit. It will open in 5 seconds unless you cancel all Macros with ALT + ESC",
+					"ActionUID": 15618493
+				},
+				{
+					"MacroActionType": "Pause",
+					"TimeOutAbortsMacro": true,
+					"Time": "5",
+					"ActionUID": 15618494
+				},
+				{
+					"MacroActionType": "ActivateApplication",
+					"ActionUID": 15618495,
+					"ReopenWindows": false,
+					"AllWindows": false,
+					"TimeOutAbortsMacro": true,
+					"AlreadyActivatedActionType": "Normal",
+					"Application": {
+						"BundleIdentifier": "com.wearedevx.alter",
+						"Name": "Alter",
+						"NewFile": "/Applications/Alter.app"
+					}
+				}
+			],
+			"Conditions": {
+				"ConditionListMatch": "All",
+				"ConditionList": [
+					{
+						"Application": {
+							"BundleIdentifier": "com.wearedevx.alter",
+							"Name": "Alter",
+							"NewFile": "/Applications/Alter.app"
+						},
+						"ApplicationConditionType": "Running",
+						"ConditionType": "Application"
+					}
+				]
+			},
+			"ThenActions": []
 		}
 	]
 }

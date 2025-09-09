@@ -1,7 +1,7 @@
 {
 	"UID": "8752536B-26BB-4962-9789-B1B484ED6568",
 	"CreationDate": 650927715.106816,
-	"ModificationDate": 768100886.258181,
+	"ModificationDate": 779151166.12306,
 	"Triggers": [],
 	"Actions": [
 		{
@@ -19,7 +19,72 @@
 			"ActionUID": 15607165
 		},
 		{
+			"MacroActionType": "ExecuteAppleScript",
+			"ActionName": "check for empty markdown links",
+			"IncludedVariables": [
+				"9999"
+			],
+			"TrimResults": true,
+			"Variable": "localCheck",
+			"IncludeStdErr": false,
+			"ActionUID": 15626865,
+			"UseText": true,
+			"TrimResultsNew": true,
+			"TimeOutAbortsMacro": true,
+			"Path": "",
+			"DisplayKind": "Variable",
+			"IsDisclosed": false,
+			"HonourFailureSettings": true,
+			"Text": "set theClipboard to the clipboard as text\nlog \"Clipboard content: \" & theClipboard\n\n-- Define the Unicode Replacement Character (U+FFFC) literally.\nset unicodeReplacementChar to (character id 65532) as text\n\n-- Construct the Perl regular expression.\n-- It looks for a markdown link where the URL part can be:\n--   - Empty: ()\n--   - Containing only whitespace: (   )\n--   - Containing the Unicode Replacement Character (U+FFFC): (￼)\n--   - Containing whitespace and the Replacement Character: ( ￼ )\n-- The regex `\\\\[.*?\\\\]\\\\(\\\\s*(?:` & unicodeReplacementChar & `)?\\\\s*\\\\)`\n--   - `\\\\[` and `\\\\]`: Match literal square brackets for the link text.\n--   - `.*?`: Match any characters non-greedily for the link text.\n--   - `\\\\(` and `\\\\)`: Match literal parentheses for the URL part.\n--   - `\\\\s*`: Match zero or more whitespace characters.\n--   - `(?:` & unicodeReplacementChar & `)?`: Match the literal U+FFFC character zero or one time (optional, non-capturing group).\nset perlRegex to \"\\\\[.*?\\\\]\\\\(\\\\s*(?:(\" & unicodeReplacementChar & \"))?\\\\s*\\\\)\"\n\nlog \"Perl Regex Pattern: \" & perlRegex\n\n-- Execute the Perl command to check for a match.\n-- -CSD flags enable comprehensive Unicode support.\n-- The clipboard content is passed as an argument using 'quoted form' for safe shell handling.\nset shellCommand to \"perl -CSD -e 'print \\\"empty\\\" if ($ARGV[0] =~ /\" & perlRegex & \"/);' -- \" & quoted form of theClipboard\nlog \"Shell Command: \" & shellCommand\n\ntry\n    set matchResult to (do shell script shellCommand)\n    log \"Shell Command Result: '\" & matchResult & \"'\"\n    \n    if matchResult is equal to \"empty\" then\n        log \"Match found: Returning 'empty'\"\n        return \"empty\"\n    else\n        log \"No match found.\"\n    end if\non error errMsg number errNum\n    log \"Error executing shell command: \" & errMsg & \" (Error \" & errNum & \")\"\nend try"
+		},
+		{
 			"MacroActionType": "IfThenElse",
+			"ActionName": "Check for empty links",
+			"ActionUID": 15626866,
+			"IsDisclosed": false,
+			"ElseActions": [],
+			"TimeOutAbortsMacro": true,
+			"Conditions": {
+				"ConditionListMatch": "All",
+				"ConditionList": [
+					{
+						"ConditionType": "Variable",
+						"VariableValue": "empty",
+						"Variable": "localCheck",
+						"VariableConditionType": "Contains"
+					}
+				]
+			},
+			"ThenActions": [
+				{
+					"MacroActionType": "ExecuteMacro",
+					"UseParameter": false,
+					"MacroUID": "C5C363E6-43A6-400C-A5F7-08C94745B2C9",
+					"TimeOutAbortsMacro": true,
+					"Asynchronously": true,
+					"ActionUID": 15626869
+				},
+				{
+					"MacroActionType": "Alert",
+					"Title": "Keyboard Maestro Alert",
+					"ActionUID": 15626867,
+					"IsDisclosed": false,
+					"TimeOutAbortsMacro": true,
+					"Text": "There's an empty link... couldn't copy.",
+					"SoundPath": ""
+				},
+				{
+					"MacroActionType": "Cancel",
+					"ActionUID": 15626868,
+					"Action": "CancelThisMacro"
+				}
+			]
+		},
+		{
+			"MacroActionType": "IfThenElse",
+			"ActionUID": 15607166,
+			"IsDisclosed": false,
+			"TimeOutAbortsMacro": true,
 			"ElseActions": [
 				{
 					"MacroActionType": "InsertText",
@@ -84,12 +149,11 @@
 					"Subtitle": "Copied",
 					"SoundName": "Glass"
 				}
-			],
-			"TimeOutAbortsMacro": true,
-			"ActionUID": 15607166
+			]
 		},
 		{
 			"MacroActionType": "Pause",
+			"IsDisclosed": false,
 			"TimeOutAbortsMacro": true,
 			"Time": ".3",
 			"ActionUID": 15607560
@@ -107,6 +171,7 @@
 			"TimeOutAbortsMacro": true,
 			"Path": "",
 			"DisplayKind": "None",
+			"IsDisclosed": false,
 			"HonourFailureSettings": true,
 			"Text": "tell application id \"com.runningwithcrayons.Alfred\" to run trigger \"cmd\" in workflow \"com.pasteflow.aft\" with argument \"!addRawClip\""
 		}

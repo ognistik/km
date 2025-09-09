@@ -62,8 +62,7 @@
 																							"AlreadyActivatedActionType": "BringAllWindows",
 																							"Application": {
 																								"BundleIdentifier": "ai.elementlabs.lmstudio",
-																								"Name": "LM Studio",
-																								"NewFile": "/Applications/LM Studio.app"
+																								"Name": "LM Studio"
 																							}
 																						},
 																						{
@@ -103,8 +102,7 @@
 																					"AlreadyActivatedActionType": "BringAllWindows",
 																					"Application": {
 																						"BundleIdentifier": "ai.elementlabs.lmstudio",
-																						"Name": "LM Studio",
-																						"NewFile": "/Applications/LM Studio.app"
+																						"Name": "LM Studio"
 																					}
 																				}
 																			],
@@ -133,8 +131,7 @@
 																			"AlreadyActivatedActionType": "BringAllWindows",
 																			"Application": {
 																				"BundleIdentifier": "ai.elementlabs.lmstudio",
-																				"Name": "LM Studio",
-																				"NewFile": "/Applications/LM Studio.app"
+																				"Name": "LM Studio"
 																			}
 																		},
 																		{
@@ -284,8 +281,7 @@
 							{
 								"Application": {
 									"BundleIdentifier": "ai.elementlabs.lmstudio",
-									"Name": "LM Studio",
-									"NewFile": "/Applications/LM Studio.app"
+									"Name": "LM Studio"
 								},
 								"ApplicationConditionType": "Running",
 								"ConditionType": "Application"
@@ -355,8 +351,7 @@
 																							"AlreadyActivatedActionType": "BringAllWindows",
 																							"Application": {
 																								"BundleIdentifier": "ai.elementlabs.lmstudio",
-																								"Name": "LM Studio",
-																								"NewFile": "/Applications/LM Studio.app"
+																								"Name": "LM Studio"
 																							}
 																						},
 																						{
@@ -407,8 +402,7 @@
 																					"AlreadyActivatedActionType": "BringAllWindows",
 																					"Application": {
 																						"BundleIdentifier": "ai.elementlabs.lmstudio",
-																						"Name": "LM Studio",
-																						"NewFile": "/Applications/LM Studio.app"
+																						"Name": "LM Studio"
 																					}
 																				}
 																			],
@@ -437,8 +431,7 @@
 																			"AlreadyActivatedActionType": "BringAllWindows",
 																			"Application": {
 																				"BundleIdentifier": "ai.elementlabs.lmstudio",
-																				"Name": "LM Studio",
-																				"NewFile": "/Applications/LM Studio.app"
+																				"Name": "LM Studio"
 																			}
 																		},
 																		{
@@ -467,8 +460,7 @@
 																	"MacroActionType": "QuitSpecificApp",
 																	"Application": {
 																		"BundleIdentifier": "ai.elementlabs.lmstudio",
-																		"Name": "LM Studio",
-																		"NewFile": "/Applications/LM Studio.app"
+																		"Name": "LM Studio"
 																	},
 																	"TimeOutAbortsMacro": true,
 																	"Target": "Specific",
@@ -497,8 +489,7 @@
 															"ActionUID": 15520168,
 															"Application": {
 																"BundleIdentifier": "ai.elementlabs.lmstudio",
-																"Name": "LM Studio",
-																"NewFile": "/Applications/LM Studio.app"
+																"Name": "LM Studio"
 															}
 														}
 													],
@@ -636,8 +627,7 @@
 							"AlreadyActivatedActionType": "Normal",
 							"Application": {
 								"BundleIdentifier": "ai.elementlabs.lmstudio",
-								"Name": "LM Studio",
-								"NewFile": "/Applications/LM Studio.app"
+								"Name": "LM Studio"
 							}
 						}
 					],
@@ -647,8 +637,7 @@
 							{
 								"Application": {
 									"BundleIdentifier": "ai.elementlabs.lmstudio",
-									"Name": "LM Studio",
-									"NewFile": "/Applications/LM Studio.app"
+									"Name": "LM Studio"
 								},
 								"ApplicationConditionType": "Running",
 								"ConditionType": "Application"
@@ -665,8 +654,7 @@
 							"AlreadyActivatedActionType": "Hide",
 							"Application": {
 								"BundleIdentifier": "ai.elementlabs.lmstudio",
-								"Name": "LM Studio",
-								"NewFile": "/Applications/LM Studio.app"
+								"Name": "LM Studio"
 							}
 						}
 					],

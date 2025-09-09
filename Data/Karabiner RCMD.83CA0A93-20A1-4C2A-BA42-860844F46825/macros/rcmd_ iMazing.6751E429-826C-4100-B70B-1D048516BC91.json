@@ -1,15 +1,15 @@
 {
 	"CreationDate": 740181822.845748,
-	"UID": "B8F95E75-4107-41F0-969F-939C5884C9E3",
-	"Name": "rcmd: iA Writer",
+	"UID": "6751E429-826C-4100-B70B-1D048516BC91",
+	"Name": "rcmd: iMazing",
 	"Triggers": [],
-	"ModificationDate": 756430119.657988,
+	"ModificationDate": 778433651.53813,
 	"Actions": [
 		{
 			"MacroActionType": "SetVariableToText",
 			"Variable": "localAction",
 			"Text": "%TriggerValue%",
-			"ActionUID": 15568896
+			"ActionUID": 15626430
 		},
 		{
 			"MacroActionType": "IfThenElse",
@@ -55,30 +55,31 @@
 																					"ThenActions": [
 																						{
 																							"MacroActionType": "ActivateApplication",
-																							"ActionUID": 15568939,
+																							"ActionUID": 15626473,
 																							"ReopenWindows": false,
 																							"AllWindows": true,
 																							"TimeOutAbortsMacro": true,
 																							"AlreadyActivatedActionType": "BringAllWindows",
 																							"Application": {
-																								"BundleIdentifier": "pro.writer.mac",
-																								"Name": "ia writer"
+																								"BundleIdentifier": "com.DigiDNA.iMazing3Mac",
+																								"Name": "iMazing",
+																								"NewFile": "/Applications/iMazing.app"
 																							}
 																						},
 																						{
 																							"MacroActionType": "Pause",
 																							"TimeOutAbortsMacro": true,
 																							"Time": ".3",
-																							"ActionUID": 15568940
+																							"ActionUID": 15626474
 																						},
 																						{
 																							"MacroActionType": "HideOthers",
-																							"ActionUID": 15568941,
+																							"ActionUID": 15626475,
 																							"HonorExcluded": true
 																						}
 																					],
 																					"TimeOutAbortsMacro": true,
-																					"ActionUID": 15568938
+																					"ActionUID": 15626472
 																				}
 																			],
 																			"Conditions": {
@@ -95,19 +96,20 @@
 																			"ThenActions": [
 																				{
 																					"MacroActionType": "ActivateApplication",
-																					"ActionUID": 15568937,
+																					"ActionUID": 15626471,
 																					"ReopenWindows": false,
 																					"AllWindows": true,
 																					"TimeOutAbortsMacro": true,
 																					"AlreadyActivatedActionType": "BringAllWindows",
 																					"Application": {
-																						"BundleIdentifier": "pro.writer.mac",
-																						"Name": "ia writer"
+																						"BundleIdentifier": "com.DigiDNA.iMazing3Mac",
+																						"Name": "iMazing",
+																						"NewFile": "/Applications/iMazing.app"
 																					}
 																				}
 																			],
 																			"TimeOutAbortsMacro": true,
-																			"ActionUID": 15568936
+																			"ActionUID": 15626470
 																		}
 																	],
 																	"Conditions": {
@@ -124,30 +126,31 @@
 																	"ThenActions": [
 																		{
 																			"MacroActionType": "ActivateApplication",
-																			"ActionUID": 15568933,
+																			"ActionUID": 15626467,
 																			"ReopenWindows": false,
 																			"AllWindows": true,
 																			"TimeOutAbortsMacro": true,
 																			"AlreadyActivatedActionType": "BringAllWindows",
 																			"Application": {
-																				"BundleIdentifier": "pro.writer.mac",
-																				"Name": "ia writer"
+																				"BundleIdentifier": "com.DigiDNA.iMazing3Mac",
+																				"Name": "iMazing",
+																				"NewFile": "/Applications/iMazing.app"
 																			}
 																		},
 																		{
 																			"MacroActionType": "Pause",
 																			"TimeOutAbortsMacro": true,
 																			"Time": ".3",
-																			"ActionUID": 15568934
+																			"ActionUID": 15626468
 																		},
 																		{
 																			"MacroActionType": "HideOthers",
-																			"ActionUID": 15568935,
+																			"ActionUID": 15626469,
 																			"HonorExcluded": true
 																		}
 																	],
 																	"TimeOutAbortsMacro": true,
-																	"ActionUID": 15568932
+																	"ActionUID": 15626466
 																}
 															],
 															"Conditions": {
@@ -168,11 +171,11 @@
 																	"SoundName": "",
 																	"Subtitle": "",
 																	"Text": "App is not running.",
-																	"ActionUID": 15568931
+																	"ActionUID": 15626465
 																}
 															],
 															"TimeOutAbortsMacro": true,
-															"ActionUID": 15568930
+															"ActionUID": 15626464
 														}
 													],
 													"Conditions": {
@@ -193,11 +196,11 @@
 															"SoundName": "",
 															"Subtitle": "",
 															"Text": "App is not running.",
-															"ActionUID": 15568929
+															"ActionUID": 15626463
 														}
 													],
 													"TimeOutAbortsMacro": true,
-													"ActionUID": 15568928
+													"ActionUID": 15626462
 												}
 											],
 											"Conditions": {
@@ -218,11 +221,11 @@
 													"SoundName": "",
 													"Subtitle": "",
 													"Text": "App is not running.",
-													"ActionUID": 15568927
+													"ActionUID": 15626461
 												}
 											],
 											"TimeOutAbortsMacro": true,
-											"ActionUID": 15568926
+											"ActionUID": 15626460
 										}
 									],
 									"Conditions": {
@@ -243,11 +246,11 @@
 											"SoundName": "",
 											"Subtitle": "",
 											"Text": "App is not running.",
-											"ActionUID": 15568925
+											"ActionUID": 15626459
 										}
 									],
 									"TimeOutAbortsMacro": true,
-									"ActionUID": 15568924
+									"ActionUID": 15626458
 								}
 							],
 							"Conditions": {
@@ -268,11 +271,11 @@
 									"SoundName": "",
 									"Subtitle": "",
 									"Text": "App is not running.",
-									"ActionUID": 15568923
+									"ActionUID": 15626457
 								}
 							],
 							"TimeOutAbortsMacro": true,
-							"ActionUID": 15568922
+							"ActionUID": 15626456
 						}
 					],
 					"Conditions": {
@@ -280,8 +283,9 @@
 						"ConditionList": [
 							{
 								"Application": {
-									"BundleIdentifier": "pro.writer.mac",
-									"Name": "ia writer"
+									"BundleIdentifier": "com.DigiDNA.iMazing3Mac",
+									"Name": "iMazing",
+									"NewFile": "/Applications/iMazing.app"
 								},
 								"ApplicationConditionType": "Running",
 								"ConditionType": "Application"
@@ -333,35 +337,36 @@
 																							"TrimResults": true,
 																							"Source": "Nothing",
 																							"IncludeStdErr": false,
-																							"ActionUID": 15568919,
+																							"ActionUID": 15626453,
 																							"UseText": true,
 																							"TrimResultsNew": true,
 																							"TimeOutAbortsMacro": true,
 																							"Path": "",
 																							"DisplayKind": "None",
 																							"HonourFailureSettings": true,
-																							"Text": "~/Documents/GitHubRepos/dotfiles/Yabai/Scripts/moveAppToCurrentSpace.sh \"ia writer\""
+																							"Text": "~/Documents/GitHubRepos/dotfiles/Yabai/Scripts/moveAppToCurrentSpace.sh \"iMazing\""
 																						},
 																						{
 																							"MacroActionType": "ActivateApplication",
-																							"ActionUID": 15568920,
+																							"ActionUID": 15626454,
 																							"ReopenWindows": true,
 																							"AllWindows": true,
 																							"TimeOutAbortsMacro": true,
 																							"AlreadyActivatedActionType": "BringAllWindows",
 																							"Application": {
-																								"BundleIdentifier": "pro.writer.mac",
-																								"Name": "ia writer"
+																								"BundleIdentifier": "com.DigiDNA.iMazing3Mac",
+																								"Name": "iMazing",
+																								"NewFile": "/Applications/iMazing.app"
 																							}
 																						},
 																						{
 																							"MacroActionType": "HideOthers",
-																							"ActionUID": 15568921,
+																							"ActionUID": 15626455,
 																							"HonorExcluded": true
 																						}
 																					],
 																					"TimeOutAbortsMacro": true,
-																					"ActionUID": 15568918
+																					"ActionUID": 15626452
 																				}
 																			],
 																			"Conditions": {
@@ -384,30 +389,31 @@
 																					"TrimResults": true,
 																					"Source": "Nothing",
 																					"IncludeStdErr": false,
-																					"ActionUID": 15568916,
+																					"ActionUID": 15626450,
 																					"UseText": true,
 																					"TrimResultsNew": true,
 																					"TimeOutAbortsMacro": true,
 																					"Path": "",
 																					"DisplayKind": "None",
 																					"HonourFailureSettings": true,
-																					"Text": "~/Documents/GitHubRepos/dotfiles/Yabai/Scripts/moveAppToCurrentSpace.sh \"ia writer\""
+																					"Text": "~/Documents/GitHubRepos/dotfiles/Yabai/Scripts/moveAppToCurrentSpace.sh \"iMazing\""
 																				},
 																				{
 																					"MacroActionType": "ActivateApplication",
-																					"ActionUID": 15568917,
+																					"ActionUID": 15626451,
 																					"ReopenWindows": true,
 																					"AllWindows": true,
 																					"TimeOutAbortsMacro": true,
 																					"AlreadyActivatedActionType": "BringAllWindows",
 																					"Application": {
-																						"BundleIdentifier": "pro.writer.mac",
-																						"Name": "ia writer"
+																						"BundleIdentifier": "com.DigiDNA.iMazing3Mac",
+																						"Name": "iMazing",
+																						"NewFile": "/Applications/iMazing.app"
 																					}
 																				}
 																			],
 																			"TimeOutAbortsMacro": true,
-																			"ActionUID": 15568915
+																			"ActionUID": 15626449
 																		}
 																	],
 																	"Conditions": {
@@ -424,24 +430,25 @@
 																	"ThenActions": [
 																		{
 																			"MacroActionType": "ActivateApplication",
-																			"ActionUID": 15568913,
+																			"ActionUID": 15626447,
 																			"ReopenWindows": true,
 																			"AllWindows": true,
 																			"TimeOutAbortsMacro": true,
 																			"AlreadyActivatedActionType": "BringAllWindows",
 																			"Application": {
-																				"BundleIdentifier": "pro.writer.mac",
-																				"Name": "ia writer"
+																				"BundleIdentifier": "com.DigiDNA.iMazing3Mac",
+																				"Name": "iMazing",
+																				"NewFile": "/Applications/iMazing.app"
 																			}
 																		},
 																		{
 																			"MacroActionType": "HideOthers",
-																			"ActionUID": 15568914,
+																			"ActionUID": 15626448,
 																			"HonorExcluded": true
 																		}
 																	],
 																	"TimeOutAbortsMacro": true,
-																	"ActionUID": 15568912
+																	"ActionUID": 15626446
 																}
 															],
 															"Conditions": {
@@ -459,17 +466,18 @@
 																{
 																	"MacroActionType": "QuitSpecificApp",
 																	"Application": {
-																		"BundleIdentifier": "pro.writer.mac",
-																		"Name": "ia writer"
+																		"BundleIdentifier": "com.DigiDNA.iMazing3Mac",
+																		"Name": "iMazing",
+																		"NewFile": "/Applications/iMazing.app"
 																	},
 																	"TimeOutAbortsMacro": true,
 																	"Target": "Specific",
 																	"Action": "Quit",
-																	"ActionUID": 15568911
+																	"ActionUID": 15626445
 																}
 															],
 															"TimeOutAbortsMacro": true,
-															"ActionUID": 15568910
+															"ActionUID": 15626444
 														}
 													],
 													"Conditions": {
@@ -486,15 +494,16 @@
 													"ThenActions": [
 														{
 															"MacroActionType": "HideSpecificApp",
-															"ActionUID": 15568909,
+															"ActionUID": 15626443,
 															"Application": {
-																"BundleIdentifier": "pro.writer.mac",
-																"Name": "ia writer"
+																"BundleIdentifier": "com.DigiDNA.iMazing3Mac",
+																"Name": "iMazing",
+																"NewFile": "/Applications/iMazing.app"
 															}
 														}
 													],
 													"TimeOutAbortsMacro": true,
-													"ActionUID": 15568908
+													"ActionUID": 15626442
 												}
 											],
 											"Conditions": {
@@ -517,18 +526,18 @@
 													"TrimResults": true,
 													"Source": "Nothing",
 													"IncludeStdErr": false,
-													"ActionUID": 15568907,
+													"ActionUID": 15626441,
 													"UseText": true,
 													"TrimResultsNew": true,
 													"TimeOutAbortsMacro": true,
 													"Path": "",
 													"DisplayKind": "Window",
 													"HonourFailureSettings": true,
-													"Text": "~/Documents/GitHubRepos/dotfiles/Yabai/Scripts/closeAppWindows.sh \"ia writer\""
+													"Text": "~/Documents/GitHubRepos/dotfiles/Yabai/Scripts/closeAppWindows.sh \"iMazing\""
 												}
 											],
 											"TimeOutAbortsMacro": true,
-											"ActionUID": 15568906
+											"ActionUID": 15626440
 										}
 									],
 									"Conditions": {
@@ -551,18 +560,18 @@
 											"TrimResults": true,
 											"Source": "Nothing",
 											"IncludeStdErr": false,
-											"ActionUID": 15568905,
+											"ActionUID": 15626439,
 											"UseText": true,
 											"TrimResultsNew": true,
 											"TimeOutAbortsMacro": true,
 											"Path": "",
 											"DisplayKind": "Window",
 											"HonourFailureSettings": true,
-											"Text": "~/Documents/GitHubRepos/dotfiles/Yabai/Scripts/deminimizeWindowsOfApp.sh \"ia writer\""
+											"Text": "~/Documents/GitHubRepos/dotfiles/Yabai/Scripts/deminimizeWindowsOfApp.sh \"iMazing\""
 										}
 									],
 									"TimeOutAbortsMacro": true,
-									"ActionUID": 15568904
+									"ActionUID": 15626438
 								}
 							],
 							"Conditions": {
@@ -585,22 +594,22 @@
 									"TrimResults": true,
 									"Source": "Nothing",
 									"IncludeStdErr": false,
-									"ActionUID": 15568903,
+									"ActionUID": 15626437,
 									"UseText": true,
 									"TrimResultsNew": true,
 									"TimeOutAbortsMacro": true,
 									"Path": "",
 									"DisplayKind": "Window",
 									"HonourFailureSettings": true,
-									"Text": "~/Documents/GitHubRepos/dotfiles/Yabai/Scripts/minimizeAllWindowsOfApp.sh \"ia writer\""
+									"Text": "~/Documents/GitHubRepos/dotfiles/Yabai/Scripts/minimizeAllWindowsOfApp.sh \"iMazing\""
 								}
 							],
 							"TimeOutAbortsMacro": true,
-							"ActionUID": 15568902
+							"ActionUID": 15626436
 						}
 					],
 					"TimeOutAbortsMacro": true,
-					"ActionUID": 15568901
+					"ActionUID": 15626435
 				}
 			],
 			"Conditions": {
@@ -620,14 +629,15 @@
 					"ElseActions": [
 						{
 							"MacroActionType": "ActivateApplication",
-							"ActionUID": 15568900,
+							"ActionUID": 15626434,
 							"ReopenWindows": false,
 							"AllWindows": false,
 							"TimeOutAbortsMacro": true,
 							"AlreadyActivatedActionType": "Normal",
 							"Application": {
-								"BundleIdentifier": "pro.writer.mac",
-								"Name": "ia writer"
+								"BundleIdentifier": "com.DigiDNA.iMazing3Mac",
+								"Name": "iMazing",
+								"NewFile": "/Applications/iMazing.app"
 							}
 						}
 					],
@@ -636,8 +646,9 @@
 						"ConditionList": [
 							{
 								"Application": {
-									"BundleIdentifier": "pro.writer.mac",
-									"Name": "ia writer"
+									"BundleIdentifier": "com.DigiDNA.iMazing3Mac",
+									"Name": "iMazing",
+									"NewFile": "/Applications/iMazing.app"
 								},
 								"ApplicationConditionType": "Running",
 								"ConditionType": "Application"
@@ -647,23 +658,24 @@
 					"ThenActions": [
 						{
 							"MacroActionType": "ActivateApplication",
-							"ActionUID": 15568899,
+							"ActionUID": 15626433,
 							"ReopenWindows": true,
 							"AllWindows": true,
 							"TimeOutAbortsMacro": true,
 							"AlreadyActivatedActionType": "Hide",
 							"Application": {
-								"BundleIdentifier": "pro.writer.mac",
-								"Name": "ia writer"
+								"BundleIdentifier": "com.DigiDNA.iMazing3Mac",
+								"Name": "iMazing",
+								"NewFile": "/Applications/iMazing.app"
 							}
 						}
 					],
 					"TimeOutAbortsMacro": true,
-					"ActionUID": 15568898
+					"ActionUID": 15626432
 				}
 			],
 			"TimeOutAbortsMacro": true,
-			"ActionUID": 15568897
+			"ActionUID": 15626431
 		}
 	]
 }
